@@ -1,3 +1,8 @@
 {
-    "item.succsmod.atherium": "Atherium"
+    "item.succsmod.atherium": "Atherium",
+
+    "block.succsmod.atherium_ore": "Atherium Ore",
+    "block.succsmod.deepslate_atherium_ore": "Deepslate Atherium Ore",
+
+    "creativetab.succs_mod_tab": "Succ's Mod"
 }

@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.succ.succsmod.block.ModBlocks;
+import net.succ.succsmod.item.ModCreateModeTabs;
 import net.succ.succsmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -29,7 +31,10 @@ public class SuccsMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreateModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -48,6 +53,8 @@ public class SuccsMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ATHERIUM);
+            event.accept(ModBlocks.ATHERIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ATHERIUM_ORE);
         }
     }
 
