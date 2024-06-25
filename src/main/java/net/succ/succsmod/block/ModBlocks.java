@@ -24,6 +24,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_ATHERIUM_ORE = registerBlock("deepslate_atherium_ore",
             () -> new Block(Block.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.AMETHYST_CLUSTER)));
 
+    public static final RegistryObject<Block> ATHERIUM_BLOCK = registerBlock("atherium_block",
+            () -> new Block(Block.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.AMETHYST)));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
