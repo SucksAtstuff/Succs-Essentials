@@ -23,6 +23,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_BLOCK.get()));
+
+                        pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
                     })
                     .build());
 

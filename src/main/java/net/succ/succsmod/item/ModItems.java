@@ -16,6 +16,11 @@ public class ModItems {
     public static final RegistryObject<Item> ATHERIUM = ITEMS.register("atherium",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ROCK_CANDY = ITEMS.register("rock_candy",
+            () -> new Item(new Item.Properties().food(ModFoods.ROCK_CANDY)));
+
+
+
 
 
 
