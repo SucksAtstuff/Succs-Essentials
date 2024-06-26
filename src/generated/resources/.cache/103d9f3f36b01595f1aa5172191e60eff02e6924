@@ -1,0 +1,7 @@
+// 1.20.1	2024-06-26T20:24:00.3340553	Registries
+63f8ac1fe7e911e4b62afb8213beff3748c717a7 data/succsmod/forge/biome_modifier/add_atherium_ore.json
+a0211a2ce5d91ab79ff1939e2eec44ee5094e143 data/succsmod/forge/biome_modifier/add_deepslate_atherium_ore.json
+6053e0156a94b9c8430f71e53d93229802a8a186 data/succsmod/worldgen/configured_feature/atherium_ore.json
+09471a357cc452d0f06e696873613348d271e8c6 data/succsmod/worldgen/configured_feature/deepslate_atherium_ore.json
+b2692d7cd6def26639648e3aaf4032430bb642ad data/succsmod/worldgen/placed_feature/atherium_ore_placed.json
+47e2c235215d77c5910917647ca1be4bdbde5b64 data/succsmod/worldgen/placed_feature/deepslate_atherium_ore_placed.json

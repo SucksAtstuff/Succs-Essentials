@@ -52,9 +52,7 @@ public class SuccsMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.ATHERIUM);
-            event.accept(ModBlocks.ATHERIUM_ORE);
-            event.accept(ModBlocks.DEEPSLATE_ATHERIUM_ORE);
+
         }
     }
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "succsmod:atherium"
+    },
+    "S": {
+      "item": "succsmod:gold_handle"
+    }
+  },
+  "pattern": [
+    "AA ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "succsmod:atherium_hoe"
+  },
+  "show_notification": true
+}
