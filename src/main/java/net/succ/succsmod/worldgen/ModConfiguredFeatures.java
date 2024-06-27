@@ -24,32 +24,34 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_ATHERIUM_ORE_KEY = registerKey("deepslate_atherium_ore");
 
     // Method to register configured features during the bootstrap phase
-    public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context){
+    public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context) {
         // Define RuleTests for blocks that can be replaced by ores
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         // Define target block states for Atherium ores
         List<OreConfiguration.TargetBlockState> atheriumOres = List.of(
-                OreConfiguration.target(stoneReplaceable, ModBlocks.ATHERIUM_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(stoneReplaceable, ModBlocks.ATHERIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_ATHERIUM_ORE.get().defaultBlockState())
         );
 
         // Register Atherium ore configured feature
-        register(context, ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 2));
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
 
         // Register Deepslate Atherium ore configured feature
-        register(context, DEEPSLATE_ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 1));
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, DEEPSLATE_ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
     }
 
     // Utility method to create a ResourceKey for a ConfiguredFeature using the mod ID and a given name
-    public static ResourceKey<ConfiguredFeature<?,?>> registerKey(String name){
+    public static ResourceKey<ConfiguredFeature<?,?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(SuccsMod.MOD_ID, name));
     }
 
     // Method to register a ConfiguredFeature with the given key, feature, and configuration
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?,?>> context,
-                                                                                          ResourceKey<ConfiguredFeature<?,?>> key, F feature, FC configuration){
+                                                                                          ResourceKey<ConfiguredFeature<?,?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }
