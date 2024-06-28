@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-26T18:10:54.7719941	Item Models: succsmod
+// 1.20.1	2024-06-28T01:22:30.9776911	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 34894304f104e2c6d59902a35808297739cb7450 assets/succsmod/models/item/atherium_hoe.json
@@ -7,3 +7,9 @@ e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_ax
 0908d21beae7cd83897709de8c576510bd26d39d assets/succsmod/models/item/atherium_sword.json
 4c20fe5a11fd7b3b65025bfbe0e7b954afe4b871 assets/succsmod/models/item/gold_handle.json
 74a065b1099735fcf6cd219d2ff05bb3d2cde80b assets/succsmod/models/item/rock_candy.json
+24e37b0e3db6aab1218d1c4345d438b44f94b541 assets/succsmod/models/item/ruby.json
+f25a4411f10672e2c28dd5f0e987ede7cea0a38a assets/succsmod/models/item/ruby_axe.json
+aadcaa2c7bd0f9352e7906168b5ed7628f17c7be assets/succsmod/models/item/ruby_hoe.json
+ee1341a521d5796652bfff82126ba65801ac3c85 assets/succsmod/models/item/ruby_pickaxe.json
+c08511e96025cbf599c41e03dd410550204ac3a9 assets/succsmod/models/item/ruby_shovel.json
+816fbb9b264b5c19f085787825f6ff1e3ecef07e assets/succsmod/models/item/ruby_sword.json

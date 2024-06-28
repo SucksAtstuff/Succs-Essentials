@@ -22,6 +22,10 @@ public class ModConfiguredFeatures {
     // Define ResourceKeys for custom configured features (Atherium ore and Deepslate Atherium ore)
     public static final ResourceKey<ConfiguredFeature<?,?>> ATHERIUM_ORE_KEY = registerKey("atherium_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_ATHERIUM_ORE_KEY = registerKey("deepslate_atherium_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_RUBY_ORE_KEY = registerKey("deepslate_ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_SAPPHIRE_ORE_KEY = registerKey("deepslate_sapphire_ore");
 
     // Method to register configured features during the bootstrap phase
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context) {
@@ -42,6 +46,35 @@ public class ModConfiguredFeatures {
         // Register Deepslate Atherium ore configured feature
         // pSize represents the size of the ore vein (number of blocks)
         register(context, DEEPSLATE_ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
+
+        // Define target block states for Ruby ores
+        List<OreConfiguration.TargetBlockState> rubyOres = List.of(
+                OreConfiguration.target(stoneReplaceable, ModBlocks.RUBY_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState())
+        );
+
+        // Register Ruby ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(rubyOres, 8));
+
+        // Register Deepslate Ruby ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, DEEPSLATE_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(rubyOres, 6));
+
+        // Define target block states for Sapphire ores
+        List<OreConfiguration.TargetBlockState> sapphireOres = List.of(
+                OreConfiguration.target(stoneReplaceable, ModBlocks.SAPPHIRE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState())
+        );
+
+        // Register Sapphire ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(sapphireOres, 10));
+
+        // Register Deepslate Sapphire ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, DEEPSLATE_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(sapphireOres, 8));
+
     }
 
     // Utility method to create a ResourceKey for a ConfiguredFeature using the mod ID and a given name

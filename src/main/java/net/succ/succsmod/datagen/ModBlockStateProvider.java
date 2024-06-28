@@ -25,6 +25,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Register block states and item models for Atherium Ore and Deepslate Atherium Ore
         blockWithItem(ModBlocks.ATHERIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ATHERIUM_ORE);
+
+        // Register block states and item models for Ruby Ore and Deepslate Ruby Ore
+        blockWithItem(ModBlocks.RUBY_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
+
+        // Register block states and item models for Ruby Block
+        blockWithItem(ModBlocks.RUBY_BLOCK);
     }
 
     // Helper method to register block states and item models for a given block

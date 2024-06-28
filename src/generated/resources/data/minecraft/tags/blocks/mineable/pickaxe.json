@@ -2,6 +2,9 @@
   "values": [
     "succsmod:atherium_block",
     "succsmod:atherium_ore",
-    "succsmod:deepslate_atherium_ore"
+    "succsmod:deepslate_atherium_ore",
+    "succsmod:ruby_block",
+    "succsmod:ruby_ore",
+    "succsmod:deepslate_ruby_ore"
   ]
 }

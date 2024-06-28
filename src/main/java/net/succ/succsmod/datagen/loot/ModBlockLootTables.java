@@ -26,12 +26,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.ATHERIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RUBY_BLOCK.get());
 
         this.add(ModBlocks.ATHERIUM_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.ATHERIUM_ORE.get(), ModItems.ATHERIUM.get()));
 
         this.add(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(), ModItems.ATHERIUM.get()));
+
+        this.add(ModBlocks.RUBY_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.SAPPHIRE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
+        this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
     }
 
     protected LootTable.Builder createDiamondLikeOreDrops(Block pBlock, Item item) {
@@ -40,6 +54,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+
+
+    }
+
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+
+
     }
 
     @Override

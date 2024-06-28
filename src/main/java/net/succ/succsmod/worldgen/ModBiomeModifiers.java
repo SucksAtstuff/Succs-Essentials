@@ -18,6 +18,11 @@ public class ModBiomeModifiers {
     // Define ResourceKeys for custom biome modifiers to add Atherium ore and Deepslate Atherium ore
     public static final ResourceKey<BiomeModifier> ADD_ATHERIUM_ORE = registerKey("add_atherium_ore");
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_ATHERIUM_ORE = registerKey("add_deepslate_atherium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_RUBY_ORE = registerKey("add_ruby_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_RUBY_ORE = registerKey("add_deepslate_ruby_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
+
 
     // Method to register biome modifiers during the bootstrap phase
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -40,6 +45,42 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 // Specify the placed feature to add (Deepslate Atherium ore)
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_ATHERIUM_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Register the biome modifier for adding Ruby ore to overworld biomes
+        context.register(ADD_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Ruby ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUBY_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Register the biome modifier for adding Deepslate Ruby ore to overworld biomes
+        context.register(ADD_DEEPSLATE_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Deepslate Ruby ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_RUBY_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Register the biome modifier for adding Sapphire ore to overworld biomes
+        context.register(ADD_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Sapphire ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Register the biome modifier for adding Deepslate Sapphire ore to overworld biomes
+        context.register(ADD_DEEPSLATE_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Deepslate Sapphire ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_SAPPHIRE_ORE_PLACED_KEY)),
                 // Specify that the feature should be added during the underground ores generation step
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }

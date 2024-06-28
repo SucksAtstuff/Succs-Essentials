@@ -1,10 +1,19 @@
-// 1.20.1	2024-06-26T12:43:42.3957388	Block States: succsmod
+// 1.20.1	2024-06-28T01:22:30.9786916	Block States: succsmod
 b63934fa48a1283d85538fe4d3c6ef017e7acd05 assets/succsmod/blockstates/atherium_block.json
 39d7a43c96e89d98df99b17a3677290c8ab0b160 assets/succsmod/blockstates/atherium_ore.json
 1382068537b1727f078199c541ebde30db4c233d assets/succsmod/blockstates/deepslate_atherium_ore.json
+659d1ce08ccb38e66dd203e6f4da25db3271ef42 assets/succsmod/blockstates/deepslate_ruby_ore.json
+f8e7256dc8b32cab5fe1a68f664c78266a654a8d assets/succsmod/blockstates/ruby_block.json
+6eeb20ba5e3cb0a7d6a758b4de731e560c89f7ca assets/succsmod/blockstates/ruby_ore.json
 3cfff6d06fe4e998c602f6a7f67faec6ce8cd166 assets/succsmod/models/block/atherium_block.json
 0e7e9b6408cc4a6b33fdf354fbe01feacf555154 assets/succsmod/models/block/atherium_ore.json
 cd138e0783ccf0c24f512f411e84a220e0443c42 assets/succsmod/models/block/deepslate_atherium_ore.json
+d17d1b5eda39033c69d699155ef80d0478523d9c assets/succsmod/models/block/deepslate_ruby_ore.json
+498a9ff11603f299b0ad6efedf6c699d443938cb assets/succsmod/models/block/ruby_block.json
+ad44cf25c1a768a029ce34fc5c0fce21ce5a2865 assets/succsmod/models/block/ruby_ore.json
 cbf7780f3996015328fe272aab649c5bb44d4f09 assets/succsmod/models/item/atherium_block.json
 d86c9d496eee8efd2f61b40691beb3e0542a71e5 assets/succsmod/models/item/atherium_ore.json
 b7361641699d492508d9b3716a0df2db99d92a25 assets/succsmod/models/item/deepslate_atherium_ore.json
+c6e0231c2ad4b492e6ba1a66c4e31a82d7bed573 assets/succsmod/models/item/deepslate_ruby_ore.json
+ba151f814d825073438689caf64f61cc441689f3 assets/succsmod/models/item/ruby_block.json
+03357a6f4a229689fdef59ae25221d5a2a03ca71 assets/succsmod/models/item/ruby_ore.json

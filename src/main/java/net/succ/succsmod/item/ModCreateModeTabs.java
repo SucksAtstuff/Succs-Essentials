@@ -24,16 +24,38 @@ public class ModCreateModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         // Add items to be displayed in the custom Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_BLOCK.get()));
+
+                        pOutput.accept(new ItemStack(ModBlocks.RUBY_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_RUBY_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.RUBY_BLOCK.get()));
+
+                        pOutput.accept(new ItemStack(ModBlocks.SAPPHIRE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get()));
 
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
+
+                        pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
+
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
 
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));

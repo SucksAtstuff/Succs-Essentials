@@ -11,6 +11,8 @@ import net.succ.succsmod.SuccsMod;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_ATHERIUM_TOOL = tag("needs_atherium_tool");
+        public static final TagKey<Block> NEEDS_RUBY_TOOL = tag("needs_ruby_tool");
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
 
 
         private static TagKey<Block> tag (String name){

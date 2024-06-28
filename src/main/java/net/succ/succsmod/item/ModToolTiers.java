@@ -26,4 +26,24 @@ public class ModToolTiers {
             // No tool tiers are below Atherium
             List.of()
     );
+
+    public static final Tier RUBY = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1561, 8.0F, 3.0F, 10,
+                    ModTags.Blocks.NEEDS_RUBY_TOOL, () -> Ingredient.of(ModItems.RUBY.get())),
+            new ResourceLocation(SuccsMod.MOD_ID, "ruby"),
+            List.of(Tiers.DIAMOND),
+            // No tool tiers are below Ruby
+            List.of()
+
+    );
+
+    public static final Tier SAPPHIRE = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1561, 8.0F, 3.0F, 10,
+                    ModTags.Blocks.NEEDS_SAPPHIRE_TOOL, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+            new ResourceLocation(SuccsMod.MOD_ID, "sapphire"),
+            List.of(Tiers.DIAMOND),
+            // No tool tiers are below Sapphire
+            List.of()
+
+    );
 }

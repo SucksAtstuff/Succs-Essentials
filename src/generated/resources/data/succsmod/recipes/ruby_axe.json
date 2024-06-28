@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "succsmod:ruby"
+    },
+    "S": {
+      "item": "succsmod:gold_handle"
+    }
+  },
+  "pattern": [
+    "RR ",
+    "RS ",
+    " S "
+  ],
+  "result": {
+    "item": "succsmod:ruby_axe"
+  },
+  "show_notification": true
+}
