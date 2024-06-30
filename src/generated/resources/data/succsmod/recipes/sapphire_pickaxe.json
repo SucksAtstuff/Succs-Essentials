@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "succsmod:sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "HHH",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "succsmod:sapphire_pickaxe"
+  },
+  "show_notification": true
+}

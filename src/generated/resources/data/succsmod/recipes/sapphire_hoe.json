@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "succsmod:sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "HH ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "succsmod:sapphire_hoe"
+  },
+  "show_notification": true
+}
