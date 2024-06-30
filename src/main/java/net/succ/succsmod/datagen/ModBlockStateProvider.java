@@ -32,6 +32,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Register block states and item models for Ruby Block
         blockWithItem(ModBlocks.RUBY_BLOCK);
+
+        // Register block states and item models for Sapphire Ore and Deepslate Sapphire Ore
+        blockWithItem(ModBlocks.SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
+        // Register block states and item models for Sapphire Block
+        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
     }
 
     // Helper method to register block states and item models for a given block

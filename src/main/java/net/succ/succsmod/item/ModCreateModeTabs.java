@@ -19,8 +19,13 @@ public class ModCreateModeTabs {
 
     // Register the custom Creative Mode Tab for the mod
     public static final RegistryObject<CreativeModeTab> SUCCS_MOD_TAB = CREATIVE_MODE_TABS.register("succsmod",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ATHERIUM.get()))
+            // Create a new CreativeModeTab with specified icon, title, and displayed items
+            () -> CreativeModeTab.builder()
+                    // Set the icon of the Creative Mode Tab to be an Atherium item
+                    .icon(() -> new ItemStack(ModItems.ATHERIUM.get()))
+                    // Set the title of the Creative Mode Tab
                     .title(Component.translatable("creativetab.succs_mod_tab"))
+                    // Define the items to be displayed in the Creative Mode Tab
                     .displayItems((pParameters, pOutput) -> {
                         // Add items to be displayed in the custom Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM.get()));
@@ -39,27 +44,34 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get()));
 
+                        // Add tools made of Atherium to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
 
+                        // Add tools made of Ruby to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
 
+                        // Add tools made of Sapphire to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
 
+                        // Add miscellaneous items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
+                        pOutput.accept(new ItemStack(ModItems.ROCK.get()));
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                     })
+                    // Build the Creative Mode Tab
                     .build());
 
     // Method to register the DeferredRegister to the event bus

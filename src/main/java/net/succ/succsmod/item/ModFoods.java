@@ -19,4 +19,19 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 5), 1.0f)
             // Build the FoodProperties instance
             .build());
+
+    // Define the FoodProperties for ROCK
+    public static final FoodProperties ROCK = (new FoodProperties.Builder()
+            // Set the nutrition value (hunger restored) to 4
+            .nutrition(4)
+            // Make the food consume quickly
+            .fast()
+            // Set the saturation modifier to 0.1F (how much saturation is restored)
+            .saturationMod(0.5F)
+            // Add an effect that grants a speed boost for 200 ticks (10 seconds) at level 1, with a 100% chance
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1), 1.0f)
+            // Build the FoodProperties instance
+            .build());
 }
+
+

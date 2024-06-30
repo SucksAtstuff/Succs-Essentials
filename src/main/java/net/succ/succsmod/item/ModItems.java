@@ -30,6 +30,10 @@ public class ModItems {
     public static final RegistryObject<Item> ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(ModFoods.ROCK_CANDY)));
 
+    // Register the Rock item
+    public static final RegistryObject<Item> ROCK = ITEMS.register("rock",
+            () -> new Item(new Item.Properties().food(ModFoods.ROCK)));
+
     // Register the Gold Handle item
     public static final RegistryObject<Item> GOLD_HANDLE = ITEMS.register("gold_handle",
             () -> new Item(new Item.Properties()));
@@ -53,6 +57,10 @@ public class ModItems {
     // Register the Atherium Hoe item
     public static final RegistryObject<Item> ATHERIUM_HOE = ITEMS.register("atherium_hoe",
             () -> new HoeItem(ModToolTiers.ATHERIUM, -4, 1F, new Item.Properties()));
+
+    // Register the Atherium Hammer item
+    public static final RegistryObject<Item> ATHERIUM_HAMMER = ITEMS.register("atherium_hammer",
+            () -> new HammerItem(ModToolTiers.ATHERIUM, 4, -3.5F, new Item.Properties()));
 
     // Register the Ruby Sword item
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",

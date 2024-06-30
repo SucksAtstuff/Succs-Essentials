@@ -24,8 +24,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Register models for simple items
         simpleItem(ModItems.ATHERIUM);
         simpleItem(ModItems.ROCK_CANDY);
+        simpleItem(ModItems.ROCK);
         simpleItem(ModItems.GOLD_HANDLE);
         simpleItem((ModItems.RUBY));
+        simpleItem((ModItems.SAPPHIRE));
 
         // Register models for handheld items
         handheldItem(ModItems.ATHERIUM_SWORD);
@@ -33,12 +35,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ATHERIUM_AXE);
         handheldItem(ModItems.ATHERIUM_SHOVEL);
         handheldItem(ModItems.ATHERIUM_HOE);
+        handheldItem(ModItems.ATHERIUM_HAMMER);
 
         handheldItem(ModItems.RUBY_SWORD);
         handheldItem(ModItems.RUBY_PICKAXE);
         handheldItem(ModItems.RUBY_AXE);
         handheldItem(ModItems.RUBY_SHOVEL);
         handheldItem(ModItems.RUBY_HOE);
+
+        handheldItem(ModItems.SAPPHIRE_SWORD);
+        handheldItem(ModItems.SAPPHIRE_PICKAXE);
+        handheldItem(ModItems.SAPPHIRE_AXE);
+        handheldItem(ModItems.SAPPHIRE_SHOVEL);
+        handheldItem(ModItems.SAPPHIRE_HOE);
+
     }
 
     // Helper method to create a simple item model

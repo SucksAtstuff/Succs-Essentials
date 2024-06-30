@@ -37,20 +37,35 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RUBY_ORE.get())
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE.get());
 
-        // Add Atherium blocks to the "needs netherite tool" tag
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        // Add Atherium blocks to the "needs Ruby tool" tag
+        this.tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
                 .add(ModBlocks.ATHERIUM_BLOCK.get())
                 .add(ModBlocks.ATHERIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get());
 
-        // Add Ruby blocks to the "needs diamond tool" tag
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+        // Add Ruby blocks to the "needs Sapphire tool" tag
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
                 .add(ModBlocks.RUBY_BLOCK.get())
                 .add(ModBlocks.RUBY_ORE.get())
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE.get());
 
+        // Add Sapphire blocks to the "mineable with pickaxe" tag
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.SAPPHIRE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+
+        // Add Sapphire blocks to the "needs Netherite tool" tag
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.SAPPHIRE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+
         // Add a custom tag for blocks that need Atherium tools
         this.tag(ModTags.Blocks.NEEDS_ATHERIUM_TOOL);
+
+        // Add a custom tag for blocks that need Sapphire tools
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL);
 
         // Add a custom tag for blocks that need Ruby tools
         this.tag(ModTags.Blocks.NEEDS_RUBY_TOOL);

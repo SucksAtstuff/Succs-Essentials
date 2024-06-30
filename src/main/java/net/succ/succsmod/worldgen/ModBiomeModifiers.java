@@ -20,7 +20,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_ATHERIUM_ORE = registerKey("add_deepslate_atherium_ore");
     public static final ResourceKey<BiomeModifier> ADD_RUBY_ORE = registerKey("add_ruby_ore");
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_RUBY_ORE = registerKey("add_deepslate_ruby_ore");
-    public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_SAPPHIRE_ORE = registerKey("add_deepslate_sapphire_ore");
     public static final ResourceKey<BiomeModifier> ADD_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
 
 

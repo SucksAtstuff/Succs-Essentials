@@ -5,6 +5,9 @@
     "succsmod:deepslate_atherium_ore",
     "succsmod:ruby_block",
     "succsmod:ruby_ore",
-    "succsmod:deepslate_ruby_ore"
+    "succsmod:deepslate_ruby_ore",
+    "succsmod:sapphire_block",
+    "succsmod:sapphire_ore",
+    "succsmod:deepslate_sapphire_ore"
   ]
 }

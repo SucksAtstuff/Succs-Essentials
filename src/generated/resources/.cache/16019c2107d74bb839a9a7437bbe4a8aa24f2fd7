@@ -1,11 +1,13 @@
-// 1.20.1	2024-06-28T01:22:30.9776911	Item Models: succsmod
+// 1.20.1	2024-06-30T02:25:44.5919262	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
+d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
 34894304f104e2c6d59902a35808297739cb7450 assets/succsmod/models/item/atherium_hoe.json
 53a1598c7d8a407e1de4dd787c4546be8c86ec4a assets/succsmod/models/item/atherium_pickaxe.json
 98ab3b66d519855d91d402daf3e5e832a77f75c7 assets/succsmod/models/item/atherium_shovel.json
 0908d21beae7cd83897709de8c576510bd26d39d assets/succsmod/models/item/atherium_sword.json
 4c20fe5a11fd7b3b65025bfbe0e7b954afe4b871 assets/succsmod/models/item/gold_handle.json
+7195d523dcb58ac248296b01290eae04c85dd3ab assets/succsmod/models/item/rock.json
 74a065b1099735fcf6cd219d2ff05bb3d2cde80b assets/succsmod/models/item/rock_candy.json
 24e37b0e3db6aab1218d1c4345d438b44f94b541 assets/succsmod/models/item/ruby.json
 f25a4411f10672e2c28dd5f0e987ede7cea0a38a assets/succsmod/models/item/ruby_axe.json
@@ -13,3 +15,9 @@ aadcaa2c7bd0f9352e7906168b5ed7628f17c7be assets/succsmod/models/item/ruby_hoe.js
 ee1341a521d5796652bfff82126ba65801ac3c85 assets/succsmod/models/item/ruby_pickaxe.json
 c08511e96025cbf599c41e03dd410550204ac3a9 assets/succsmod/models/item/ruby_shovel.json
 816fbb9b264b5c19f085787825f6ff1e3ecef07e assets/succsmod/models/item/ruby_sword.json
+25e7150df238116f19da0498b054f8c0ac6f87fa assets/succsmod/models/item/sapphire.json
+d862a6574340262de47f1a49fc9680d376169b49 assets/succsmod/models/item/sapphire_axe.json
+32e9d9ecd7d2f6c38aaf862f29fd15da7f1fb9db assets/succsmod/models/item/sapphire_hoe.json
+3ea679e76e45f94e544fe8fa4c837923611d33f7 assets/succsmod/models/item/sapphire_pickaxe.json
+717c127367213d56902ecc94fdafc4887c11dd99 assets/succsmod/models/item/sapphire_shovel.json
+de7ed9f07a236047514789144a9c58c0290e08c2 assets/succsmod/models/item/sapphire_sword.json

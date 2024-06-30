@@ -11,6 +11,7 @@
     "item.succsmod.atherium_shovel": "Atherium Shovel",
     "item.succsmod.atherium_hoe": "Atherium Hoe",
     "item.succsmod.atherium_sword": "Atherium Sword",
+    "item.succsmod.atherium_hammer": "Atherium Hammer",
 
     "item.succsmod.ruby": "Ruby",
 
@@ -26,7 +27,7 @@
 
     "item.succsmod.sapphire": "Sapphire",
 
-    "item.succsmod.sapphire_block": "Block Of Sapphire",
+    "block.succsmod.sapphire_block": "Block Of Sapphire",
     "block.succsmod.sapphire_ore": "Sapphire Ore",
     "block.succsmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
 
@@ -41,5 +42,6 @@
     "creativetab.succs_mod_tab": "Succ's Mod",
 
 
-    "item.succsmod.rock_candy": "'Rock Candy'"
+    "item.succsmod.rock_candy": "'Rock Candy'",
+    "item.succsmod.rock": "Rock"
 }
