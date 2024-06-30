@@ -9,7 +9,7 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.succ.succsmod.SuccsMod;
-import net.succ.succsmod.item.HammerItem;
+import net.succ.succsmod.item.custom.HammerItem;
 
 import java.util.HashSet;
 import java.util.Set;

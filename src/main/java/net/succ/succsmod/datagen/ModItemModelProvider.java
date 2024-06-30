@@ -36,6 +36,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ATHERIUM_SHOVEL);
         handheldItem(ModItems.ATHERIUM_HOE);
         handheldItem(ModItems.ATHERIUM_HAMMER);
+        handheldItem(ModItems.ATHERIUM_PAXEL);
 
         handheldItem(ModItems.RUBY_SWORD);
         handheldItem(ModItems.RUBY_PICKAXE);

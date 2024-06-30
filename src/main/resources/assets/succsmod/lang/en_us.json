@@ -4,6 +4,8 @@
 
     "block.succsmod.atherium_ore": "Atherium Ore",
     "block.succsmod.deepslate_atherium_ore": "Deepslate Atherium Ore",
+    "block.succsmod.nether_atherium_ore": "Nether Atherium Ore",
+    "block.succsmod.end_atherium_ore": "End Atherium Ore",
     "block.succsmod.atherium_block": "Block Of Atherium",
 
     "item.succsmod.atherium_pickaxe": "Atherium Pickaxe",
@@ -12,12 +14,15 @@
     "item.succsmod.atherium_hoe": "Atherium Hoe",
     "item.succsmod.atherium_sword": "Atherium Sword",
     "item.succsmod.atherium_hammer": "Atherium Hammer",
+    "item.succsmod.atherium_paxel": "Atherium Paxel",
 
     "item.succsmod.ruby": "Ruby",
 
     "item.succsmod.ruby_block": "Block Of Ruby",
     "block.succsmod.ruby_ore": "Ruby Ore",
     "block.succsmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "block.succsmod.nether_ruby_ore": "Nether Ruby Ore",
+    "block.succsmod.end_ruby_ore": "End Ruby Ore",
 
     "item.succsmod.ruby_pickaxe": "Ruby Pickaxe",
     "item.succsmod.ruby_axe": "Ruby Axe",
@@ -30,6 +35,8 @@
     "block.succsmod.sapphire_block": "Block Of Sapphire",
     "block.succsmod.sapphire_ore": "Sapphire Ore",
     "block.succsmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+    "block.succsmod.nether_sapphire_ore": "Nether Sapphire Ore",
+    "block.succsmod.end_sapphire_ore": "End Sapphire Ore",
 
     "item.succsmod.sapphire_pickaxe": "Sapphire Pickaxe",
     "item.succsmod.sapphire_axe": "Sapphire Axe",

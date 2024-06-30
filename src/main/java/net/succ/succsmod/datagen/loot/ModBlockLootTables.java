@@ -38,11 +38,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(), ModItems.ATHERIUM.get()));
 
+        this.add(ModBlocks.NETHER_ATHERIUM_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_ATHERIUM_ORE.get(), ModItems.ATHERIUM.get()));
+
+        this.add(ModBlocks.END_ATHERIUM_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.END_ATHERIUM_ORE.get(), ModItems.ATHERIUM.get()));
+
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
 
         this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.NETHER_RUBY_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.END_RUBY_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.END_RUBY_ORE.get(), ModItems.RUBY.get()));
 
         // Define loot tables for ore blocks that drop items similar to copper ores
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
@@ -50,6 +62,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
+        this.add(ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
+        this.add(ModBlocks.END_SAPPHIRE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
 
     }
 

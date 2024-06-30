@@ -1,9 +1,15 @@
-// 1.20.1	2024-06-29T23:21:46.4739137	Loot Tables
+// 1.20.1	2024-06-30T16:02:43.9511597	Loot Tables
 539b36df382db36891fb5da327600f59bba2ee56 data/succsmod/loot_tables/blocks/atherium_block.json
 ac196cdbde01d86a776921c44355beced4a806d1 data/succsmod/loot_tables/blocks/atherium_ore.json
 70ee505ae51dc7e5e94b42855b006d1bd184fd4a data/succsmod/loot_tables/blocks/deepslate_atherium_ore.json
 99c0ba19de616df1377e19de2bc8e42398802f43 data/succsmod/loot_tables/blocks/deepslate_ruby_ore.json
 3684779873c85c1ae657b933957d36e90486f5f4 data/succsmod/loot_tables/blocks/deepslate_sapphire_ore.json
+d81009304e560fdc1aff676d8f576181676070db data/succsmod/loot_tables/blocks/end_atherium_ore.json
+042fb7bb2a79211003c772fe906dea42f1314351 data/succsmod/loot_tables/blocks/end_ruby_ore.json
+99a360e897ca63280be6479eb0601ccc034bebb7 data/succsmod/loot_tables/blocks/end_sapphire_ore.json
+2a9654d2fa2258b7a8798f39cbb92506fd3210da data/succsmod/loot_tables/blocks/nether_atherium_ore.json
+eeb26737c51a116e5515c78dda1bc338e0db78b1 data/succsmod/loot_tables/blocks/nether_ruby_ore.json
+5d6f2743c3ec3f69de9930245924c7b2696060b9 data/succsmod/loot_tables/blocks/nether_sapphire_ore.json
 4bb50022bd3257eeac9c55786fd5b643735b6135 data/succsmod/loot_tables/blocks/ruby_block.json
 abdb45553957881dab27beea1786822aab0c2292 data/succsmod/loot_tables/blocks/ruby_ore.json
 d197a8513932af91d03b5b2b8d3454132af5ec7a data/succsmod/loot_tables/blocks/sapphire_block.json

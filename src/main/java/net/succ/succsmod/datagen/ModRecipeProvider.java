@@ -19,9 +19,9 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     // List of smeltable Atherium ores
-    public static final List<ItemLike> ATHERIUM_SMELTABLES = List.of(ModBlocks.ATHERIUM_ORE.get(), ModBlocks.DEEPSLATE_ATHERIUM_ORE.get());
-    public static final List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get());
-    public static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+    public static final List<ItemLike> ATHERIUM_SMELTABLES = List.of(ModBlocks.ATHERIUM_ORE.get(), ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(), ModBlocks.NETHER_ATHERIUM_ORE.get(), ModBlocks.END_ATHERIUM_ORE.get());
+    public static final List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModBlocks.NETHER_RUBY_ORE.get(), ModBlocks.END_RUBY_ORE.get());
+    public static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModBlocks.END_SAPPHIRE_ORE.get());
 
     // Constructor for the ModRecipeProvider class
     public ModRecipeProvider(PackOutput pOutput) {
@@ -118,6 +118,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .define('A', ModItems.ATHERIUM.get())
                 .define('S', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Atherium Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ATHERIUM_PAXEL.get())
+                .pattern("ASP")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('A', ModItems.ATHERIUM_AXE.get())
+                .define('P', ModItems.ATHERIUM_PICKAXE.get())
+                .define('S', ModItems.ATHERIUM_SHOVEL.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
                 .save(pWriter);
 

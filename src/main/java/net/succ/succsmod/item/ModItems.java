@@ -7,6 +7,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.item.custom.HammerItem;
+import net.succ.succsmod.item.custom.PaxelItem;
 
 public class ModItems {
 
@@ -60,7 +62,11 @@ public class ModItems {
 
     // Register the Atherium Hammer item
     public static final RegistryObject<Item> ATHERIUM_HAMMER = ITEMS.register("atherium_hammer",
-            () -> new HammerItem(ModToolTiers.ATHERIUM, 4, -3.5F, new Item.Properties()));
+            () -> new HammerItem(ModToolTiers.ATHERIUM, 10, -3.5F, new Item.Properties()));
+
+    // Register the Atherium Paxel item
+    public static final RegistryObject<Item> ATHERIUM_PAXEL = ITEMS.register("atherium_paxel",
+            () -> new PaxelItem(ModToolTiers.ATHERIUM, 2, -2.5F, new Item.Properties()));
 
     // Register the Ruby Sword item
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",

@@ -34,14 +34,20 @@ public class ModCreateModeTabs {
 
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.NETHER_ATHERIUM_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.END_ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_BLOCK.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.RUBY_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_RUBY_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.NETHER_RUBY_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.END_RUBY_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.RUBY_BLOCK.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.SAPPHIRE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.NETHER_SAPPHIRE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.END_SAPPHIRE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.SAPPHIRE_BLOCK.get()));
 
                         // Add tools made of Atherium to the Creative Mode Tab
@@ -51,6 +57,7 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_PAXEL.get()));
 
                         // Add tools made of Ruby to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));

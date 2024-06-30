@@ -3,11 +3,17 @@
     "succsmod:atherium_block",
     "succsmod:atherium_ore",
     "succsmod:deepslate_atherium_ore",
+    "succsmod:nether_atherium_ore",
+    "succsmod:end_atherium_ore",
     "succsmod:ruby_block",
     "succsmod:ruby_ore",
     "succsmod:deepslate_ruby_ore",
+    "succsmod:nether_ruby_ore",
+    "succsmod:end_ruby_ore",
     "succsmod:sapphire_block",
     "succsmod:sapphire_ore",
-    "succsmod:deepslate_sapphire_ore"
+    "succsmod:deepslate_sapphire_ore",
+    "succsmod:nether_sapphire_ore",
+    "succsmod:end_sapphire_ore"
   ]
 }

@@ -2,6 +2,8 @@
   "values": [
     "succsmod:ruby_block",
     "succsmod:ruby_ore",
-    "succsmod:deepslate_ruby_ore"
+    "succsmod:deepslate_ruby_ore",
+    "succsmod:nether_ruby_ore",
+    "succsmod:end_ruby_ore"
   ]
 }

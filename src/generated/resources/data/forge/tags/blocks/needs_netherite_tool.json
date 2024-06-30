@@ -2,6 +2,8 @@
   "values": [
     "succsmod:sapphire_block",
     "succsmod:sapphire_ore",
-    "succsmod:deepslate_sapphire_ore"
+    "succsmod:deepslate_sapphire_ore",
+    "succsmod:nether_sapphire_ore",
+    "succsmod:end_sapphire_ore"
   ]
 }

@@ -25,10 +25,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Register block states and item models for Atherium Ore and Deepslate Atherium Ore
         blockWithItem(ModBlocks.ATHERIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ATHERIUM_ORE);
+        blockWithItem(ModBlocks.NETHER_ATHERIUM_ORE);
+        blockWithItem(ModBlocks.END_ATHERIUM_ORE);
 
         // Register block states and item models for Ruby Ore and Deepslate Ruby Ore
         blockWithItem(ModBlocks.RUBY_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockWithItem(ModBlocks.NETHER_RUBY_ORE);
+        blockWithItem(ModBlocks.END_RUBY_ORE);
 
         // Register block states and item models for Ruby Block
         blockWithItem(ModBlocks.RUBY_BLOCK);
@@ -36,6 +40,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Register block states and item models for Sapphire Ore and Deepslate Sapphire Ore
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.END_SAPPHIRE_ORE);
 
         // Register block states and item models for Sapphire Block
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);

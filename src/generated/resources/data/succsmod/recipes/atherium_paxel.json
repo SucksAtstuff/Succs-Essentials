@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "succsmod:atherium_axe"
+    },
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "P": {
+      "item": "succsmod:atherium_pickaxe"
+    },
+    "S": {
+      "item": "succsmod:atherium_shovel"
+    }
+  },
+  "pattern": [
+    "ASP",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:atherium_paxel"
+  },
+  "show_notification": true
+}

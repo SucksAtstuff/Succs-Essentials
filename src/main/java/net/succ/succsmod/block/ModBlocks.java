@@ -36,6 +36,18 @@ public class ModBlocks {
                     .sound(SoundType.AMETHYST_CLUSTER)
                     .requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
 
+    // Register the Nether Atherium Ore block with properties copied from Ancient Debris and custom sound and experience drop
+    public static final RegistryObject<Block> NETHER_ATHERIUM_ORE = registerBlock("nether_atherium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
+                    .sound(SoundType.AMETHYST_CLUSTER)
+                    .requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
+
+    // Register the End Atherium Ore block with properties copied from Ancient Debris and custom sound and experience drop
+    public static final RegistryObject<Block> END_ATHERIUM_ORE = registerBlock("end_atherium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
+                    .sound(SoundType.AMETHYST_CLUSTER)
+                    .requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
+
     // Register the Atherium Block with properties copied from Ancient Debris and custom sound
     public static final RegistryObject<Block> ATHERIUM_BLOCK = registerBlock("atherium_block",
             () -> new Block(Block.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.AMETHYST)));
@@ -47,6 +59,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> END_RUBY_ORE = registerBlock("end_ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
@@ -61,6 +81,14 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
 
     public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> NETHER_SAPPHIRE_ORE = registerBlock("nether_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> END_SAPPHIRE_ORE = registerBlock("end_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
 
 
