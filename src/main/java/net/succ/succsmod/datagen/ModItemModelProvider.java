@@ -4,11 +4,14 @@ package net.succ.succsmod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -50,6 +53,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
 
+        complexBlock(ModBlocks.GEM_POLISHING_TABLE.get());
+
+    }
+
+    private ItemModelBuilder complexBlock(Block block){
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), new ResourceLocation(SuccsMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
     }
 
     // Helper method to create a simple item model

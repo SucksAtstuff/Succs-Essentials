@@ -2,6 +2,7 @@ package net.succ.succsmod;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,8 +15,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.succ.succsmod.block.ModBlocks;
+import net.succ.succsmod.block.entity.ModBlockEntities;
 import net.succ.succsmod.item.ModCreateModeTabs;
 import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.screen.GemPolishingTableScreen;
+import net.succ.succsmod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -37,6 +41,9 @@ public class SuccsMod
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -70,7 +77,9 @@ public class SuccsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            event.enqueueWork(() -> {
+                MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingTableScreen::new);
+            });
         }
     }
 }

@@ -4,6 +4,7 @@ package net.succ.succsmod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
@@ -45,6 +46,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Register block states and item models for Sapphire Block
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+
+        horizontalBlock(ModBlocks.GEM_POLISHING_TABLE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_table")));
     }
 
     // Helper method to register block states and item models for a given block
