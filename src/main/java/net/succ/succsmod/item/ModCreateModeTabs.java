@@ -77,6 +77,7 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
                         pOutput.accept(new ItemStack(ModItems.ROCK.get()));
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
                     })
                     // Build the Creative Mode Tab
                     .build());

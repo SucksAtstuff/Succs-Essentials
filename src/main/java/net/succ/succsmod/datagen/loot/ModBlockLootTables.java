@@ -30,6 +30,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ATHERIUM_BLOCK.get());
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
         this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.GEM_POLISHING_TABLE.get());
 
         // Define loot tables for ore blocks that drop items similar to diamond ores
         this.add(ModBlocks.ATHERIUM_ORE.get(),
