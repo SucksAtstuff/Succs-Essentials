@@ -30,7 +30,7 @@ public class GemPolishingTableBlock extends BaseEntityBlock {
         super(pProperties);
     }
 
-    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 5, 16);
+    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 5, 15);
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 

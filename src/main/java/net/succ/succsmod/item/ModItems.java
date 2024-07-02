@@ -1,6 +1,7 @@
 package net.succ.succsmod.item;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
+
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,15 +17,24 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SuccsMod.MOD_ID);
 
-    // Register the Atherium item
+    // Register the Atherium items
+    public static final RegistryObject<Item> DIRTY_ATHERIUM = ITEMS.register("dirty_atherium",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ATHERIUM = ITEMS.register("atherium",
             () -> new Item(new Item.Properties()));
 
-    // Register the Ruby item
+    // Register the Ruby items
+    public static final RegistryObject<Item> DIRTY_RUBY = ITEMS.register("dirty_ruby",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
 
-    // Register the Sapphire item
+    // Register the Sapphire items
+    public static final RegistryObject<Item> DIRTY_SAPPHIRE = ITEMS.register("dirty_sapphire",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
 
@@ -107,6 +117,7 @@ public class ModItems {
     // Register the Sapphire Hoe item
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, -3, 1F, new Item.Properties()));
+
 
 
     // Method to register the DeferredRegister to the event bus

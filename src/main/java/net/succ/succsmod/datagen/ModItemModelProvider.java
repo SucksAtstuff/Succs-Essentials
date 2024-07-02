@@ -26,10 +26,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         // Register models for simple items
         simpleItem(ModItems.ATHERIUM);
+        simpleItem(ModItems.DIRTY_ATHERIUM);
         simpleItem(ModItems.ROCK_CANDY);
         simpleItem(ModItems.ROCK);
         simpleItem(ModItems.GOLD_HANDLE);
         simpleItem((ModItems.RUBY));
+        simpleItem((ModItems.DIRTY_RUBY));
+        simpleItem((ModItems.DIRTY_SAPPHIRE));
         simpleItem((ModItems.SAPPHIRE));
 
         // Register models for handheld items

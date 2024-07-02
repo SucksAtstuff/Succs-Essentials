@@ -1,0 +1,11 @@
+{
+  "type": "succsmod:gem_polishing",
+  "ingredients": [
+    {
+      "item": "succsmod:dirty_sapphire"
+    }
+  ],
+  "output": {
+    "item": "succsmod:sapphire"
+  }
+}

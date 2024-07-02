@@ -29,8 +29,11 @@ public class ModCreateModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         // Add items to be displayed in the custom Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM.get()));
+                        pOutput.accept((new ItemStack(ModItems.DIRTY_ATHERIUM.get())));
                         pOutput.accept(new ItemStack(ModItems.RUBY.get()));
+                        pOutput.accept(new ItemStack(ModItems.DIRTY_RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE.get()));
+                        pOutput.accept(new ItemStack(ModItems.DIRTY_SAPPHIRE.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));

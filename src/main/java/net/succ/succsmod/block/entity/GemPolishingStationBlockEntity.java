@@ -1,6 +1,7 @@
 package net.succ.succsmod.block.entity;
 
 import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.recipe.GemPolishingRecipe;
 import net.succ.succsmod.screen.GemPolishingTableMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -29,6 +30,8 @@ import net.succ.succsmod.screen.GemPolishingTableMenu;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class GemPolishingStationBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(3) { // Changed to 3 slots as OUTPUT_SLOT is index 2
         @Override
@@ -39,7 +42,7 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
-                case INPUT_SLOT -> stack.getItem() == ModItems.RUBY.get();
+                case INPUT_SLOT -> true;
                 case FUEL_INPUT_SLOT -> true; // Assuming you will use fuel in the future
                 case OUTPUT_SLOT -> false;
                 default -> super.isItemValid(slot, stack);
@@ -157,9 +160,12 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     }
 
     private void craftItem() {
+        Optional<GemPolishingRecipe> recipe = GetCurrentRecipe();
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
+
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(ModItems.RUBY.get(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + 1));
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(resultItem.getItem(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + resultItem.getCount()));
     }
 
     private void resetProgress() {
@@ -175,12 +181,24 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     }
 
     private boolean hasRecipe() {
-        return canInsertAmountIntoOutputSlot(1) && canInsertItemIntoOutputSlot(ModItems.RUBY.get())
-                && hasRecipeItemInInputSlot();
+        Optional<GemPolishingRecipe> recipe = GetCurrentRecipe();
+
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(resultItem.getCount())
+                && canInsertItemIntoOutputSlot(resultItem.getItem());
     }
 
-    private boolean hasRecipeItemInInputSlot() {
-        return this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.RUBY.get();
+    private Optional<GemPolishingRecipe> GetCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for(int i = 0; i < this.itemHandler.getSlots(); i++){
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(GemPolishingRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

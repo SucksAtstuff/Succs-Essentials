@@ -18,6 +18,7 @@ import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.block.entity.ModBlockEntities;
 import net.succ.succsmod.item.ModCreateModeTabs;
 import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.recipe.ModRecipes;
 import net.succ.succsmod.screen.GemPolishingTableScreen;
 import net.succ.succsmod.screen.ModMenuTypes;
 import org.slf4j.Logger;
@@ -44,6 +45,8 @@ public class SuccsMod
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

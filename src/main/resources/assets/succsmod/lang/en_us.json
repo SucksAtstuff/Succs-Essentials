@@ -1,6 +1,7 @@
 {
 
     "item.succsmod.atherium": "Atherium",
+    "item.succsmod.dirty_atherium": "Dirty Atherium",
 
     "block.succsmod.atherium_ore": "Atherium Ore",
     "block.succsmod.deepslate_atherium_ore": "Deepslate Atherium Ore",
@@ -17,6 +18,7 @@
     "item.succsmod.atherium_paxel": "Atherium Paxel",
 
     "item.succsmod.ruby": "Ruby",
+    "item.succsmod.dirty_ruby": "Dirty Ruby",
 
     "item.succsmod.ruby_block": "Block Of Ruby",
     "block.succsmod.ruby_ore": "Ruby Ore",
@@ -31,6 +33,7 @@
     "item.succsmod.ruby_sword": "Ruby Sword",
 
     "item.succsmod.sapphire": "Sapphire",
+    "item.succsmod.dirty_sapphire": "Dirty Sapphire",
 
     "block.succsmod.sapphire_block": "Block Of Sapphire",
     "block.succsmod.sapphire_ore": "Sapphire Ore",

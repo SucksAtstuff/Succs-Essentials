@@ -1,0 +1,11 @@
+{
+  "type": "succsmod:gem_polishing",
+  "ingredients": [
+    {
+      "item": "succsmod:dirty_ruby"
+    }
+  ],
+  "output": {
+    "item": "succsmod:ruby"
+  }
+}
