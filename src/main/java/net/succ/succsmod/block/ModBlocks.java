@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.block.custom.GemPolishingTableBlock;
 import net.succ.succsmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -90,6 +91,9 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
     public static final RegistryObject<Block> END_SAPPHIRE_ORE = registerBlock("end_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> GEM_POLISHING_TABLE = registerBlock("gem_polishing_table",
+            () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE).noOcclusion()));
 
 
 

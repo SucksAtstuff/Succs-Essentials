@@ -7,6 +7,8 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -22,6 +24,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     // Override method to add custom item tags
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        // Custom item tags should be added here
+        this.tag(ModTags.Items.POLISHABLE_GEMS)
+                .add(ModItems.RUBY.get())
+                .add(ModItems.SAPPHIRE.get())
+                .add(ModItems.ATHERIUM.get());
     }
 }

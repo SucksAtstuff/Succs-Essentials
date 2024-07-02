@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "succsmod:block/gem_polishing_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "succsmod:block/gem_polishing_table"
+    },
+    "facing=south": {
+      "model": "succsmod:block/gem_polishing_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "succsmod:block/gem_polishing_table",
+      "y": 270
+    }
+  }
+}
