@@ -10,10 +10,10 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 import net.succ.succsmod.block.ModBlocks;
-import net.succ.succsmod.block.entity.GemPolishingStationBlockEnitity;
+import net.succ.succsmod.block.entity.GemPolishingStationBlockEntity;
 
 public class GemPolishingTableMenu extends AbstractContainerMenu {
-    public final GemPolishingStationBlockEnitity blockEntity;
+    public final GemPolishingStationBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
@@ -24,7 +24,7 @@ public class GemPolishingTableMenu extends AbstractContainerMenu {
     public GemPolishingTableMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.GEM_POLISHING_MENU.get(), pContainerId);
         checkContainerSize(inv, 3);
-        blockEntity = ((GemPolishingStationBlockEnitity) entity);
+        blockEntity = ((GemPolishingStationBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -32,9 +32,9 @@ public class GemPolishingTableMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 64, 24));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 64, 61));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 124, 42));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 59));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 59));
 
         });
 
@@ -48,7 +48,7 @@ public class GemPolishingTableMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);  // Max Progress
-        int progressArrowSize = 16; // This is the height in pixels of your arrow
+        int progressArrowSize = 26; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

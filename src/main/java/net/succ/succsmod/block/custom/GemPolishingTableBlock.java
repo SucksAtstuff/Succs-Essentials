@@ -21,7 +21,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
-import net.succ.succsmod.block.entity.GemPolishingStationBlockEnitity;
+import net.succ.succsmod.block.entity.GemPolishingStationBlockEntity;
 import net.succ.succsmod.block.entity.ModBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
@@ -68,8 +68,8 @@ public class GemPolishingTableBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving){
         if (pState.getBlock() != pNewState.getBlock()){
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof GemPolishingStationBlockEnitity){
-                ((GemPolishingStationBlockEnitity) blockEntity).drops();
+            if (blockEntity instanceof GemPolishingStationBlockEntity){
+                ((GemPolishingStationBlockEntity) blockEntity).drops();
             }
         }
 
@@ -80,8 +80,8 @@ public class GemPolishingTableBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit){
         if (!pLevel.isClientSide) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof GemPolishingStationBlockEnitity){
-                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (GemPolishingStationBlockEnitity)entity, pPos);
+            if(entity instanceof GemPolishingStationBlockEntity){
+                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (GemPolishingStationBlockEntity)entity, pPos);
             } else {
                 throw new IllegalStateException("Our container provider is missing!");
             }
@@ -93,7 +93,7 @@ public class GemPolishingTableBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new GemPolishingStationBlockEnitity(pPos, pState);
+        return new GemPolishingStationBlockEntity(pPos, pState);
     }
 
     @Nullable
