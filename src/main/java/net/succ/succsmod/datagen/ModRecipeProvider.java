@@ -8,8 +8,10 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.fluids.FluidStack;
 import net.succ.succsmod.SuccsMod;
 import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.datagen.custom.GemPolishingRecipeBuilder;
@@ -45,13 +47,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_RUBY.get(), ModItems.RUBY.get(), 1)
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_RUBY.get(), ModItems.RUBY.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
                 .unlockedBy("has_ruby", has(ModItems.RUBY.get())).save(pWriter);
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_SAPPHIRE.get(), ModItems.SAPPHIRE.get(), 1)
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_SAPPHIRE.get(), ModItems.SAPPHIRE.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
                 .unlockedBy("has_sapphire", has(ModItems.SAPPHIRE.get())).save(pWriter);
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1)
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
                 .unlockedBy("has_atherium", has(ModItems.ATHERIUM.get())).save(pWriter);
 
         // Register shaped recipe for Atherium Block

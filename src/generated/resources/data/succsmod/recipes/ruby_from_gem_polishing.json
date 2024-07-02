@@ -1,5 +1,8 @@
 {
   "type": "succsmod:gem_polishing",
+  "craftTime": 160,
+  "fluidAmount": 500,
+  "fluidType": "minecraft:water",
   "ingredients": [
     {
       "item": "succsmod:dirty_ruby"

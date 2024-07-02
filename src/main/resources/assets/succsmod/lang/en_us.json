@@ -54,5 +54,8 @@
     "block.succsmod.gem_polishing_table": "Gem Polishing Table",
 
     "item.succsmod.rock_candy": "'Rock Candy'",
-    "item.succsmod.rock": "Rock"
+    "item.succsmod.rock": "Rock",
+
+    "succsmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
+    "succsmod.tooltip.liquid.amount": "%s mB"
 }
