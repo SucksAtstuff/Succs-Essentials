@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-02T11:29:12.6997496	Item Models: succsmod
+// 1.20.1	2024-07-02T22:42:51.5373273	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
@@ -10,6 +10,7 @@ d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_ha
 a8dd49ab1c746aabcee9666208712daaa1d6d3e1 assets/succsmod/models/item/dirty_atherium.json
 1ba157d5bbb821883d076ab5af62f1a76ef22066 assets/succsmod/models/item/dirty_ruby.json
 85e8d85326f489ec978b2824208eefec38b77f54 assets/succsmod/models/item/dirty_sapphire.json
+4df8775ef0e61573d744fa97067ad3f972913ffa assets/succsmod/models/item/dirty_sunstone.json
 98b11801e2f7d2177e79b950825c622989810766 assets/succsmod/models/item/gem_polishing_table.json
 4c20fe5a11fd7b3b65025bfbe0e7b954afe4b871 assets/succsmod/models/item/gold_handle.json
 7195d523dcb58ac248296b01290eae04c85dd3ab assets/succsmod/models/item/rock.json
@@ -26,3 +27,9 @@ d862a6574340262de47f1a49fc9680d376169b49 assets/succsmod/models/item/sapphire_ax
 3ea679e76e45f94e544fe8fa4c837923611d33f7 assets/succsmod/models/item/sapphire_pickaxe.json
 717c127367213d56902ecc94fdafc4887c11dd99 assets/succsmod/models/item/sapphire_shovel.json
 de7ed9f07a236047514789144a9c58c0290e08c2 assets/succsmod/models/item/sapphire_sword.json
+552904560967dee65450fb3f86893074d7c70079 assets/succsmod/models/item/sunstone.json
+3a79bebe487018893be08678735d92821ab05e26 assets/succsmod/models/item/sunstone_axe.json
+c06ff3136e74aba708b572bd0041b096521d2d3f assets/succsmod/models/item/sunstone_hoe.json
+09cf9e4587b559dedddc095166867dd812a92928 assets/succsmod/models/item/sunstone_pickaxe.json
+4fd051ec1f476e90b172ab5cf8f0caae40ff3a72 assets/succsmod/models/item/sunstone_shovel.json
+c450679659506e7bc946b76d568482eb6df767c3 assets/succsmod/models/item/sunstone_sword.json

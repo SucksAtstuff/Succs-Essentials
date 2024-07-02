@@ -24,9 +24,5 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     // Override method to add custom item tags
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(ModTags.Items.POLISHABLE_GEMS)
-                .add(ModItems.RUBY.get())
-                .add(ModItems.SAPPHIRE.get())
-                .add(ModItems.ATHERIUM.get());
     }
 }

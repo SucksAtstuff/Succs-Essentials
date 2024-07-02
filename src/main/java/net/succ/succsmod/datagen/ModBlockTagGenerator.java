@@ -73,6 +73,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_SAPPHIRE_ORE.get())
                 .add(ModBlocks.END_SAPPHIRE_ORE.get());
 
+        // Add Sunstone blocks to the "needs Netherite tool" tag
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.SUNSTONE_BLOCK.get())
+                .add(ModBlocks.SUNSTONE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get())
+                .add(ModBlocks.NETHER_SUNSTONE_ORE.get())
+                .add(ModBlocks.END_SUNSTONE_ORE.get());
+
+        // Add Sunstone blocks to the "mineable with pickaxe" tag
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SUNSTONE_BLOCK.get())
+                .add(ModBlocks.SUNSTONE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get())
+                .add(ModBlocks.NETHER_SUNSTONE_ORE.get())
+                .add(ModBlocks.END_SUNSTONE_ORE.get());
+
         this.tag(ModTags.Blocks.PAXEL_MINEABLE)
             .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
             .addTag(BlockTags.MINEABLE_WITH_AXE)

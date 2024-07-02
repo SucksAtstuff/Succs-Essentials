@@ -44,8 +44,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.END_SAPPHIRE_ORE);
 
+
         // Register block states and item models for Sapphire Block
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+
+        // Register block states and item models for Sunstone Ore and Deepslate Sunstone Ore
+        blockWithItem(ModBlocks.SUNSTONE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SUNSTONE_ORE);
+        blockWithItem(ModBlocks.NETHER_SUNSTONE_ORE);
+        blockWithItem(ModBlocks.END_SUNSTONE_ORE);
 
         horizontalBlock(ModBlocks.GEM_POLISHING_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_table")));

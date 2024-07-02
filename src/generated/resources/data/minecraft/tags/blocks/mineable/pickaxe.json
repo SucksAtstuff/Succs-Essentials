@@ -14,6 +14,11 @@
     "succsmod:sapphire_ore",
     "succsmod:deepslate_sapphire_ore",
     "succsmod:nether_sapphire_ore",
-    "succsmod:end_sapphire_ore"
+    "succsmod:end_sapphire_ore",
+    "succsmod:sunstone_block",
+    "succsmod:sunstone_ore",
+    "succsmod:deepslate_sunstone_ore",
+    "succsmod:nether_sunstone_ore",
+    "succsmod:end_sunstone_ore"
   ]
 }

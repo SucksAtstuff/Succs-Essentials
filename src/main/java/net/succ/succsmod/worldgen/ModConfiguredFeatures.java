@@ -28,12 +28,16 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_ATHERIUM_ORE_KEY = registerKey("deepslate_atherium_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_ATHERIUM_ORE_KEY = registerKey("nether_atherium_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> END_ATHERIUM_ORE_KEY = registerKey("end_atherium_ore");
+
     public static final ResourceKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_RUBY_ORE_KEY = registerKey("deepslate_ruby_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
 
     public static final ResourceKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_SAPPHIRE_ORE_KEY = registerKey("deepslate_sapphire_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?,?>> SUNSTONE_ORE_KEY = registerKey("sunstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_SUNSTONE_ORE_KEY = registerKey("deepslate_sunstone_ore");
 
 
     // Method to register configured features during the bootstrap phase
@@ -106,6 +110,20 @@ public class ModConfiguredFeatures {
         // Register Deepslate Sapphire ore configured feature
         // pSize represents the size of the ore vein (number of blocks)
         register(context, DEEPSLATE_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(sapphireOres, 8));
+
+        // Define target block states for Sunstone ores
+        List<OreConfiguration.TargetBlockState> sunstoneOres = List.of(
+                OreConfiguration.target(stoneReplaceable, ModBlocks.SUNSTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_SUNSTONE_ORE.get().defaultBlockState())
+        );
+
+        // Register Sunstone ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, SUNSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(sunstoneOres, 10));
+
+        // Register Deepslate Sunstone ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, DEEPSLATE_SUNSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(sunstoneOres, 8));
 
 
 

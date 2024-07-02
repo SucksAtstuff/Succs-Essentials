@@ -1,6 +1,6 @@
-// 1.20.1	2024-07-02T03:30:08.7342114	Tags for minecraft:block mod id succsmod
-a4f37cfc5382254a328b84a6d7525ecd9ff1c76e data/forge/tags/blocks/needs_netherite_tool.json
-b283c4e971ac34bef9181f44b38f63d312f3a67b data/minecraft/tags/blocks/mineable/pickaxe.json
+// 1.20.1	2024-07-02T22:47:38.1805085	Tags for minecraft:block mod id succsmod
+ba2daf60ac8a7a5260fbb1eda08ce08c8f00eb95 data/forge/tags/blocks/needs_netherite_tool.json
+de5bf850d74c378c36258999b625d63f9cdbf2b3 data/minecraft/tags/blocks/mineable/pickaxe.json
 82362cfbd1836db13c7e9d36c8712821e795ac55 data/succsmod/tags/blocks/mineable/paxel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/succsmod/tags/blocks/needs_atherium_tool.json
 0abf5e3bcd2bb81eb0ec1b60adc71693e7fef031 data/succsmod/tags/blocks/needs_ruby_tool.json

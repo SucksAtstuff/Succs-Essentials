@@ -34,6 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem((ModItems.DIRTY_RUBY));
         simpleItem((ModItems.DIRTY_SAPPHIRE));
         simpleItem((ModItems.SAPPHIRE));
+        simpleItem((ModItems.DIRTY_SUNSTONE));
+        simpleItem((ModItems.SUNSTONE));
 
         // Register models for handheld items
         handheldItem(ModItems.ATHERIUM_SWORD);
@@ -55,6 +57,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_AXE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
+
+        handheldItem(ModItems.SUNSTONE_SWORD);
+        handheldItem(ModItems.SUNSTONE_PICKAXE);
+        handheldItem(ModItems.SUNSTONE_AXE);
+        handheldItem(ModItems.SUNSTONE_SHOVEL);
+        handheldItem(ModItems.SUNSTONE_HOE);
 
         complexBlock(ModBlocks.GEM_POLISHING_TABLE.get());
 

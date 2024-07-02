@@ -92,6 +92,21 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
 
+    public static final RegistryObject<Block> SUNSTONE_ORE = registerBlock("sunstone_ore",
+            () -> new Block(Block.Properties.copy(Blocks.DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> DEEPSLATE_SUNSTONE_ORE = registerBlock("deepslate_sunstone_ore",
+            () -> new Block(Block.Properties.copy(Blocks.DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> NETHER_SUNSTONE_ORE = registerBlock("nether_sunstone_ore",
+            () -> new Block(Block.Properties.copy(Blocks.DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> END_SUNSTONE_ORE = registerBlock("end_sunstone_ore",
+            () -> new Block(Block.Properties.copy(Blocks.DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> SUNSTONE_BLOCK = registerBlock("sunstone_block",
+            () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
+
     public static final RegistryObject<Block> GEM_POLISHING_TABLE = registerBlock("gem_polishing_table",
             () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE).noOcclusion()));
 

@@ -47,6 +47,21 @@
     "item.succsmod.sapphire_hoe": "Sapphire Hoe",
     "item.succsmod.sapphire_sword": "Sapphire Sword",
 
+    "item.succsmod.sunstone": "Sunstone",
+    "item.succsmod.dirty_sunstone": "Dirty Sunstone",
+
+    "block.succsmod.sunstone_block": "Block Of Sunstone",
+    "block.succsmod.sunstone_ore": "Sunstone Ore",
+    "block.succsmod.deepslate_sunstone_ore": "Deepslate Sunstone Ore",
+    "block.succsmod.nether_sunstone_ore": "Nether Sunstone Ore",
+    "block.succsmod.end_sunstone_ore": "End Sunstone Ore",
+
+    "item.succsmod.sunstone_pickaxe": "Sunstone Pickaxe",
+    "item.succsmod.sunstone_axe": "Sunstone Axe",
+    "item.succsmod.sunstone_shovel": "Sunstone Shovel",
+    "item.succsmod.sunstone_hoe": "Sunstone Hoe",
+    "item.succsmod.sunstone_sword": "Sunstone Sword",
+
     "item.succsmod.gold_handle": "Gold Handle",
 
     "creativetab.succs_mod_tab": "Succ's Mod",

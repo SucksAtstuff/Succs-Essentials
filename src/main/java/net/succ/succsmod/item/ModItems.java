@@ -24,6 +24,13 @@ public class ModItems {
     public static final RegistryObject<Item> ATHERIUM = ITEMS.register("atherium",
             () -> new Item(new Item.Properties()));
 
+    // Register the Sunstone items
+    public static final RegistryObject<Item> DIRTY_SUNSTONE = ITEMS.register("dirty_sunstone",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone",
+            () -> new Item(new Item.Properties()));
+
     // Register the Ruby items
     public static final RegistryObject<Item> DIRTY_RUBY = ITEMS.register("dirty_ruby",
             () -> new Item(new Item.Properties()));
@@ -117,6 +124,26 @@ public class ModItems {
     // Register the Sapphire Hoe item
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, -3, 1F, new Item.Properties()));
+
+    // Register the Sunstone Sword item
+    public static final RegistryObject<Item> SUNSTONE_SWORD = ITEMS.register("sunstone_sword",
+            () -> new SwordItem(ModToolTiers.SUNSTONE, 3, -2.4F, new Item.Properties()));
+
+    // Register the Sunstone Pickaxe item
+    public static final RegistryObject<Item> SUNSTONE_PICKAXE = ITEMS.register("sunstone_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SUNSTONE, 2, -2.8F, new Item.Properties()));
+
+    // Register the Sunstone Axe item
+    public static final RegistryObject<Item> SUNSTONE_AXE = ITEMS.register("sunstone_axe",
+            () -> new AxeItem(ModToolTiers.SUNSTONE, 6, -3F, new Item.Properties()));
+
+    // Register the Sunstone Shovel item
+    public static final RegistryObject<Item> SUNSTONE_SHOVEL = ITEMS.register("sunstone_shovel",
+            () -> new ShovelItem(ModToolTiers.SUNSTONE, 2, -3F, new Item.Properties()));
+
+    // Register the Sunstone Hoe item
+    public static final RegistryObject<Item> SUNSTONE_HOE = ITEMS.register("sunstone_hoe",
+            () -> new HoeItem(ModToolTiers.SUNSTONE, -3, 1F, new Item.Properties()));
 
 
 
