@@ -19,8 +19,6 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidType;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.joml.Matrix4f;
 
 import java.text.NumberFormat;
@@ -117,9 +115,9 @@ public class FluidTankRenderer {
         setGLColorFromInt(color);
 
         final int xTileCount = tiledWidth / TEXTURE_SIZE;
-        final int xRemainder = tiledWidth - (xTileCount * TEXTURE_SIZE);
+        final int xRemainder = tiledWidth % TEXTURE_SIZE;
         final long yTileCount = scaledAmount / TEXTURE_SIZE;
-        final long yRemainder = scaledAmount - (yTileCount * TEXTURE_SIZE);
+        final long yRemainder = scaledAmount % TEXTURE_SIZE;
 
         final int yStart = tiledHeight;
 

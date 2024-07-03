@@ -1,18 +1,13 @@
 package net.succ.succsmod.block.entity;
 
-import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.capability.IFluidHandler;
-import net.minecraftforge.fluids.capability.IFluidHandlerItem;
-import net.minecraftforge.fluids.capability.templates.FluidTank;
-import net.succ.succsmod.item.ModItems;
-import net.succ.succsmod.recipe.GemPolishingRecipe;
-import net.succ.succsmod.screen.GemPolishingTableMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -25,32 +20,44 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.energy.IEnergyStorage;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.capability.IFluidHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import net.succ.succsmod.block.entity.ModBlockEntities;
-import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.block.custom.GemPolishingTableBlock;
+import net.succ.succsmod.recipe.GemPolishingRecipe;
 import net.succ.succsmod.screen.GemPolishingTableMenu;
+import net.succ.succsmod.util.InventoryDirectionEntry;
+import net.succ.succsmod.util.InventoryDirectionWrapper;
+import net.succ.succsmod.util.WrappedHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
 import java.util.Optional;
 
 public class GemPolishingStationBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) { // Changed to 3 slots as OUTPUT_SLOT is index 2
+    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
+            if(!level.isClientSide()) {
+                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+            }
         }
 
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
-                case INPUT_SLOT -> true;
-                case FLUID_INPUT_SLOT -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
-                case OUTPUT_SLOT -> false;
+                case 0 -> true;
+                case 1 -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
+                case 2 -> false;
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -61,34 +68,54 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     private static final int OUTPUT_SLOT = 2;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
+            new InventoryDirectionWrapper(itemHandler,
+                    new InventoryDirectionEntry(Direction.DOWN, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.NORTH, INPUT_SLOT, true),
+                    new InventoryDirectionEntry(Direction.SOUTH, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.EAST, OUTPUT_SLOT, false),
+                    new InventoryDirectionEntry(Direction.WEST, INPUT_SLOT, true),
+                    new InventoryDirectionEntry(Direction.UP, INPUT_SLOT, true)).directionsMap;
+
+    private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
     private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 100;
-    private final int DEFAULT_MAX_PROGRESS = 100;
+    private int maxProgress = 78;
+    private final int DEFAULT_MAX_PROGRESS = 78;
+
+    private FluidStack neededFluidStack = FluidStack.EMPTY;
 
     private final FluidTank FLUID_TANK = createFluidTank();
 
     private FluidTank createFluidTank() {
-        return new FluidTank(64000){
+        return new FluidTank(64000) {
             @Override
             protected void onContentsChanged() {
                 setChanged();
-                if(!level.isClientSide) {
+                if(!level.isClientSide()) {
                     level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
                 }
             }
 
             @Override
             public boolean isFluidValid(FluidStack stack) {
-                return stack.getFluid() == Fluids.WATER;
+                return true;
             }
         };
-
     }
 
-    private FluidStack neededFluidStack = FluidStack.EMPTY;
+
+    public ItemStack getRenderStack() {
+        ItemStack stack = itemHandler.getStackInSlot(OUTPUT_SLOT);
+
+        if(stack.isEmpty()) {
+            stack = itemHandler.getStackInSlot(INPUT_SLOT);
+        }
+
+        return stack;
+    }
 
     public GemPolishingStationBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.GEM_POLISHING_STATION_BE.get(), pPos, pBlockState);
@@ -117,6 +144,7 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
         };
     }
 
+
     public FluidStack getFluid() {
         return FLUID_TANK.getFluid();
     }
@@ -129,6 +157,7 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
 
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
+
 
     @Override
     public Component getDisplayName() {
@@ -143,12 +172,29 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-            return lazyItemHandler.cast();
+        if(cap == ForgeCapabilities.FLUID_HANDLER) {
+            return lazyFluidHandler.cast();
         }
 
-        if(cap==ForgeCapabilities.FLUID_HANDLER_ITEM) {
-            return lazyFluidHandler.cast();
+        if(cap == ForgeCapabilities.ITEM_HANDLER) {
+            if(side == null) {
+                return lazyItemHandler.cast();
+            }
+
+            if(directionWrappedHandlerMap.containsKey(side)) {
+                Direction localDir = this.getBlockState().getValue(GemPolishingTableBlock.FACING);
+
+                if(side == Direction.DOWN ||side == Direction.UP) {
+                    return directionWrappedHandlerMap.get(side).cast();
+                }
+
+                return switch (localDir) {
+                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
+                    case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();
+                    case SOUTH -> directionWrappedHandlerMap.get(side).cast();
+                    case WEST -> directionWrappedHandlerMap.get(side.getCounterClockWise()).cast();
+                };
+            }
         }
 
         return super.getCapability(cap, side);
@@ -165,17 +211,19 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyEnergyHandler.invalidate();
         lazyFluidHandler.invalidate();
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("gem_polishing_table.progress", progress);
-        pTag.putInt("gem_polishing_table.max_progress", maxProgress);
-        pTag = FLUID_TANK.writeToNBT(pTag);
+        pTag.putInt("gem_polishing_station.progress", progress);
+        pTag.putInt("gem_polishing_station.max_progress", maxProgress);
 
         neededFluidStack.writeToNBT(pTag);
+
+        pTag = FLUID_TANK.writeToNBT(pTag);
 
         super.saveAdditional(pTag);
     }
@@ -184,38 +232,36 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        pTag.putInt("gem_polishing_table.progress", progress);
-        pTag.putInt("gem_polishing_table.max_progress", maxProgress);
+        progress = pTag.getInt("gem_polishing_station.progress");
+        maxProgress = pTag.getInt("gem_polishing_station.max_progress");
+        neededFluidStack = FluidStack.loadFluidStackFromNBT(pTag);
         FLUID_TANK.readFromNBT(pTag);
 
-        neededFluidStack = FluidStack.loadFluidStackFromNBT(pTag);
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
         fillUpOnFluid();
-        
-        if (!level.isClientSide) { // Ensure it only runs on the server side
-            if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
-                increaseCraftingProcess();
-                setChanged(level, pPos, pState);
 
-                if (hasProgressFinished()) {
-                    craftItem();
-                    extractFluid();
-                    resetProgress();
-                }
-            } else {
+        if (isOutputSlotEmptyOrReceivable() && hasRecipe()) {
+            increaseCraftingProcess();
+            setChanged(level, pPos, pState);
+
+            if (hasProgressFinished()) {
+                craftItem();
+                extractFluid();
                 resetProgress();
             }
+        } else {
+            resetProgress();
         }
     }
 
     private void extractFluid() {
-        this.FLUID_TANK.drain(500, IFluidHandler.FluidAction.EXECUTE);
+        this.FLUID_TANK.drain(neededFluidStack.getAmount(), IFluidHandler.FluidAction.EXECUTE);
     }
 
     private void fillUpOnFluid() {
-        if(hasFluidSourceInSlot(FLUID_INPUT_SLOT)){
+        if(hasFluidSourceInSlot(FLUID_INPUT_SLOT)) {
             transferItemFluidToTank(FLUID_INPUT_SLOT);
         }
     }
@@ -228,8 +274,8 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
             if(stack.getFluid() == Fluids.WATER){
                 stack = iFluidHandlerItem.drain(drainAmount, IFluidHandler.FluidAction.EXECUTE);
                 fillTankWithFluid(stack, iFluidHandlerItem.getContainer());
-
             }
+
         });
     }
 
@@ -245,12 +291,12 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
                 this.itemHandler.getStackInSlot(fluidInputSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
     }
 
-
     private void craftItem() {
-        Optional<GemPolishingRecipe> recipe = GetCurrentRecipe();
+        Optional<GemPolishingRecipe> recipe = getCurrentRecipe();
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
 
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(resultItem.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + resultItem.getCount()));
     }
@@ -268,11 +314,12 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     }
 
     private boolean hasRecipe() {
-        Optional<GemPolishingRecipe> recipe = GetCurrentRecipe();
+        Optional<GemPolishingRecipe> recipe = getCurrentRecipe();
 
         if (recipe.isEmpty()) {
             return false;
         }
+
         maxProgress = recipe.get().getCraftTime();
         neededFluidStack = recipe.get().getFluidStack();
 
@@ -282,13 +329,14 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
                 && canInsertItemIntoOutputSlot(resultItem.getItem()) && hasEnoughFluidToCraft();
     }
 
-    private boolean hasEnoughFluidToCraft(){
-        return this.FLUID_TANK.getFluid().getAmount() >= neededFluidStack.getAmount();
-    };
+    private boolean hasEnoughFluidToCraft() {
+        return this.FLUID_TANK.getFluidAmount() >= neededFluidStack.getAmount();
+    }
 
-    private Optional<GemPolishingRecipe> GetCurrentRecipe() {
+
+    private Optional<GemPolishingRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
-        for(int i = 0; i < this.itemHandler.getSlots(); i++){
+        for(int i = 0; i < this.itemHandler.getSlots(); i++) {
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
@@ -310,4 +358,19 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements MenuP
     }
 
 
+    @Nullable
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
+    }
+
+    @Override
+    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
+        super.onDataPacket(net, pkt);
+    }
 }

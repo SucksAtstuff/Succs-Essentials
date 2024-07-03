@@ -2,6 +2,7 @@ package net.succ.succsmod.recipe;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import net.succ.succsmod.SuccsMod;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
@@ -16,14 +17,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.succ.succsmod.SuccsMod;
 
 public class GemPolishingRecipe implements Recipe<SimpleContainer> {
-
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
     private final int craftTime;
     private final FluidStack fluidStack;
 
-    public GemPolishingRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems, int craftTime, FluidStack fluidStack) {
+    public GemPolishingRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems,
+                               int craftTime, FluidStack fluidStack) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -33,7 +34,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
-        if(pLevel.isClientSide()){
+        if(pLevel.isClientSide()) {
             return false;
         }
 
@@ -41,7 +42,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
-    public ItemStack assemble(SimpleContainer pContainer, RegistryAccess pRegistryAccess) {
+    public ItemStack assemble(SimpleContainer p_44001_, RegistryAccess p_267165_) {
         return output.copy();
     }
 
@@ -51,7 +52,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
-    public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
+    public ItemStack getResultItem(RegistryAccess p_267052_) {
         return output.copy();
     }
 
@@ -75,7 +76,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return Serializer.INSTANCE;
     }
 
     @Override
@@ -83,8 +84,8 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<GemPolishingRecipe>{
-        private Type(){}
+    public static class Type implements RecipeType<GemPolishingRecipe> {
+        private Type() { }
         public static final Type INSTANCE = new Type();
         public static final String ID = "gem_polishing";
     }
@@ -108,6 +109,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
             }
 
             int craftTime = json.get("craftTime").getAsInt();
+
             return new GemPolishingRecipe(id, output, inputs, craftTime, fluidStack);
         }
 
