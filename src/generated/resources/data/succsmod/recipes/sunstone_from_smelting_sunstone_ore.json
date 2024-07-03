@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "sunstone",
+  "ingredient": {
+    "item": "succsmod:sunstone_ore"
+  },
+  "result": "succsmod:sunstone"
+}

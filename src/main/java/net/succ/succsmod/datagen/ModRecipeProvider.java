@@ -17,6 +17,7 @@ import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.datagen.custom.GemPolishingRecipeBuilder;
 import net.succ.succsmod.item.ModItems;
 import net.succ.succsmod.recipe.GemPolishingRecipe;
+import net.succ.succsmod.util.ModTags;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -26,6 +27,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> ATHERIUM_SMELTABLES = List.of(ModBlocks.ATHERIUM_ORE.get(), ModBlocks.DEEPSLATE_ATHERIUM_ORE.get(), ModBlocks.NETHER_ATHERIUM_ORE.get(), ModBlocks.END_ATHERIUM_ORE.get());
     public static final List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModBlocks.NETHER_RUBY_ORE.get(), ModBlocks.END_RUBY_ORE.get());
     public static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModBlocks.END_SAPPHIRE_ORE.get());
+    public static final List<ItemLike> SUNSTONE_SMELTABLES = List.of(ModBlocks.SUNSTONE_ORE.get(), ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(), ModBlocks.NETHER_SUNSTONE_ORE.get(), ModBlocks.END_SUNSTONE_ORE.get());
 
     // Constructor for the ModRecipeProvider class
     public ModRecipeProvider(PackOutput pOutput) {
@@ -47,14 +49,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_RUBY.get(), ModItems.RUBY.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
+        // Register smelting and blasting recipes for Sunstone ores
+        oreBlasting(pWriter, SUNSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.SUNSTONE.get(), 0.25f, 100, "sunstone");
+        oreSmelting(pWriter, SUNSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.SUNSTONE.get(), 0.25f, 200, "sunstone");
+
+        // Register recipe for crafting the Gem Polishing Table
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GEM_POLISHING_TABLE.get(), 1)
+                .pattern("QQQ")
+                .pattern("BIB")
+                .pattern("BBB")
+                .define('Q', Items.QUARTZ_BLOCK)
+                .define('I', Items.IRON_INGOT)
+                .define('B', Items.BLACKSTONE)
+                .unlockedBy(getHasName(Items.QUARTZ_BLOCK), has(Items.QUARTZ_BLOCK))
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .unlockedBy(getHasName(Items.BLACKSTONE), has(Items.BLACKSTONE))
+                .save(pWriter);
+
+        // Register gem polishing recipes
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_RUBY.get(), ModItems.RUBY.get(), 1, 240, new FluidStack(Fluids.WATER, 500))
                 .unlockedBy("has_ruby", has(ModItems.RUBY.get())).save(pWriter);
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_SAPPHIRE.get(), ModItems.SAPPHIRE.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_SAPPHIRE.get(), ModItems.SAPPHIRE.get(), 1, 160, new FluidStack(Fluids.WATER, 250))
                 .unlockedBy("has_sapphire", has(ModItems.SAPPHIRE.get())).save(pWriter);
 
-        new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1, 400, new FluidStack(Fluids.WATER, 1000))
                 .unlockedBy("has_atherium", has(ModItems.ATHERIUM.get())).save(pWriter);
+
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_SUNSTONE.get(), ModItems.SUNSTONE.get(), 1, 160, new FluidStack(Fluids.WATER, 250))
+                .unlockedBy("has_sunstone", has(ModItems.SUNSTONE.get())).save(pWriter);
 
         // Register shapeless recipe for crafting Atherium
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 1)
@@ -292,11 +315,70 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
+        // Register shapeless recipe to convert Sunstone Block back to Sunstone items
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SUNSTONE.get(), 9)
+                .requires(ModBlocks.SUNSTONE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SUNSTONE_BLOCK.get()), has(ModBlocks.SUNSTONE_BLOCK.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Sunstone Block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SUNSTONE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SUNSTONE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Sunstone Pickaxe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('S', ModItems.SUNSTONE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Sunstone Axe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_AXE.get())
+                .pattern("SS ")
+                .pattern("SG ")
+                .pattern(" G ")
+                .define('S', ModItems.SUNSTONE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Sunstone Shovel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('S', ModItems.SUNSTONE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Sunstone Hoe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_HOE.get())
+                .pattern("SS ")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('S', ModItems.SUNSTONE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Sword
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" G ")
+                .define('S', ModItems.SUNSTONE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
     }
 
     // Helper method to register smelting recipes for ores

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "S": {
+      "item": "succsmod:sunstone"
+    }
+  },
+  "pattern": [
+    "SS ",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:sunstone_hoe"
+  },
+  "show_notification": true
+}

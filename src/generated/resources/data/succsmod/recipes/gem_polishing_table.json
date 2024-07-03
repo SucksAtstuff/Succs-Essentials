@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blackstone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "QQQ",
+    "BIB",
+    "BBB"
+  ],
+  "result": {
+    "item": "succsmod:gem_polishing_table"
+  },
+  "show_notification": true
+}

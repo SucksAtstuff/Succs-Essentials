@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_sunstone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "succsmod:nether_sunstone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "succsmod:sunstone_from_blasting_nether_sunstone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_nether_sunstone_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "succsmod:sunstone_from_blasting_nether_sunstone_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

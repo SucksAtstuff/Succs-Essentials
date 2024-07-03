@@ -5,10 +5,10 @@
   "fluidType": "minecraft:water",
   "ingredients": [
     {
-      "item": "succsmod:dirty_sapphire"
+      "item": "succsmod:dirty_sunstone"
     }
   ],
   "output": {
-    "item": "succsmod:sapphire"
+    "item": "succsmod:sunstone"
   }
 }
