@@ -39,32 +39,6 @@ public class ModBiomeModifiers {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        // Register the biome modifier for adding Atherium ore to overworld biomes
-        context.register(ADD_ATHERIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                // Specify that the modifier applies to all overworld biomes
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                // Specify the placed feature to add (Atherium ore)
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ATHERIUM_ORE_PLACED_KEY)),
-                // Specify that the feature should be added during the underground ores generation step
-                GenerationStep.Decoration.UNDERGROUND_ORES));
-
-        // Register the biome modifier for adding Deepslate Atherium ore to overworld biomes
-        context.register(ADD_DEEPSLATE_ATHERIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                // Specify that the modifier applies to all overworld biomes
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                // Specify the placed feature to add (Deepslate Atherium ore)
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_ATHERIUM_ORE_PLACED_KEY)),
-                // Specify that the feature should be added during the underground ores generation step
-                GenerationStep.Decoration.UNDERGROUND_ORES));
-
-        // Register the biome modifier for adding Nether Atherium ore to Nether biomes
-        context.register(ADD_NETHER_ATHERIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                // Specify that the modifier applies to all Nether biomes
-                biomes.getOrThrow(BiomeTags.IS_NETHER),
-                // Specify the placed feature to add (Nether Atherium ore)
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_ATHERIUM_ORE_PLACED_KEY)),
-                // Specify that the feature should be added during the underground ores generation step
-                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         // Register the biome modifier for adding End Atherium ore to End biomes
         context.register(ADD_END_ATHERIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

@@ -24,9 +24,6 @@ import java.util.List;
 public class ModConfiguredFeatures {
 
     // Define ResourceKeys for custom configured features (Atherium ore and Deepslate Atherium ore)
-    public static final ResourceKey<ConfiguredFeature<?,?>> ATHERIUM_ORE_KEY = registerKey("atherium_ore");
-    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_ATHERIUM_ORE_KEY = registerKey("deepslate_atherium_ore");
-    public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_ATHERIUM_ORE_KEY = registerKey("nether_atherium_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> END_ATHERIUM_ORE_KEY = registerKey("end_atherium_ore");
 
     public static final ResourceKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
@@ -50,23 +47,10 @@ public class ModConfiguredFeatures {
 
         // Define target block states for Atherium ores
         List<OreConfiguration.TargetBlockState> atheriumOres = List.of(
-                OreConfiguration.target(stoneReplaceable, ModBlocks.ATHERIUM_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_ATHERIUM_ORE.get().defaultBlockState()),
-                OreConfiguration.target(netherrackReplaceable, ModBlocks.NETHER_ATHERIUM_ORE.get().defaultBlockState()),
+
                 OreConfiguration.target(endStoneReplaceable, ModBlocks.END_ATHERIUM_ORE.get().defaultBlockState())
         );
 
-        // Register Atherium ore configured feature
-        // pSize represents the size of the ore vein (number of blocks)
-        register(context, ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
-
-        // Register Deepslate Atherium ore configured feature
-        // pSize represents the size of the ore vein (number of blocks)
-        register(context, DEEPSLATE_ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
-
-        // Register Nether Atherium ore configured feature
-        // pSize represents the size of the ore vein (number of blocks)
-        register(context, NETHER_ATHERIUM_ORE_KEY, Feature.ORE, new OreConfiguration(atheriumOres, 3));
 
         // Register End Atherium ore configured feature
         // pSize represents the size of the ore vein (number of blocks)

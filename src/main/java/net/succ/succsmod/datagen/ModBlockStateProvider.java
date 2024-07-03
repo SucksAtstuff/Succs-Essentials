@@ -54,6 +54,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_SUNSTONE_ORE);
         blockWithItem(ModBlocks.END_SUNSTONE_ORE);
 
+        // Register block states and item models for Sunstone Block
+        blockWithItem(ModBlocks.SUNSTONE_BLOCK);
+
         horizontalBlock(ModBlocks.GEM_POLISHING_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_table")));
     }

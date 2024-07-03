@@ -40,24 +40,6 @@ public class ModPlacedFeatures {
         // Get a HolderGetter to lookup ConfiguredFeatures
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        // Register Atherium ore placed feature with its configuration and placement modifiers
-        // Atherium Ore is most common around Y level 13 (range from 6 to 20)
-        register(context, ATHERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ATHERIUM_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (2 veins per chunk for Atherium ore)
-                ModOrePlacement.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(6), VerticalAnchor.absolute(20))));
-
-        // Register Deepslate Atherium ore placed feature with its configuration and placement modifiers
-        // Deepslate Atherium Ore is most common around Y level -6 (range from -20 to 8)
-        register(context, DEEPSLATE_ATHERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_ATHERIUM_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (1 vein per chunk for Deepslate Atherium ore)
-                ModOrePlacement.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(8))));
-
-        // Register Nether Atherium ore placed feature with its configuration and placement modifiers
-        // Nether Atherium Ore is most common around Y level 15 (range from 10 to 20)
-        register(context, NETHER_ATHERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_ATHERIUM_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (1 vein per chunk for Nether Atherium ore)
-                ModOrePlacement.commonOrePlacement(1, HeightRangePlacement.triangle(VerticalAnchor.absolute(10), VerticalAnchor.absolute(20))));
-
         // Register End Atherium ore placed feature with its configuration and placement modifiers
         // End Atherium Ore is most common around Y level 8 (range from -32 to 32)
         register(context, END_ATHERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_ATHERIUM_ORE_KEY),

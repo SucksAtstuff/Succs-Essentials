@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_atherium_block": {
+    "has_atherium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "succsmod:atherium_block"
+              "succsmod:atherium"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "succsmod:atherium"
+        "recipe": "minecraft:atherium_crafting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_atherium_block",
+      "has_atherium",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "succsmod:atherium"
+      "minecraft:atherium_crafting"
     ]
   },
   "sends_telemetry_event": false

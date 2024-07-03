@@ -20,7 +20,7 @@
     "item.succsmod.ruby": "Ruby",
     "item.succsmod.dirty_ruby": "Dirty Ruby",
 
-    "item.succsmod.ruby_block": "Block Of Ruby",
+    "block.succsmod.ruby_block": "Block Of Ruby",
     "block.succsmod.ruby_ore": "Ruby Ore",
     "block.succsmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
     "block.succsmod.nether_ruby_ore": "Nether Ruby Ore",
@@ -72,5 +72,15 @@
     "item.succsmod.rock": "Rock",
 
     "succsmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
-    "succsmod.tooltip.liquid.amount": "%s mB"
+    "succsmod.tooltip.liquid.amount": "%s mB",
+
+    "tooltip.succsmod.fire_sword.tooltip.shift": "Sets hit mobs on fire",
+    "tooltip.succsmod.fire_sword.tooltip": "Press §eShift§r for more information",
+
+    "tooltip.succsmod.fortune_pickaxe.tooltip.shift": "Has a chance to drop more items when mining ores",
+    "tooltip.succsmod.fortune_pickaxe.tooltip": "Press §eShift§r for more information",
+
+    "tooltip.succsmod.looting_sword.tooltip.shift": "Mobs have a chance to drop more items when killed",
+    "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information"
+
 }

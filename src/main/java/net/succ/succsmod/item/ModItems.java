@@ -8,8 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
-import net.succ.succsmod.item.custom.HammerItem;
-import net.succ.succsmod.item.custom.PaxelItem;
+import net.succ.succsmod.item.custom.*;
 
 public class ModItems {
 
@@ -107,11 +106,11 @@ public class ModItems {
 
     // Register the Sapphire Sword item
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
+            () -> new LootingSwordItem(ModToolTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
 
     // Register the Sapphire Pickaxe item
     public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 2, -2.8F, new Item.Properties()));
+            () -> new LootingPickaxeItem(ModToolTiers.SAPPHIRE, 2, -2.8F, new Item.Properties()));
 
     // Register the Sapphire Axe item
     public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
@@ -127,7 +126,7 @@ public class ModItems {
 
     // Register the Sunstone Sword item
     public static final RegistryObject<Item> SUNSTONE_SWORD = ITEMS.register("sunstone_sword",
-            () -> new SwordItem(ModToolTiers.SUNSTONE, 3, -2.4F, new Item.Properties()));
+            () -> new FireSwordItem(ModToolTiers.SUNSTONE, 3, -2.4F, new Item.Properties()));
 
     // Register the Sunstone Pickaxe item
     public static final RegistryObject<Item> SUNSTONE_PICKAXE = ITEMS.register("sunstone_pickaxe",

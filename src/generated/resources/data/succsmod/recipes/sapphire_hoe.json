@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
     "H": {
       "item": "succsmod:sapphire"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "pattern": [
     "HH ",
-    " S ",
-    " S "
+    " G ",
+    " G "
   ],
   "result": {
     "item": "succsmod:sapphire_hoe"

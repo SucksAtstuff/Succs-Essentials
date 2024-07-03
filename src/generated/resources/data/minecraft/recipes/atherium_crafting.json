@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "succsmod:sunstone"
+    },
+    {
+      "item": "succsmod:sunstone"
+    },
+    {
+      "item": "succsmod:sunstone"
+    },
+    {
+      "item": "succsmod:ruby"
+    },
+    {
+      "item": "succsmod:ruby"
+    },
+    {
+      "item": "succsmod:ruby"
+    },
+    {
+      "item": "succsmod:sapphire"
+    },
+    {
+      "item": "succsmod:sapphire"
+    },
+    {
+      "item": "succsmod:sapphire"
+    }
+  ],
+  "result": {
+    "item": "succsmod:atherium"
+  }
+}

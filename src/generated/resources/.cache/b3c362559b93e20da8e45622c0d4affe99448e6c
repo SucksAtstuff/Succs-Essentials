@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-02T22:47:38.1825086	Block States: succsmod
+// 1.20.1	2024-07-03T16:22:10.3967359	Block States: succsmod
 b63934fa48a1283d85538fe4d3c6ef017e7acd05 assets/succsmod/blockstates/atherium_block.json
 39d7a43c96e89d98df99b17a3677290c8ab0b160 assets/succsmod/blockstates/atherium_ore.json
 1382068537b1727f078199c541ebde30db4c233d assets/succsmod/blockstates/deepslate_atherium_ore.json
@@ -18,6 +18,7 @@ f8e7256dc8b32cab5fe1a68f664c78266a654a8d assets/succsmod/blockstates/ruby_block.
 6eeb20ba5e3cb0a7d6a758b4de731e560c89f7ca assets/succsmod/blockstates/ruby_ore.json
 1179786a5e9ee87b020e50478e437820d74f2a2e assets/succsmod/blockstates/sapphire_block.json
 aa47c49fac16177218c130b957e8addd84b1b504 assets/succsmod/blockstates/sapphire_ore.json
+1260e780f3f5b1c507562e6f0eb8ed49ce9ad1fe assets/succsmod/blockstates/sunstone_block.json
 cdbfc7c705a7c278ac03cf10ea4b7f1154ea2ff1 assets/succsmod/blockstates/sunstone_ore.json
 3cfff6d06fe4e998c602f6a7f67faec6ce8cd166 assets/succsmod/models/block/atherium_block.json
 0e7e9b6408cc4a6b33fdf354fbe01feacf555154 assets/succsmod/models/block/atherium_ore.json
@@ -37,6 +38,7 @@ dfa9bc9e5d5d56ad6180c0c34bfd3bdefe0cc280 assets/succsmod/models/block/nether_sap
 ad44cf25c1a768a029ce34fc5c0fce21ce5a2865 assets/succsmod/models/block/ruby_ore.json
 941fa1206582e6640cd07bed435ed5a5aa3df690 assets/succsmod/models/block/sapphire_block.json
 60650387eb82c1e2fabc7bebc5294b3427124425 assets/succsmod/models/block/sapphire_ore.json
+5f8cc937fc0bb323f95e9d3ec7742ac68f138f78 assets/succsmod/models/block/sunstone_block.json
 2cf97f8407ecc97155937ce5633a615ac6541fbf assets/succsmod/models/block/sunstone_ore.json
 cbf7780f3996015328fe272aab649c5bb44d4f09 assets/succsmod/models/item/atherium_block.json
 d86c9d496eee8efd2f61b40691beb3e0542a71e5 assets/succsmod/models/item/atherium_ore.json
@@ -56,4 +58,5 @@ ba151f814d825073438689caf64f61cc441689f3 assets/succsmod/models/item/ruby_block.
 03357a6f4a229689fdef59ae25221d5a2a03ca71 assets/succsmod/models/item/ruby_ore.json
 ab14d1ba42551647d8c6c0705c47837858922ad8 assets/succsmod/models/item/sapphire_block.json
 f106d0d533e4d58e2d1083a11d5336142f3102f3 assets/succsmod/models/item/sapphire_ore.json
+d5302779951b264aa88cdfeb18541817b5485c05 assets/succsmod/models/item/sunstone_block.json
 575d256d90893439c795b349f34ea6f3471b2184 assets/succsmod/models/item/sunstone_ore.json

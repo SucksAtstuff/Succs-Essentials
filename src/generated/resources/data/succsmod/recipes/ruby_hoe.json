@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
     "R": {
       "item": "succsmod:ruby"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "pattern": [
     "RR ",
-    " S ",
-    " S "
+    " G ",
+    " G "
   ],
   "result": {
     "item": "succsmod:ruby_hoe"

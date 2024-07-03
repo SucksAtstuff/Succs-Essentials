@@ -56,6 +56,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1, 160, new FluidStack(Fluids.WATER, 500))
                 .unlockedBy("has_atherium", has(ModItems.ATHERIUM.get())).save(pWriter);
 
+        // Register shapeless recipe for crafting Atherium
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 1)
+                .requires(ModItems.SUNSTONE.get(), 3)
+                .requires(ModItems.RUBY.get(), 3)
+                .requires(ModItems.SAPPHIRE.get(), 3)
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter, "atherium_crafting");
+
+        // Register shapeless recipe to convert Atherium Block back to Atherium items
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 9)
+                .requires(ModBlocks.ATHERIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.ATHERIUM_BLOCK.get()), has(ModBlocks.ATHERIUM_BLOCK.get()))
+                .save(pWriter, "atherium_block_to_atherium");
+
         // Register shaped recipe for Atherium Block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ATHERIUM_BLOCK.get())
                 .pattern("AAA")
@@ -146,11 +160,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
                 .save(pWriter);
 
-        // Register shapeless recipe to convert Atherium Block back to Atherium items
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 9)
-                .requires(ModBlocks.ATHERIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.ATHERIUM_BLOCK.get()), has(ModBlocks.ATHERIUM_BLOCK.get()))
-                .save(pWriter);
+
 
         // Register shaped recipe for Ruby Block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK.get())
@@ -164,40 +174,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Register shaped recipe for Ruby Pickaxe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_PICKAXE.get())
                 .pattern("RRR")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('R', ModItems.RUBY.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Ruby Axe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_AXE.get())
                 .pattern("RR ")
-                .pattern("RS ")
-                .pattern(" S ")
+                .pattern("RG ")
+                .pattern(" G ")
                 .define('R', ModItems.RUBY.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Ruby Shovel
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SHOVEL.get())
                 .pattern(" R ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('R', ModItems.RUBY.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Ruby Hoe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HOE.get())
                 .pattern("RR ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('R', ModItems.RUBY.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
@@ -205,9 +215,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SWORD.get())
                 .pattern(" R ")
                 .pattern(" R ")
-                .pattern(" S ")
+                .pattern(" G ")
                 .define('R', ModItems.RUBY.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
@@ -229,40 +239,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Register shaped recipe for Sapphire Pickaxe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_PICKAXE.get())
                 .pattern("HHH")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Sapphire Axe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_AXE.get())
                 .pattern("HH ")
-                .pattern("HS ")
-                .pattern(" S ")
+                .pattern("HG ")
+                .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Sapphire Shovel
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SHOVEL.get())
                 .pattern(" H ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         // Register shaped recipe for Sapphire Hoe
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_HOE.get())
                 .pattern("HH ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern(" G ")
+                .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
@@ -270,9 +280,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SWORD.get())
                 .pattern(" H ")
                 .pattern(" H ")
-                .pattern(" S ")
+                .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
-                .define('S', Items.STICK)
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
@@ -281,6 +291,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
+
+
+
+
 
 
     }
