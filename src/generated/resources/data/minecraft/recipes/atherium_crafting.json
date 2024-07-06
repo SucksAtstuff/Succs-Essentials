@@ -3,31 +3,31 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "succsmod:sunstone"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:sunstone"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:sunstone"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:ruby"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:ruby"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:ruby"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:sapphire"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:sapphire"
+      "tag": "succsmod:polishable_gems"
     },
     {
-      "item": "succsmod:sapphire"
+      "tag": "succsmod:polishable_gems"
     }
   ],
   "result": {

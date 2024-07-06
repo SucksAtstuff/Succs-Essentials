@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sapphire": {
+    "has_dirty_sapphire": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sapphire",
+      "has_dirty_sapphire",
       "has_the_recipe"
     ]
   ],

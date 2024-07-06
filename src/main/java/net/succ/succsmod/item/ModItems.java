@@ -84,6 +84,22 @@ public class ModItems {
     public static final RegistryObject<Item> ATHERIUM_PAXEL = ITEMS.register("atherium_paxel",
             () -> new PaxelItem(ModToolTiers.ATHERIUM, 2, -2.5F, new Item.Properties()));
 
+    // Register the Atherium Helmet item
+    public static final RegistryObject<Item> ATHERIUM_HELMET = ITEMS.register("atherium_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.ATHERIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    // Register the Atherium Chestplate item
+    public static final RegistryObject<Item> ATHERIUM_CHESTPLATE = ITEMS.register("atherium_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.ATHERIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    // Register the Atherium Leggings item
+    public static final RegistryObject<Item> ATHERIUM_LEGGINGS = ITEMS.register("atherium_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.ATHERIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    // Register the Atherium Boots item
+    public static final RegistryObject<Item> ATHERIUM_BOOTS = ITEMS.register("atherium_boots",
+            () -> new ModArmorItem(ModArmorMaterials.ATHERIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     // Register the Ruby Sword item
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModToolTiers.RUBY, 3, -2.4F, new Item.Properties()));

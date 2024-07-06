@@ -68,23 +68,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Register gem polishing recipes
         new GemPolishingRecipeBuilder(ModItems.DIRTY_RUBY.get(), ModItems.RUBY.get(), 1, 240, new FluidStack(Fluids.WATER, 500))
-                .unlockedBy("has_ruby", has(ModItems.RUBY.get())).save(pWriter);
+                .unlockedBy(getHasName(ModItems.DIRTY_RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
 
         new GemPolishingRecipeBuilder(ModItems.DIRTY_SAPPHIRE.get(), ModItems.SAPPHIRE.get(), 1, 160, new FluidStack(Fluids.WATER, 250))
-                .unlockedBy("has_sapphire", has(ModItems.SAPPHIRE.get())).save(pWriter);
+                .unlockedBy(getHasName(ModItems.DIRTY_SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
 
         new GemPolishingRecipeBuilder(ModItems.DIRTY_ATHERIUM.get(), ModItems.ATHERIUM.get(), 1, 400, new FluidStack(Fluids.WATER, 1000))
-                .unlockedBy("has_atherium", has(ModItems.ATHERIUM.get())).save(pWriter);
+                .unlockedBy(getHasName(ModItems.DIRTY_ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
 
         new GemPolishingRecipeBuilder(ModItems.DIRTY_SUNSTONE.get(), ModItems.SUNSTONE.get(), 1, 160, new FluidStack(Fluids.WATER, 250))
-                .unlockedBy("has_sunstone", has(ModItems.SUNSTONE.get())).save(pWriter);
+                .unlockedBy(getHasName(ModItems.DIRTY_SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
 
         // Register shapeless recipe for crafting Atherium
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 1)
-                .requires(ModItems.SUNSTONE.get(), 3)
-                .requires(ModItems.RUBY.get(), 3)
-                .requires(ModItems.SAPPHIRE.get(), 3)
-                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .requires(Ingredient.of(ModTags.Items.POLISHABLE_GEMS), 9)  // Requires 9 items from the POLISHABLE_GEMS tag
+                .unlockedBy("has_polishable_gems", has(ModTags.Items.POLISHABLE_GEMS))
                 .save(pWriter, "atherium_crafting");
 
         // Register shapeless recipe to convert Atherium Block back to Atherium items

@@ -4,6 +4,7 @@ package net.succ.succsmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,16 +32,16 @@ public class DataGenerators {
         // Add loot table provider to the data generator for server-side data
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
+        BlockTagsProvider blockTagsProvider = new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTagsProvider);
+
         // Add block state provider to the data generator for client-side data
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         // Add item model provider to the data generator for client-side data
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
 
-        // Create and add block tag generator to the data generator for server-side data
-        ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
-                new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
         // Add item tag generator to the data generator for server-side data, dependent on block tag generator
-        generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
         // Add world generation provider to the data generator for server-side data
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));

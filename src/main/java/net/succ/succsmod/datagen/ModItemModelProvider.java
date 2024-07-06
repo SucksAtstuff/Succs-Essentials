@@ -37,6 +37,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem((ModItems.DIRTY_SUNSTONE));
         simpleItem((ModItems.SUNSTONE));
 
+        //simpleItem((ModItems.ATHERIUM_HELMET));
+       // simpleItem((ModItems.ATHERIUM_CHESTPLATE));
+       // simpleItem((ModItems.ATHERIUM_LEGGINGS));
+       // simpleItem((ModItems.ATHERIUM_BOOTS));
+
         // Register models for handheld items
         handheldItem(ModItems.ATHERIUM_SWORD);
         handheldItem(ModItems.ATHERIUM_PICKAXE);

@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_atherium": {
+    "has_polishable_gems": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "succsmod:atherium"
-            ]
+            "tag": "succsmod:polishable_gems"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_atherium",
+      "has_polishable_gems",
       "has_the_recipe"
     ]
   ],

@@ -69,6 +69,10 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_HELMET.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_CHESTPLATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_LEGGINGS.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_BOOTS.get()));
 
                         // Add tools made of Ruby to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));

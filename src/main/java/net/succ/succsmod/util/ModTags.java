@@ -25,6 +25,7 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SUNSTONE_TOOL = tag("needs_sunstone_tool");
 
 
+
         private static TagKey<Block> tag (String name){
             return BlockTags.create(new ResourceLocation(SuccsMod.MOD_ID, name));
         }

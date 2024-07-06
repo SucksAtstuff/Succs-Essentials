@@ -16,6 +16,11 @@
     "item.succsmod.atherium_sword": "Atherium Sword",
     "item.succsmod.atherium_hammer": "Atherium Hammer",
     "item.succsmod.atherium_paxel": "Atherium Paxel",
+    "item.succsmod.atherium_helmet": "Atherium Helmet",
+    "item.succsmod.atherium_chestplate": "Atherium Chestplate",
+    "item.succsmod.atherium_leggings": "Atherium Leggings",
+    "item.succsmod.atherium_boots": "Atherium Boots",
+
 
     "item.succsmod.ruby": "Ruby",
     "item.succsmod.dirty_ruby": "Dirty Ruby",
@@ -81,6 +86,9 @@
     "tooltip.succsmod.fortune_pickaxe.tooltip": "Press §eShift§r for more information",
 
     "tooltip.succsmod.looting_sword.tooltip.shift": "Mobs have a chance to drop more items when killed",
-    "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information"
+    "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information",
+
+    "tooltip.succsmod.atherium_armor.tooltip.shift": "Gives the player 10+ hearts when wearing a full set",
+    "tooltip.succsmod.atherium_armor.tooltip": "Press §eShift§r for more information"
 
 }

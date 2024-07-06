@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sunstone": {
+    "has_dirty_sunstone": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sunstone",
+      "has_dirty_sunstone",
       "has_the_recipe"
     ]
   ],

@@ -108,7 +108,7 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
             () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> GEM_POLISHING_TABLE = registerBlock("gem_polishing_table",
-            () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE).noOcclusion()));
+            () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.BREWING_STAND).noOcclusion()));
 
 
     // Generic method to register a block and its corresponding item

@@ -1,9 +1,9 @@
-// 1.20.1	2024-07-03T20:33:54.2345927	Recipes
+// 1.20.1	2024-07-05T19:42:50.6848765	Recipes
 2977d0faafadd6b91c23da5687a801208d111981 data/minecraft/advancements/recipes/misc/atherium_block_to_atherium.json
-ebb870994f482cf82ca36677a533e967cd86faed data/minecraft/advancements/recipes/misc/atherium_crafting.json
+ac306df5cd7c6b56990f7669ab4e51a1a4770a7b data/minecraft/advancements/recipes/misc/atherium_crafting.json
 92af0dbbce0379a5825fbac0424d52dfbbac6704 data/minecraft/recipes/atherium_block_to_atherium.json
-cf4afb3091896272e0213a32b8f4cde316716d74 data/minecraft/recipes/atherium_crafting.json
-b6bddc5b1df614c299cac9fd4c3a7f944222ed60 data/succsmod/advancements/recipes/atherium.json
+88a1b2453aaf2fd02da85cbb3b4c3bf948f302f3 data/minecraft/recipes/atherium_crafting.json
+250282d53adf278fce25ec28d45f8439924ba674 data/succsmod/advancements/recipes/atherium.json
 8c15d15923adb7f24ef1368661e665d286d422db data/succsmod/advancements/recipes/misc/atherium_axe.json
 d928d37148606b8dec150964167b0353b5e59ced data/succsmod/advancements/recipes/misc/atherium_block.json
 e4fd4cfed2aa45be5a1b1a8414fadb1f9d325b21 data/succsmod/advancements/recipes/misc/atherium_from_blasting_atherium_ore.json
@@ -67,9 +67,9 @@ f805b14a8b03c4e71e129ccfdd4e47f234593c6b data/succsmod/advancements/recipes/misc
 03b763187b47b07746afc4d23ae582a900fdcfc7 data/succsmod/advancements/recipes/misc/sunstone_pickaxe.json
 d71a0a9108bffce888929e115a7668f924becdc2 data/succsmod/advancements/recipes/misc/sunstone_shovel.json
 bd1076f4a220c47821820f3af776fa53a83135b5 data/succsmod/advancements/recipes/misc/sunstone_sword.json
-2948236deb3d2c11b00cad78099ff694aee56800 data/succsmod/advancements/recipes/ruby.json
-cea082f7f73515ba7495e683108d65ab9ef44aa2 data/succsmod/advancements/recipes/sapphire.json
-b8d3114de841c50d7ece30688156d4eeb18c5b23 data/succsmod/advancements/recipes/sunstone.json
+95ff9d6d442429dff8356dda502198e0df944fa9 data/succsmod/advancements/recipes/ruby.json
+32c705ebbb50b44a249aa77fc6b4b9b40ce34f21 data/succsmod/advancements/recipes/sapphire.json
+11757e75e2a62a896c4fa0b2a74112e5b81d46a1 data/succsmod/advancements/recipes/sunstone.json
 6d86db03dd2b58447f9b069768386096c41c879a data/succsmod/recipes/atherium_axe.json
 4d4fd0b68b7dbc386d6f04e418c5ae5bfeb0d1eb data/succsmod/recipes/atherium_block.json
 985f8332d9b2a290d4ef4e0e36dd8819c3f338ce data/succsmod/recipes/atherium_from_blasting_atherium_ore.json

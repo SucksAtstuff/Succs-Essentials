@@ -1,0 +1,6 @@
+Ignore Green and Alpha
+HSV+
+H: -180
+S: 0
+V: 25
+A: 0
