@@ -59,9 +59,6 @@ public class SuccsMod
         ModLootModifiers.register(modEventBus);
 
         ModVillagers.register(modEventBus);
-
-
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

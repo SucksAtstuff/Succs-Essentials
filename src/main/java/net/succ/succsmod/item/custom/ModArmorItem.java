@@ -56,7 +56,6 @@ public class ModArmorItem extends ArmorItem {
     private void addAttributeToPlayer(Player player, AttributeModifier attribute) {
         if (!player.getAttribute(Attributes.MAX_HEALTH).hasModifier(attribute)) {
             player.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(attribute);
-            updatePlayerHealth(player);
         }
     }
 
