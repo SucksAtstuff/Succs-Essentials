@@ -18,9 +18,12 @@ import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.block.entity.ModBlockEntities;
 import net.succ.succsmod.item.ModCreateModeTabs;
 import net.succ.succsmod.item.ModItems;
+import net.succ.succsmod.loot.ModLootModifiers;
+import net.succ.succsmod.painting.ModPaintings;
 import net.succ.succsmod.recipe.ModRecipes;
 import net.succ.succsmod.screen.GemPolishingTableScreen;
 import net.succ.succsmod.screen.ModMenuTypes;
+import net.succ.succsmod.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -50,6 +53,12 @@ public class SuccsMod
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        ModPaintings.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
 
 
 

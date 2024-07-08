@@ -185,7 +185,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
                 .save(pWriter);
 
+        // Register shaped recipe for Atherium Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ATHERIUM_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.ATHERIUM.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
 
+        // Register shaped recipe for Atherium Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ATHERIUM_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.ATHERIUM.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Atherium Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ATHERIUM_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.ATHERIUM.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Atherium Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ATHERIUM_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.ATHERIUM.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
 
         // Register shaped recipe for Ruby Block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK.get())

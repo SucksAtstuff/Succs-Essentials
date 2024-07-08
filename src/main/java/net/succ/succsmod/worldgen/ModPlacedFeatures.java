@@ -66,7 +66,6 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(40), VerticalAnchor.absolute(80))));
 
 
-
         // Register Sapphire ore placed feature with its configuration and placement modifiers
         // Sapphire Ore is most common around Y level 36 (range from 8 to 64)
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),

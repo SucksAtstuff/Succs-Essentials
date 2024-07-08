@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "succsmod:theomonty",
+      "required": false
+    },
+    {
+      "id": "succsmod:kurgerbing",
+      "required": false
+    },
+    {
+      "id": "succsmod:jack_sip",
+      "required": false
+    }
+  ]
+}

@@ -17,6 +17,8 @@ public class ModFoods {
             .saturationMod(0.1F)
             // Add an effect that grants a speed boost for 200 ticks (10 seconds) at level 5, with a 100% chance
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 5), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 200, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 1), 1.0f)
             // Build the FoodProperties instance
             .build());
 

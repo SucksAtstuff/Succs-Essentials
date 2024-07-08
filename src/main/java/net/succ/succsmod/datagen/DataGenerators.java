@@ -45,5 +45,12 @@ public class DataGenerators {
 
         // Add world generation provider to the data generator for server-side data
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+
+        // Add painting variant tag provider to the data generator for client-side data
+        generator.addProvider(event.includeClient(), new ModPaintingVariantTagProvider(packOutput, lookupProvider, existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new ModPoiTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new ModGlobalLootModifierProvider(packOutput));
     }
 }

@@ -1,17 +1,26 @@
 package net.succ.succsmod.event;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraftforge.event.level.BlockEvent;
+import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.item.ModItems;
 import net.succ.succsmod.item.custom.HammerItem;
+import net.succ.succsmod.villager.ModVillagers;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Mod.EventBusSubscriber(modid = SuccsMod.MOD_ID)
@@ -50,6 +59,19 @@ public class ModEvents {
                 serverPlayer.gameMode.destroyBlock(pos); // Destroy the block at the given position
                 HARVESTED_BLOCKS.remove(pos); // Remove the block position from the set after destruction
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void addCustomTrades(VillagerTradesEvent event) {
+        if(event.getType() == ModVillagers.GEM_CUTTER.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ModItems.ROCK_CANDY.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 6), stack, 10, 2, 0.25f
+            ));
         }
     }
 }

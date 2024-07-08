@@ -1,6 +1,6 @@
-Ignore Green and Alpha
+Ignore Red
 HSV+
-H: -180
-S: 0
-V: 25
+H: -50
+S: 50
+V: 15
 A: 0

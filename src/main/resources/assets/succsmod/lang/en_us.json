@@ -79,6 +79,15 @@
     "succsmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
     "succsmod.tooltip.liquid.amount": "%s mB",
 
+    "painting.succsmod.theomonty.title": "Theomonty",
+    "painting.succsmod.theomonty.author": "IsuckAtEverything",
+
+    "painting.succsmod.kurgerbing.title": "Kurger Bing",
+    "painting.succsmod.kurgerbing.author": "IsuckAtEverything",
+
+    "painting.succsmod.jack_sip.title": "Jack Sip",
+    "painting.succsmod.jack_sip.author": "IsuckAtEverything",
+
     "tooltip.succsmod.fire_sword.tooltip.shift": "Sets hit mobs on fire",
     "tooltip.succsmod.fire_sword.tooltip": "Press §eShift§r for more information",
 
@@ -89,6 +98,8 @@
     "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information",
 
     "tooltip.succsmod.atherium_armor.tooltip.shift": "Gives the player 10+ hearts when wearing a full set",
-    "tooltip.succsmod.atherium_armor.tooltip": "Press §eShift§r for more information"
+    "tooltip.succsmod.atherium_armor.tooltip": "Press §eShift§r for more information",
+
+    "entity.minecraft.villager.succsmod.gem_cutter": "'Gem' Cutter"
 
 }
