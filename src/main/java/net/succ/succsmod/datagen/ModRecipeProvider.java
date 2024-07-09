@@ -87,13 +87,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 1)
                 .requires(Ingredient.of(ModTags.Items.POLISHABLE_GEMS), 9)  // Requires 9 items from the POLISHABLE_GEMS tag
                 .unlockedBy("has_polishable_gems", has(ModTags.Items.POLISHABLE_GEMS))
-                .save(pWriter, "atherium_crafting");
+                .save(pWriter, SuccsMod.MOD_ID + ":" + "atherium_crafting");
 
         // Register shapeless recipe to convert Atherium Block back to Atherium items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 9)
                 .requires(ModBlocks.ATHERIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ATHERIUM_BLOCK.get()), has(ModBlocks.ATHERIUM_BLOCK.get()))
-                .save(pWriter, "atherium_block_to_atherium");
+                .save(pWriter, SuccsMod.MOD_ID + ":" + "atherium_block_to_atherium");
 
         // Register shaped recipe for Atherium Block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ATHERIUM_BLOCK.get())
@@ -280,6 +280,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
+        // Register shaped recipe for Ruby Hammer
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HAMMER.get())
+                .pattern("RRR")
+                .pattern("RGR")
+                .pattern(" G ")
+                .define('R', ModItems.RUBY.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Ruby Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_PAXEL.get())
+                .pattern("ASP")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('A', ModItems.RUBY_AXE.get())
+                .define('S', ModItems.RUBY_SHOVEL.get())
+                .define('P', ModItems.RUBY_PICKAXE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.ATHERIUM.get()), has(ModItems.ATHERIUM.get()))
+                .save(pWriter);
+
         // Register shapeless recipe to convert Ruby Block back to Ruby items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUBY.get(), 9)
                 .requires(ModBlocks.RUBY_BLOCK.get())
@@ -341,6 +363,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" H ")
                 .pattern(" G ")
                 .define('H', ModItems.SAPPHIRE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sapphire Hammer
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_HAMMER.get())
+                .pattern("HHH")
+                .pattern("HGH")
+                .pattern(" G ")
+                .define('H', ModItems.SAPPHIRE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sapphire Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_PAXEL.get())
+                .pattern("ASP")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('A', ModItems.SAPPHIRE_AXE.get())
+                .define('S', ModItems.SAPPHIRE_SHOVEL.get())
+                .define('P', ModItems.SAPPHIRE_PICKAXE.get())
                 .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
@@ -415,6 +459,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
                 .save(pWriter);
+
+        // Register shaped recipe for Sunstone Hammer
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_HAMMER.get())
+                .pattern("HHH")
+                .pattern("HSH")
+                .pattern(" G ")
+                .define('H', ModItems.SUNSTONE.get())
+                .define('S', ModItems.SUNSTONE_SHOVEL.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_PAXEL.get())
+                .pattern("PPP")
+                .pattern("PSP")
+                .pattern(" G ")
+                .define('P', ModItems.SUNSTONE_PICKAXE.get())
+                .define('S', ModItems.SUNSTONE_SHOVEL.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+
     }
 
     // Helper method to register smelting recipes for ores

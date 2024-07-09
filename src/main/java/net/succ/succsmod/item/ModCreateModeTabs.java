@@ -34,8 +34,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.DIRTY_RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE.get()));
                         pOutput.accept(new ItemStack(ModItems.DIRTY_SAPPHIRE.get()));
-                        pOutput.accept(new ItemStack(ModItems.DIRTY_SUNSTONE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE.get()));
+                        pOutput.accept(new ItemStack(ModItems.DIRTY_SUNSTONE.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));
@@ -80,6 +80,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_HAMMER.get()));
 
                         // Add tools made of Sapphire to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
@@ -87,6 +89,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HAMMER.get()));
 
                         // Add tools made of Sunstone to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_SWORD.get()));
@@ -94,6 +98,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
 
                         // Add miscellaneous items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));

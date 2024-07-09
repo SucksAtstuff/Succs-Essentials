@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_atherium_block": {
+    "has_sunstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "succsmod:atherium_block"
+              "succsmod:sunstone"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:atherium_block_to_atherium"
+        "recipe": "succsmod:sunstone_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_atherium_block",
+      "has_sunstone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:atherium_block_to_atherium"
+      "succsmod:sunstone_hammer"
     ]
   },
   "sends_telemetry_event": false

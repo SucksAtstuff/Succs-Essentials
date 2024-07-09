@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-06T13:00:35.2057442	Item Models: succsmod
+// 1.20.1	2024-07-09T23:17:55.5262432	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
@@ -17,19 +17,25 @@ a8dd49ab1c746aabcee9666208712daaa1d6d3e1 assets/succsmod/models/item/dirty_ather
 74a065b1099735fcf6cd219d2ff05bb3d2cde80b assets/succsmod/models/item/rock_candy.json
 24e37b0e3db6aab1218d1c4345d438b44f94b541 assets/succsmod/models/item/ruby.json
 f25a4411f10672e2c28dd5f0e987ede7cea0a38a assets/succsmod/models/item/ruby_axe.json
+50dc7e127d78513ecd72b833b4596b3a6c4339d6 assets/succsmod/models/item/ruby_hammer.json
 aadcaa2c7bd0f9352e7906168b5ed7628f17c7be assets/succsmod/models/item/ruby_hoe.json
+128ae1c3da43367ddaa62fd802945fc701bf4c3e assets/succsmod/models/item/ruby_paxel.json
 ee1341a521d5796652bfff82126ba65801ac3c85 assets/succsmod/models/item/ruby_pickaxe.json
 c08511e96025cbf599c41e03dd410550204ac3a9 assets/succsmod/models/item/ruby_shovel.json
 816fbb9b264b5c19f085787825f6ff1e3ecef07e assets/succsmod/models/item/ruby_sword.json
 25e7150df238116f19da0498b054f8c0ac6f87fa assets/succsmod/models/item/sapphire.json
 d862a6574340262de47f1a49fc9680d376169b49 assets/succsmod/models/item/sapphire_axe.json
+b245396bc9aea62f329afca7434549b1bc2c3355 assets/succsmod/models/item/sapphire_hammer.json
 32e9d9ecd7d2f6c38aaf862f29fd15da7f1fb9db assets/succsmod/models/item/sapphire_hoe.json
+d8ab66cfc151ab17720980086a002fae3fbcba0e assets/succsmod/models/item/sapphire_paxel.json
 3ea679e76e45f94e544fe8fa4c837923611d33f7 assets/succsmod/models/item/sapphire_pickaxe.json
 717c127367213d56902ecc94fdafc4887c11dd99 assets/succsmod/models/item/sapphire_shovel.json
 de7ed9f07a236047514789144a9c58c0290e08c2 assets/succsmod/models/item/sapphire_sword.json
 552904560967dee65450fb3f86893074d7c70079 assets/succsmod/models/item/sunstone.json
 3a79bebe487018893be08678735d92821ab05e26 assets/succsmod/models/item/sunstone_axe.json
+ccd269a71ff78336750a7f56d1dc74c50f0d1d76 assets/succsmod/models/item/sunstone_hammer.json
 c06ff3136e74aba708b572bd0041b096521d2d3f assets/succsmod/models/item/sunstone_hoe.json
+70a6d564b55474df21f4b7e04eebd42e8c28ff22 assets/succsmod/models/item/sunstone_paxel.json
 09cf9e4587b559dedddc095166867dd812a92928 assets/succsmod/models/item/sunstone_pickaxe.json
 4fd051ec1f476e90b172ab5cf8f0caae40ff3a72 assets/succsmod/models/item/sunstone_shovel.json
 c450679659506e7bc946b76d568482eb6df767c3 assets/succsmod/models/item/sunstone_sword.json

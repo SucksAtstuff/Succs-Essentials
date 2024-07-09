@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polishable_gems": {
+    "has_atherium_block": {
       "conditions": {
         "items": [
           {
-            "tag": "succsmod:polishable_gems"
+            "items": [
+              "succsmod:atherium_block"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:atherium_crafting"
+        "recipe": "succsmod:atherium_block_to_atherium"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_polishable_gems",
+      "has_atherium_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:atherium_crafting"
+      "succsmod:atherium_block_to_atherium"
     ]
   },
   "sends_telemetry_event": false

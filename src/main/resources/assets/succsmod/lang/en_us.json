@@ -16,7 +16,8 @@
     "item.succsmod.atherium_sword": "Atherium Sword",
     "item.succsmod.atherium_hammer": "Atherium Hammer",
     "item.succsmod.atherium_paxel": "Atherium Paxel",
-    "item.succsmod.atherium_helmet": "Atherium Helmet",
+
+    "item.succsmod.atherium_helmet": "Atherium Crown",
     "item.succsmod.atherium_chestplate": "Atherium Chestplate",
     "item.succsmod.atherium_leggings": "Atherium Leggings",
     "item.succsmod.atherium_boots": "Atherium Boots",
@@ -36,6 +37,8 @@
     "item.succsmod.ruby_shovel": "Ruby Shovel",
     "item.succsmod.ruby_hoe": "Ruby Hoe",
     "item.succsmod.ruby_sword": "Ruby Sword",
+    "item.succsmod.ruby_hammer": "Ruby Hammer",
+    "item.succsmod.ruby_paxel": "Ruby Paxel",
 
     "item.succsmod.sapphire": "Sapphire",
     "item.succsmod.dirty_sapphire": "Dirty Sapphire",
@@ -51,6 +54,8 @@
     "item.succsmod.sapphire_shovel": "Sapphire Shovel",
     "item.succsmod.sapphire_hoe": "Sapphire Hoe",
     "item.succsmod.sapphire_sword": "Sapphire Sword",
+    "item.succsmod.sapphire_hammer": "Sapphire Hammer",
+    "item.succsmod.sapphire_paxel": "Sapphire Paxel",
 
     "item.succsmod.sunstone": "Sunstone",
     "item.succsmod.dirty_sunstone": "Dirty Sunstone",
@@ -66,6 +71,8 @@
     "item.succsmod.sunstone_shovel": "Sunstone Shovel",
     "item.succsmod.sunstone_hoe": "Sunstone Hoe",
     "item.succsmod.sunstone_sword": "Sunstone Sword",
+    "item.succsmod.sunstone_hammer": "Sunstone Hammer",
+    "item.succsmod.sunstone_paxel": "Sunstone Paxel",
 
     "item.succsmod.gold_handle": "Gold Handle",
 
@@ -81,22 +88,17 @@
 
     "painting.succsmod.theomonty.title": "Theomonty",
     "painting.succsmod.theomonty.author": "IsuckAtEverything",
-
     "painting.succsmod.kurgerbing.title": "Kurger Bing",
     "painting.succsmod.kurgerbing.author": "IsuckAtEverything",
-
     "painting.succsmod.jack_sip.title": "Jack Sip",
     "painting.succsmod.jack_sip.author": "IsuckAtEverything",
 
     "tooltip.succsmod.fire_sword.tooltip.shift": "Sets hit mobs on fire",
     "tooltip.succsmod.fire_sword.tooltip": "Press §eShift§r for more information",
-
     "tooltip.succsmod.fortune_pickaxe.tooltip.shift": "Has a chance to drop more items when mining ores",
     "tooltip.succsmod.fortune_pickaxe.tooltip": "Press §eShift§r for more information",
-
     "tooltip.succsmod.looting_sword.tooltip.shift": "Mobs have a chance to drop more items when killed",
     "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information",
-
     "tooltip.succsmod.atherium_armor.tooltip.shift": "Gives the player 10+ hearts when wearing a full set",
     "tooltip.succsmod.atherium_armor.tooltip": "Press §eShift§r for more information",
 

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "succsmod:ruby_axe"
+    },
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "P": {
+      "item": "succsmod:ruby_pickaxe"
+    },
+    "S": {
+      "item": "succsmod:ruby_shovel"
+    }
+  },
+  "pattern": [
+    "ASP",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:ruby_paxel"
+  },
+  "show_notification": true
+}

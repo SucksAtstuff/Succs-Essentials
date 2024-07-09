@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "succsmod:sapphire_axe"
+    },
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "P": {
+      "item": "succsmod:sapphire_pickaxe"
+    },
+    "S": {
+      "item": "succsmod:sapphire_shovel"
+    }
+  },
+  "pattern": [
+    "ASP",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:sapphire_paxel"
+  },
+  "show_notification": true
+}

@@ -56,18 +56,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.RUBY_AXE);
         handheldItem(ModItems.RUBY_SHOVEL);
         handheldItem(ModItems.RUBY_HOE);
+        handheldItem(ModItems.RUBY_HAMMER);
+        handheldItem(ModItems.RUBY_PAXEL);
 
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);
         handheldItem(ModItems.SAPPHIRE_AXE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
+        handheldItem(ModItems.SAPPHIRE_HAMMER);
+        handheldItem(ModItems.SAPPHIRE_PAXEL);
 
         handheldItem(ModItems.SUNSTONE_SWORD);
         handheldItem(ModItems.SUNSTONE_PICKAXE);
         handheldItem(ModItems.SUNSTONE_AXE);
         handheldItem(ModItems.SUNSTONE_SHOVEL);
         handheldItem(ModItems.SUNSTONE_HOE);
+        handheldItem(ModItems.SUNSTONE_HAMMER);
+        handheldItem(ModItems.SUNSTONE_PAXEL);
 
         complexBlock(ModBlocks.GEM_POLISHING_TABLE.get());
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "P": {
+      "item": "succsmod:sunstone_pickaxe"
+    },
+    "S": {
+      "item": "succsmod:sunstone_shovel"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PSP",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:sunstone_paxel"
+  },
+  "show_notification": true
+}

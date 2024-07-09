@@ -52,5 +52,16 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ModPoiTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
 
         generator.addProvider(event.includeClient(), new ModGlobalLootModifierProvider(packOutput));
+
+        event.getGenerator().addProvider(
+                // Tell generator to run only when server data are generating
+                event.includeServer(),
+                new CuriosProvider(
+                        SuccsMod.MOD_ID,
+                        event.getGenerator().getPackOutput(),
+                        event.getExistingFileHelper(),
+                        event.getLookupProvider()
+                )
+        );
     }
 }

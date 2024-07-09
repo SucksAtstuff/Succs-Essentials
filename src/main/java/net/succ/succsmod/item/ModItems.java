@@ -2,6 +2,7 @@ package net.succ.succsmod.item;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
 
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -82,7 +83,7 @@ public class ModItems {
 
     // Register the Atherium Paxel item
     public static final RegistryObject<Item> ATHERIUM_PAXEL = ITEMS.register("atherium_paxel",
-            () -> new PaxelItem(ModToolTiers.ATHERIUM, 2, -2.5F, new Item.Properties()));
+            () -> new PaxelItem(ModToolTiers.ATHERIUM, 3, -2.5F, new Item.Properties()));
 
     // Register the Atherium Helmet item
     public static final RegistryObject<Item> ATHERIUM_HELMET = ITEMS.register("atherium_helmet",
@@ -120,6 +121,14 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModToolTiers.RUBY, -3, 1F, new Item.Properties()));
 
+    // Register the Ruby Hammer item
+    public static final RegistryObject<Item> RUBY_HAMMER = ITEMS.register("ruby_hammer",
+            () -> new HammerItem(ModToolTiers.RUBY, 9, -3.5F, new Item.Properties()));
+
+    // Register the Ruby Paxel Item
+    public static final RegistryObject<Item> RUBY_PAXEL = ITEMS.register("ruby_paxel",
+            () -> new PaxelItem(ModToolTiers.RUBY, 2, -2.5F, new Item.Properties()));
+
     // Register the Sapphire Sword item
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
             () -> new LootingSwordItem(ModToolTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
@@ -139,6 +148,14 @@ public class ModItems {
     // Register the Sapphire Hoe item
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, -3, 1F, new Item.Properties()));
+
+    // Register the Sapphire Paxel Item
+    public static final RegistryObject<Item> SAPPHIRE_PAXEL = ITEMS.register("sapphire_paxel",
+            () -> new PaxelItem(ModToolTiers.SAPPHIRE, 1, -2.5F, new Item.Properties()));
+
+    // Register the Sapphire Hammer item
+    public static final RegistryObject<Item> SAPPHIRE_HAMMER = ITEMS.register("sapphire_hammer",
+            () -> new HammerItem(ModToolTiers.SAPPHIRE, 8, -3.5F, new Item.Properties()));
 
     // Register the Sunstone Sword item
     public static final RegistryObject<Item> SUNSTONE_SWORD = ITEMS.register("sunstone_sword",
@@ -160,10 +177,18 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_HOE = ITEMS.register("sunstone_hoe",
             () -> new HoeItem(ModToolTiers.SUNSTONE, -3, 1F, new Item.Properties()));
 
+    // Register the Sunstone Hammer item
+    public static final RegistryObject<Item> SUNSTONE_HAMMER = ITEMS.register("sunstone_hammer",
+            () -> new HammerItem(ModToolTiers.SUNSTONE, 8, -3.5F, new Item.Properties()));
+
+    // Register the Sunstone Paxel Item
+    public static final RegistryObject<Item> SUNSTONE_PAXEL = ITEMS.register("sunstone_paxel",
+            () -> new PaxelItem(ModToolTiers.SUNSTONE, 1, -2.5F, new Item.Properties()));
 
 
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
+
         ITEMS.register(eventBus);
     }
 }

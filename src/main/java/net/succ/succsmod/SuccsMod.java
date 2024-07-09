@@ -59,7 +59,10 @@ public class SuccsMod
         ModLootModifiers.register(modEventBus);
 
         ModVillagers.register(modEventBus);
+
+
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
@@ -92,5 +95,7 @@ public class SuccsMod
                 MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingTableScreen::new);
             });
         }
+
     }
+
 }
