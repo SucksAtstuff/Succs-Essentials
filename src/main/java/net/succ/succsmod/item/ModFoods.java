@@ -32,6 +32,24 @@ public class ModFoods {
             // Build the FoodProperties instance
             .build());
 
+    // Define the FoodProperties for Garlic
+    public static final FoodProperties GARLIC = (new FoodProperties.Builder()
+            // Set the nutrition value (hunger restored) to 2
+            .nutrition(2)
+            // Set the saturation modifier to 0.1F (how much saturation is restored)
+            .saturationMod(0.2F)
+            // Build the FoodProperties instance
+            .build());
+
+    // Define the FoodProperties for Garlic Bread
+    public static final FoodProperties GARLIC_BREAD = (new FoodProperties.Builder()
+            // Set the nutrition value (hunger restored) to 6
+            .nutrition(6)
+            // Set the saturation modifier to 0.6F (how much saturation is restored)
+            .saturationMod(0.6F)
+            // Build the FoodProperties instance
+            .build());
+
 }
 
 

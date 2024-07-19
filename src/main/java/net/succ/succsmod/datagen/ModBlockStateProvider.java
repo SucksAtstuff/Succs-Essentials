@@ -2,13 +2,20 @@ package net.succ.succsmod.datagen;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
 import net.succ.succsmod.block.ModBlocks;
+import net.succ.succsmod.block.custom.GarlicCropBlock;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -59,6 +66,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         horizontalBlock(ModBlocks.GEM_POLISHING_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_table")));
+
+        makeCrop(((GarlicCropBlock) ModBlocks.GARLIC_CROP.get()), "garlic_stage", "garlic_stage");
+    }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((GarlicCropBlock) block).getAgeProperty()),
+                new ResourceLocation(SuccsMod.MOD_ID, "block/" + textureName + state.getValue(((GarlicCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     // Helper method to register block states and item models for a given block

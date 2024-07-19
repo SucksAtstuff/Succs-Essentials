@@ -67,8 +67,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
-                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_LEGGINGS.get()));
@@ -102,10 +102,14 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
 
                         // Add miscellaneous items to the Creative Mode Tab
-                        pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
-                        pOutput.accept(new ItemStack(ModItems.ROCK.get()));
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
+
+                        // Add food items to the Creative Mode Tab
+                        pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
+                        pOutput.accept(new ItemStack(ModItems.ROCK.get()));
+                        pOutput.accept(new ItemStack(ModItems.GARLIC.get()));
+                        pOutput.accept(new ItemStack(ModItems.GARLIC_BREAD.get()));
                     })
                     // Build the Creative Mode Tab
                     .build());

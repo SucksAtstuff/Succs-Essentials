@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.block.custom.GarlicCropBlock;
 import net.succ.succsmod.block.custom.GemPolishingTableBlock;
 import net.succ.succsmod.item.ModItems;
 
@@ -110,6 +111,8 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
     public static final RegistryObject<Block> GEM_POLISHING_TABLE = registerBlock("gem_polishing_table",
             () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.BREWING_STAND).noOcclusion()));
 
+    public static final RegistryObject<Block> GARLIC_CROP = BLOCKS.register("garlic_crop",
+            () -> new GarlicCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
     // Generic method to register a block and its corresponding item
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

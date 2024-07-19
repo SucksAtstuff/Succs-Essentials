@@ -22,7 +22,6 @@
     "item.succsmod.atherium_leggings": "Atherium Leggings",
     "item.succsmod.atherium_boots": "Atherium Boots",
 
-
     "item.succsmod.ruby": "Ruby",
     "item.succsmod.dirty_ruby": "Dirty Ruby",
 
@@ -82,6 +81,8 @@
 
     "item.succsmod.rock_candy": "'Rock Candy'",
     "item.succsmod.rock": "Rock",
+    "item.succsmod.garlic": "Garlic",
+    "item.succsmod.garlic_bread": "Garlic Bread",
 
     "succsmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
     "succsmod.tooltip.liquid.amount": "%s mB",
@@ -90,8 +91,8 @@
     "painting.succsmod.theomonty.author": "IsuckAtEverything",
     "painting.succsmod.kurgerbing.title": "Kurger Bing",
     "painting.succsmod.kurgerbing.author": "IsuckAtEverything",
-    "painting.succsmod.jack_sip.title": "Jack Sip",
-    "painting.succsmod.jack_sip.author": "IsuckAtEverything",
+    "painting.succsmod.theomonty_scream.title": "Theomonty Scream",
+    "painting.succsmod.theomonty_scream.author": "IsuckAtEverything",
 
     "tooltip.succsmod.fire_sword.tooltip.shift": "Sets hit mobs on fire",
     "tooltip.succsmod.fire_sword.tooltip": "Press §eShift§r for more information",

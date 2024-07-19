@@ -482,6 +482,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
                 .save(pWriter);
 
+        // Register shapeless recipe for Garlic Bread
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GARLIC_BREAD.get(), 1)
+                .requires(Items.BREAD)
+                .requires(ModItems.GARLIC.get())
+                .unlockedBy(getHasName(ModItems.GARLIC.get()), has(ModItems.GARLIC.get()))
+                .save(pWriter);
 
     }
 

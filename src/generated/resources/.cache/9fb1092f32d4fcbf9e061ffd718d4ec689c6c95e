@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-09T23:21:20.2420308	Recipes
+// 1.20.1	2024-07-13T15:57:08.0886207	Recipes
 250282d53adf278fce25ec28d45f8439924ba674 data/succsmod/advancements/recipes/atherium.json
 8c15d15923adb7f24ef1368661e665d286d422db data/succsmod/advancements/recipes/misc/atherium_axe.json
 d928d37148606b8dec150964167b0353b5e59ced data/succsmod/advancements/recipes/misc/atherium_block.json
@@ -22,6 +22,7 @@ bd7c9c9ef68b01ac70f4fef565b6ebd73d83b0ee data/succsmod/advancements/recipes/misc
 600f90e593e08520b9180a469cc6b704ce1b0570 data/succsmod/advancements/recipes/misc/atherium_pickaxe.json
 7fa2563667c7653aa3188ec38c27dd1491fd443d data/succsmod/advancements/recipes/misc/atherium_shovel.json
 58f8fe1ad5c8fd93bed99717b45fa48070255003 data/succsmod/advancements/recipes/misc/atherium_sword.json
+f623441409b0b4d7c47ebbbfc61707f92b01fd1b data/succsmod/advancements/recipes/misc/garlic_bread.json
 ce76c9839b297bea466060020483205998394cd2 data/succsmod/advancements/recipes/misc/gem_polishing_table.json
 1e076f29e720bd6e79606b06a818a173d89088b7 data/succsmod/advancements/recipes/misc/gold_handle.json
 fdeb0c085cf0d4c148517801a0baadf36cd975f0 data/succsmod/advancements/recipes/misc/ruby.json
@@ -101,6 +102,7 @@ d69e7f40ac29371bf893aef92794672e777eb320 data/succsmod/recipes/atherium_hammer.j
 31f98e3263e5938f896428d3bb43e276cc5f1a6e data/succsmod/recipes/atherium_pickaxe.json
 3d7b4b2d35587fb173159231e1294f29ee694c51 data/succsmod/recipes/atherium_shovel.json
 0afb36909ed35e9152a4670e573cbb5952f6299b data/succsmod/recipes/atherium_sword.json
+741a01fb9d369f58611d50a6763e6b23fa55f7a8 data/succsmod/recipes/garlic_bread.json
 984c2ea08b1c2cad7fbc325c93dfd7701523e3e1 data/succsmod/recipes/gem_polishing_table.json
 0a64aed042dd179acef0b534554d6b3fef435f1e data/succsmod/recipes/gold_handle.json
 974dcd07c43cc442975397a576d24a3b41ebdb43 data/succsmod/recipes/ruby.json

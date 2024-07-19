@@ -1,5 +1,7 @@
 {
   "entries": [
+    "succsmod:garlic_from_grass",
+    "succsmod:garlic_from_tall_grass",
     "succsmod:rock_from_stone"
   ],
   "replace": false

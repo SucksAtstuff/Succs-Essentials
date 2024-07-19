@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-03T16:22:10.3967359	Block States: succsmod
+// 1.20.1	2024-07-11T21:23:20.7694533	Block States: succsmod
 b63934fa48a1283d85538fe4d3c6ef017e7acd05 assets/succsmod/blockstates/atherium_block.json
 39d7a43c96e89d98df99b17a3677290c8ab0b160 assets/succsmod/blockstates/atherium_ore.json
 1382068537b1727f078199c541ebde30db4c233d assets/succsmod/blockstates/deepslate_atherium_ore.json
@@ -9,6 +9,7 @@ ae4daaddca9e806331355d37fc155f918d63c5ef assets/succsmod/blockstates/end_atheriu
 cb0e15e1ab5fe52a9943287429fa44f7347fb3a5 assets/succsmod/blockstates/end_ruby_ore.json
 2c9c31c2ec19772144c1cce1f16a4aa1e392f16a assets/succsmod/blockstates/end_sapphire_ore.json
 b491eaedd61fc908dd7742d2dd52fc36825cfb07 assets/succsmod/blockstates/end_sunstone_ore.json
+bfa8351501da53bf03e0b350405200a9fda8c5cf assets/succsmod/blockstates/garlic_crop.json
 b517831d99f03766f16f596019cec0b0bc44f78c assets/succsmod/blockstates/gem_polishing_table.json
 1861d2d4a82c9b0e3832b7c282286ff1c7421699 assets/succsmod/blockstates/nether_atherium_ore.json
 ac9cd182b20564d2260f7d22ddb54ebbc40fec92 assets/succsmod/blockstates/nether_ruby_ore.json
@@ -30,6 +31,10 @@ ee3d57af7fefd8318c40ab70f0a70d71cd0f909a assets/succsmod/models/block/end_atheri
 55314714ef2e7f65c23a6fd2ca53209a1325e337 assets/succsmod/models/block/end_ruby_ore.json
 3dc275305437d9a6ed29310ee711ac12b6b7145a assets/succsmod/models/block/end_sapphire_ore.json
 8d2f3dfc9d5e91234389693609f58042defa3ded assets/succsmod/models/block/end_sunstone_ore.json
+65239832d07da98b6b7fa5880adc61769657d7ed assets/succsmod/models/block/garlic_stage0.json
+cea81c75f8a3621b8e371fa240a257af1f58fb5e assets/succsmod/models/block/garlic_stage1.json
+d2025b2a015d573f7e6f65dac267f9d0e0bd0647 assets/succsmod/models/block/garlic_stage2.json
+8789c67eb59a7d133cc01fde85473c27efb0079d assets/succsmod/models/block/garlic_stage3.json
 06152994217bebe0e9058a31fee7c3ac0643d795 assets/succsmod/models/block/nether_atherium_ore.json
 4242c5d267fba2046f699fc10d90543b74ec724f assets/succsmod/models/block/nether_ruby_ore.json
 dfa9bc9e5d5d56ad6180c0c34bfd3bdefe0cc280 assets/succsmod/models/block/nether_sapphire_ore.json

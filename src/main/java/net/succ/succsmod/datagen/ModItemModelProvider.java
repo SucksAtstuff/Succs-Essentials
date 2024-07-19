@@ -36,6 +36,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem((ModItems.SAPPHIRE));
         simpleItem((ModItems.DIRTY_SUNSTONE));
         simpleItem((ModItems.SUNSTONE));
+        simpleItem((ModItems.GARLIC));
+        simpleItem((ModItems.GARLIC_BREAD));
 
         //simpleItem((ModItems.ATHERIUM_HELMET));
        // simpleItem((ModItems.ATHERIUM_CHESTPLATE));

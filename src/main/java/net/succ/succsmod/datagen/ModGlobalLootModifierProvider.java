@@ -20,5 +20,13 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("rock_from_stone", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.STONE).build(),
                 LootItemRandomChanceCondition.randomChance(0.1f).build() }, ModItems.ROCK.get()));
+
+        add("garlic_from_grass", new AddItemModifier(new LootItemCondition[]{
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
+                LootItemRandomChanceCondition.randomChance(0.25f).build() }, ModItems.GARLIC.get()));
+
+        add("garlic_from_tall_grass", new AddItemModifier(new LootItemCondition[]{
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.TALL_GRASS).build(),
+                LootItemRandomChanceCondition.randomChance(0.25f).build() }, ModItems.GARLIC.get()));
     }
 }

@@ -9,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.SuccsMod;
+import net.succ.succsmod.block.ModBlocks;
 import net.succ.succsmod.item.custom.*;
 
 public class ModItems {
@@ -52,6 +53,14 @@ public class ModItems {
     // Register the Rock item
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock",
             () -> new Item(new Item.Properties().food(ModFoods.ROCK)));
+
+    // Register the Garlic item
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
+            () -> new GarlicItem(ModBlocks.GARLIC_CROP.get(), new Item.Properties()));
+
+    // Register the Garlic Bread item with food properties
+    public static final RegistryObject<Item> GARLIC_BREAD = ITEMS.register("garlic_bread",
+            () -> new Item(new Item.Properties().food(ModFoods.GARLIC_BREAD)));
 
     // Register the Gold Handle item
     public static final RegistryObject<Item> GOLD_HANDLE = ITEMS.register("gold_handle",
@@ -185,10 +194,8 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_PAXEL = ITEMS.register("sunstone_paxel",
             () -> new PaxelItem(ModToolTiers.SUNSTONE, 1, -2.5F, new Item.Properties()));
 
-
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
-
         ITEMS.register(eventBus);
     }
 }

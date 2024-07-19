@@ -1,6 +1,7 @@
 package net.succ.succsmod.datagen.loot;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -10,9 +11,12 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.succ.succsmod.block.ModBlocks;
+import net.succ.succsmod.block.custom.GarlicCropBlock;
 import net.succ.succsmod.item.ModItems;
 
 import java.util.Set;
@@ -83,6 +87,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.END_SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_SAPPHIRE_ORE.get(), ModItems.DIRTY_SAPPHIRE.get()));
+
+
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.GARLIC_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GarlicCropBlock.AGE, 3));
+        this.add(ModBlocks.GARLIC_CROP.get(), this.createCropDrops(ModBlocks.GARLIC_CROP.get(),
+                ModItems.GARLIC.get(), ModItems.GARLIC.get(), lootitemcondition$builder1));
 
 
     }

@@ -25,6 +25,8 @@ public class ModPaintingVariantTagProvider extends PaintingVariantTagsProvider {
                 .addOptional(new ResourceLocation(SuccsMod.MOD_ID, "kurgerbing"));
 
         this.tag(PaintingVariantTags.PLACEABLE)
-                .addOptional(new ResourceLocation(SuccsMod.MOD_ID, "jack_sip"));
+                .addOptional(new ResourceLocation(SuccsMod.MOD_ID, "theomonty_scream"));
+
+
     }
 }

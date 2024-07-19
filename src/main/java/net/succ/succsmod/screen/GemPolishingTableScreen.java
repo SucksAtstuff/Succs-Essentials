@@ -34,7 +34,7 @@ public class GemPolishingTableScreen extends AbstractContainerScreen<GemPolishin
     }
 
     private void assignFluidRenderer() {
-        fluidRenderer = new FluidTankRenderer(64000, true, 16,36);
+        fluidRenderer = new FluidTankRenderer(64000, true, 16,39);
     }
 
     @Override
