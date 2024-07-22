@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-13T15:55:33.5290523	Item Models: succsmod
+// 1.20.1	2024-07-22T12:53:56.9626051	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
@@ -15,6 +15,7 @@ a8dd49ab1c746aabcee9666208712daaa1d6d3e1 assets/succsmod/models/item/dirty_ather
 8b29c383d3fa2f08a9e60a97bcbdaeb2b9a12650 assets/succsmod/models/item/garlic_bread.json
 98b11801e2f7d2177e79b950825c622989810766 assets/succsmod/models/item/gem_polishing_table.json
 4c20fe5a11fd7b3b65025bfbe0e7b954afe4b871 assets/succsmod/models/item/gold_handle.json
+8efd061ce90e51324ec6db5318536d3bd43ca7a9 assets/succsmod/models/item/ring_of_ruby.json
 7195d523dcb58ac248296b01290eae04c85dd3ab assets/succsmod/models/item/rock.json
 74a065b1099735fcf6cd219d2ff05bb3d2cde80b assets/succsmod/models/item/rock_candy.json
 24e37b0e3db6aab1218d1c4345d438b44f94b541 assets/succsmod/models/item/ruby.json

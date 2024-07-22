@@ -101,6 +101,9 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
 
+                        // Add rings to the Creative Mode Tab
+                        pOutput.accept(new ItemStack(ModItems.RING_OF_RUBY.get()));
+
                         // Add miscellaneous items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
