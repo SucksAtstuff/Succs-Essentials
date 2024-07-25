@@ -1,0 +1,10 @@
+{
+  "type": "succsmod:add_item",
+  "conditions": [
+    {
+      "chance": 0.01,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "succsmod:ring_of_ruby"
+}

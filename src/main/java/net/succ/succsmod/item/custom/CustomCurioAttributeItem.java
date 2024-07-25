@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
@@ -54,7 +55,14 @@ public class CustomCurioAttributeItem extends Item implements ICurioItem {
     public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
         if (slotContext.entity() instanceof Player player) {
             player.getAttribute(attribute).removeModifier(attributeModifierUUID);
+            updatePlayerHealth(player);
         }
+
+
+    }
+
+    private void updatePlayerHealth(Player player) {
+        player.setHealth(player.getMaxHealth());
     }
 
     @Override

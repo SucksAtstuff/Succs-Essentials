@@ -103,10 +103,14 @@ public class ModCreateModeTabs {
 
                         // Add rings to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.RING_OF_RUBY.get()));
+                        pOutput.accept(new ItemStack(ModItems.RING_OF_SAPPHIRE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RING_OF_SUNSTONE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RING_OF_ATHERIUM.get()));
 
                         // Add miscellaneous items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
+                        pOutput.accept(new ItemStack(ModItems.GARLIC_TRIDENT.get()));
 
                         // Add food items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));

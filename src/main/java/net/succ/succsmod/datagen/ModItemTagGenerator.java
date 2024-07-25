@@ -39,5 +39,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ATHERIUM_CHESTPLATE.get())
                 .add(ModItems.ATHERIUM_LEGGINGS.get())
                 .add(ModItems.ATHERIUM_BOOTS.get());
+
+
     }
 }

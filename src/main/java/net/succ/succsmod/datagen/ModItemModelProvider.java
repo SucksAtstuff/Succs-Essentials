@@ -40,6 +40,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem((ModItems.GARLIC_BREAD));
 
         simpleItem((ModItems.RING_OF_RUBY));
+        simpleItem((ModItems.RING_OF_SAPPHIRE));
+        simpleItem((ModItems.RING_OF_SUNSTONE));
+        simpleItem((ModItems.RING_OF_ATHERIUM));
 
         //simpleItem((ModItems.ATHERIUM_HELMET));
        // simpleItem((ModItems.ATHERIUM_CHESTPLATE));

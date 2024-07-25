@@ -2,6 +2,8 @@ package net.succ.succsmod.item;
 
 // Import statements for necessary classes from Minecraft, Forge, and SuccsMod
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
@@ -195,9 +197,25 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_PAXEL = ITEMS.register("sunstone_paxel",
             () -> new PaxelItem(ModToolTiers.SUNSTONE, 1, -2.5F, new Item.Properties()));
 
+    // Register the Ring of Atherium item with levitation effect for the ring slot
+    public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
+            () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.LEVITATION, Integer.MAX_VALUE, 5, true, false, false), "ring"));
+
     // Register the Ring of Ruby item with health effect for the ring slot
     public static final RegistryObject<Item> RING_OF_RUBY = ITEMS.register("ring_of_ruby",
             () -> new CustomCurioAttributeItem(Attributes.MAX_HEALTH, "e3a7c2a3-4c5b-4e3e-9b8e-b6b9f781df55", 20.0, AttributeModifier.Operation.ADDITION, "ring"));
+
+    // Register the Ring of Sapphire item with luck effect for the ring slot
+    public static final RegistryObject<Item> RING_OF_SAPPHIRE = ITEMS.register("ring_of_sapphire",
+            () -> new CustomCurioAttributeItem(Attributes.LUCK, "e3a7c2a3-4c5b-4e3e-9b8e-b6b9f781df55", 20, AttributeModifier.Operation.ADDITION, "ring"));
+
+    // Register the Ring of Sunstone item with fire resistance effect for the ring slot
+    public static final RegistryObject<Item> RING_OF_SUNSTONE = ITEMS.register("ring_of_sunstone",
+            () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, false), "ring"));
+
+    // Register the Garlic Trident item
+    public static final RegistryObject<TridentItem> GARLIC_TRIDENT = ITEMS.register("garlic_trident",
+            () -> new TridentItem(new Item.Properties().durability(250)));
 
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {

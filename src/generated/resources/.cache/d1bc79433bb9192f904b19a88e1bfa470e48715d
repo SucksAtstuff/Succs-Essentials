@@ -1,5 +1,9 @@
-// 1.20.1	2024-07-11T21:23:20.7674528	Global Loot Modifiers : succsmod
-024b6f38c864beaae3fcb942b2e77092b4edac71 data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.1	2024-07-25T00:06:04.6163822	Global Loot Modifiers : succsmod
+e2cb740be5bc7ac00a20b38fe4547c164851b05b data/forge/loot_modifiers/global_loot_modifiers.json
 f7a225d9ef4eb814e8a987834297953c154b7c22 data/succsmod/loot_modifiers/garlic_from_grass.json
 58c7635fb1f3cc0d568d28fda5eb9d3d5da8fe3a data/succsmod/loot_modifiers/garlic_from_tall_grass.json
+4fd21d2cedeaca90dbbdb4163dd836bc5ce20f2a data/succsmod/loot_modifiers/ring_of_atherium_from_chest.json
+5bafe78c80fcf9d7312bac4f98fe62a14ed33130 data/succsmod/loot_modifiers/ring_of_ruby_from_chest.json
+e3d8e39523255dd89fb1ba558b0cf3c3776d0ee2 data/succsmod/loot_modifiers/ring_of_sapphire_from_chest.json
+ecd167bdd0d97ca148dcd86c761dcfe58d74cf64 data/succsmod/loot_modifiers/ring_of_sunstone_from_chest.json
 549be84c90c34932131107feeacd01a8852ac080 data/succsmod/loot_modifiers/rock_from_stone.json

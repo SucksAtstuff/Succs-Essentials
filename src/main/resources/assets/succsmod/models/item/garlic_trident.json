@@ -1,0 +1,19 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "succsmod:item/garlic_trident_3d"
+	},
+
+	"perspectives": {
+		"gui": {
+			"parent": "succsmod:item/garlic_trident_2d"
+		},
+		"ground": {
+			"parent": "succsmod:item/garlic_trident_3d"
+		},
+		"fixed": {
+			"parent": "succsmod:item/garlic_trident_2d"
+		}
+	}
+}

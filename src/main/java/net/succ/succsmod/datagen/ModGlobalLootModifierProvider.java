@@ -28,5 +28,19 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("garlic_from_tall_grass", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.TALL_GRASS).build(),
                 LootItemRandomChanceCondition.randomChance(0.25f).build() }, ModItems.GARLIC.get()));
+
+        add("ring_of_ruby_from_chest", new AddItemModifier(new LootItemCondition[]{
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.RING_OF_RUBY.get()));
+
+        add("ring_of_sapphire_from_chest", new AddItemModifier(new LootItemCondition[]{
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.RING_OF_SAPPHIRE.get()));
+
+        add("ring_of_sunstone_from_chest", new AddItemModifier(new LootItemCondition[]{
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.RING_OF_SUNSTONE.get()));
+
+        add("ring_of_atherium_from_chest", new AddItemModifier(new LootItemCondition[]{
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.RING_OF_ATHERIUM.get()));
+        }
+
     }
-}
+
