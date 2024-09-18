@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "succsmod:ruby"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "R R"
+  ],
+  "result": {
+    "item": "succsmod:ruby_helmet"
+  },
+  "show_notification": true
+}

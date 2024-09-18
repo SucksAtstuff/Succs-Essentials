@@ -3,6 +3,18 @@
     "succsmod:atherium_helmet",
     "succsmod:atherium_chestplate",
     "succsmod:atherium_leggings",
-    "succsmod:atherium_boots"
+    "succsmod:atherium_boots",
+    "succsmod:ruby_helmet",
+    "succsmod:ruby_chestplate",
+    "succsmod:ruby_leggings",
+    "succsmod:ruby_boots",
+    "succsmod:sapphire_helmet",
+    "succsmod:sapphire_chestplate",
+    "succsmod:sapphire_leggings",
+    "succsmod:sapphire_boots",
+    "succsmod:sunstone_helmet",
+    "succsmod:sunstone_chestplate",
+    "succsmod:sunstone_leggings",
+    "succsmod:sunstone_boots"
   ]
 }

@@ -141,6 +141,23 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_PAXEL = ITEMS.register("ruby_paxel",
             () -> new PaxelItem(ModToolTiers.RUBY, 2, -2.5F, new Item.Properties()));
 
+
+    // Register the Ruby Helmet item
+    public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    // Register the Ruby Chestplate item
+    public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    // Register the Ruby Leggings item
+    public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    // Register the Ruby Boots item
+    public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
+            () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     // Register the Sapphire Sword item
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
             () -> new LootingSwordItem(ModToolTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
@@ -169,6 +186,22 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_HAMMER = ITEMS.register("sapphire_hammer",
             () -> new HammerItem(ModToolTiers.SAPPHIRE, 8, -3.5F, new Item.Properties()));
 
+    // Register the Sapphire Helmet item
+    public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    // Register the Sapphire Chestplate item
+    public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    // Register the Sapphire Leggings item
+    public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    // Register the Sapphire Boots item
+    public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     // Register the Sunstone Sword item
     public static final RegistryObject<Item> SUNSTONE_SWORD = ITEMS.register("sunstone_sword",
             () -> new FireSwordItem(ModToolTiers.SUNSTONE, 3, -2.4F, new Item.Properties()));
@@ -196,6 +229,22 @@ public class ModItems {
     // Register the Sunstone Paxel Item
     public static final RegistryObject<Item> SUNSTONE_PAXEL = ITEMS.register("sunstone_paxel",
             () -> new PaxelItem(ModToolTiers.SUNSTONE, 1, -2.5F, new Item.Properties()));
+
+    // Register the Sunstone Helmet item
+    public static final RegistryObject<Item> SUNSTONE_HELMET = ITEMS.register("sunstone_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    // Register the Sunstone Chestplate item
+    public static final RegistryObject<Item> SUNSTONE_CHESTPLATE = ITEMS.register("sunstone_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    // Register the Sunstone Leggings item
+    public static final RegistryObject<Item> SUNSTONE_LEGGINGS = ITEMS.register("sunstone_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    // Register the Sunstone Boots item
+    public static final RegistryObject<Item> SUNSTONE_BOOTS = ITEMS.register("sunstone_boots",
+            () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     // Register the Ring of Atherium item with levitation effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",

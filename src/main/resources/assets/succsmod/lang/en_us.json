@@ -39,6 +39,11 @@
     "item.succsmod.ruby_hammer": "Ruby Hammer",
     "item.succsmod.ruby_paxel": "Ruby Paxel",
 
+    "item.succsmod.ruby_helmet": "Ruby Helmet",
+    "item.succsmod.ruby_chestplate": "Ruby Chestplate",
+    "item.succsmod.ruby_leggings": "Ruby Leggings",
+    "item.succsmod.ruby_boots": "Ruby Boots",
+
     "item.succsmod.sapphire": "Sapphire",
     "item.succsmod.dirty_sapphire": "Dirty Sapphire",
 
@@ -56,6 +61,11 @@
     "item.succsmod.sapphire_hammer": "Sapphire Hammer",
     "item.succsmod.sapphire_paxel": "Sapphire Paxel",
 
+    "item.succsmod.sapphire_helmet": "Sapphire Helmet",
+    "item.succsmod.sapphire_chestplate": "Sapphire Chestplate",
+    "item.succsmod.sapphire_leggings": "Sapphire Leggings",
+    "item.succsmod.sapphire_boots": "Sapphire Boots",
+
     "item.succsmod.sunstone": "Sunstone",
     "item.succsmod.dirty_sunstone": "Dirty Sunstone",
 
@@ -72,6 +82,11 @@
     "item.succsmod.sunstone_sword": "Sunstone Sword",
     "item.succsmod.sunstone_hammer": "Sunstone Hammer",
     "item.succsmod.sunstone_paxel": "Sunstone Paxel",
+
+    "item.succsmod.sunstone_helmet": "Sunstone Helmet",
+    "item.succsmod.sunstone_chestplate": "Sunstone Chestplate",
+    "item.succsmod.sunstone_leggings": "Sunstone Leggings",
+    "item.succsmod.sunstone_boots": "Sunstone Boots",
 
     "item.succsmod.ring_of_ruby": "Ring Of Ruby",
     "item.succsmod.ring_of_sapphire": "Ring Of Sapphire",

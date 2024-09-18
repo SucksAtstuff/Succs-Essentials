@@ -82,6 +82,10 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_HELMET.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_CHESTPLATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_LEGGINGS.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_BOOTS.get()));
 
                         // Add tools made of Sapphire to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
@@ -91,6 +95,10 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HELMET.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_CHESTPLATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_LEGGINGS.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_BOOTS.get()));
 
                         // Add tools made of Sunstone to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_SWORD.get()));
@@ -100,6 +108,10 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HELMET.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_CHESTPLATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_LEGGINGS.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_BOOTS.get()));
 
                         // Add rings to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.RING_OF_RUBY.get()));

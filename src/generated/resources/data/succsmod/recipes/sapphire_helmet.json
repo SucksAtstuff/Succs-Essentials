@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "succsmod:sapphire"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "H H"
+  ],
+  "result": {
+    "item": "succsmod:sapphire_helmet"
+  },
+  "show_notification": true
+}

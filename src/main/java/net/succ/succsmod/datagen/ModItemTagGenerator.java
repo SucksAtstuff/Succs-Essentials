@@ -38,7 +38,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ATHERIUM_HELMET.get())
                 .add(ModItems.ATHERIUM_CHESTPLATE.get())
                 .add(ModItems.ATHERIUM_LEGGINGS.get())
-                .add(ModItems.ATHERIUM_BOOTS.get());
+                .add(ModItems.ATHERIUM_BOOTS.get())
+                .add(ModItems.RUBY_HELMET.get())
+                .add(ModItems.RUBY_CHESTPLATE.get())
+                .add(ModItems.RUBY_LEGGINGS.get())
+                .add(ModItems.RUBY_BOOTS.get())
+                .add(ModItems.SAPPHIRE_HELMET.get())
+                .add(ModItems.SAPPHIRE_CHESTPLATE.get())
+                .add(ModItems.SAPPHIRE_LEGGINGS.get())
+                .add(ModItems.SAPPHIRE_BOOTS.get())
+                .add(ModItems.SUNSTONE_HELMET.get())
+                .add(ModItems.SUNSTONE_CHESTPLATE.get())
+                .add(ModItems.SUNSTONE_LEGGINGS.get())
+                .add(ModItems.SUNSTONE_BOOTS.get());
+
 
 
     }

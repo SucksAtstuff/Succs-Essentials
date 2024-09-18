@@ -308,6 +308,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK.get()), has(ModBlocks.RUBY_BLOCK.get()))
                 .save(pWriter);
 
+        // Register shaped recipe for Ruby Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HELMET.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .define('R', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Ruby Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_CHESTPLATE.get())
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Ruby Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_LEGGINGS.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Ruby Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_BOOTS.get())
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
         // Register shaped recipe for Sapphire block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("HHH")
@@ -395,11 +429,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
+        // Register shaped recipe for Sapphire Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_HELMET.get())
+                .pattern("HHH")
+                .pattern("H H")
+                .define('H', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sapphire Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_CHESTPLATE.get())
+                .pattern("H H")
+                .pattern("HHH")
+                .pattern("HHH")
+                .define('H', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sapphire Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_LEGGINGS.get())
+                .pattern("HHH")
+                .pattern("H H")
+                .pattern("H H")
+                .define('H', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sapphire Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_BOOTS.get())
+                .pattern("H H")
+                .pattern("H H")
+                .define('H', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
         // Register shapeless recipe to convert Sunstone Block back to Sunstone items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SUNSTONE.get(), 9)
                 .requires(ModBlocks.SUNSTONE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SUNSTONE_BLOCK.get()), has(ModBlocks.SUNSTONE_BLOCK.get()))
                 .save(pWriter);
+
 
         // Register shaped recipe for Sunstone Block
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SUNSTONE_BLOCK.get())
@@ -479,6 +548,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModItems.SUNSTONE_PICKAXE.get())
                 .define('S', ModItems.SUNSTONE_SHOVEL.get())
                 .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.SUNSTONE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SUNSTONE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SUNSTONE.get())
+                .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Sunstone Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SUNSTONE.get())
                 .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
                 .save(pWriter);
 
