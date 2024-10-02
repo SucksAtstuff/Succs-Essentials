@@ -262,9 +262,7 @@ public class ModItems {
     public static final RegistryObject<Item> RING_OF_SUNSTONE = ITEMS.register("ring_of_sunstone",
             () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, false), "ring"));
 
-    // Register the Garlic Trident item
-    public static final RegistryObject<TridentItem> GARLIC_TRIDENT = ITEMS.register("garlic_trident",
-            () -> new TridentItem(new Item.Properties().durability(250)));
+    
 
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {

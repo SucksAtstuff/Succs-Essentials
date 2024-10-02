@@ -122,7 +122,6 @@ public class ModCreateModeTabs {
                         // Add miscellaneous items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
-                        pOutput.accept(new ItemStack(ModItems.GARLIC_TRIDENT.get()));
 
                         // Add food items to the Creative Mode Tab
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
