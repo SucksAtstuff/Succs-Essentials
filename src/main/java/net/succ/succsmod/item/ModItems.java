@@ -246,9 +246,9 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_BOOTS = ITEMS.register("sunstone_boots",
             () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    // Register the Ring of Atherium item with levitation effect for the ring slot
+    // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
-            () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.LEVITATION, Integer.MAX_VALUE, 5, true, false, false), "ring"));
+            () -> new CustomCurioAttributeItem(Attributes.ATTACK_SPEED, "a7e8f2d7-5e4b-4e7e-8f89-8c7e1f94e76f", 0.4, AttributeModifier.Operation.ADDITION, "ring"));
 
     // Register the Ring of Ruby item with health effect for the ring slot
     public static final RegistryObject<Item> RING_OF_RUBY = ITEMS.register("ring_of_ruby",
@@ -262,7 +262,7 @@ public class ModItems {
     public static final RegistryObject<Item> RING_OF_SUNSTONE = ITEMS.register("ring_of_sunstone",
             () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, false), "ring"));
 
-    
+
 
     // Method to register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
