@@ -1,6 +1,0 @@
-Ignore Red
-HSV+
-H: -50
-S: 50
-V: 15
-A: 0

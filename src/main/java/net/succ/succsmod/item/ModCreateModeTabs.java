@@ -27,9 +27,9 @@ public class ModCreateModeTabs {
                     .title(Component.translatable("creativetab.succs_mod_tab"))
                     // Define the items to be displayed in the Creative Mode Tab
                     .displayItems((pParameters, pOutput) -> {
-                        // Add items to be displayed in the custom Creative Mode Tab
+                        // Add ingots and raw materials first
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM.get()));
-                        pOutput.accept((new ItemStack(ModItems.DIRTY_ATHERIUM.get())));
+                        pOutput.accept(new ItemStack(ModItems.DIRTY_ATHERIUM.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.DIRTY_RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE.get()));
@@ -37,6 +37,7 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE.get()));
                         pOutput.accept(new ItemStack(ModItems.DIRTY_SUNSTONE.get()));
 
+                        // Add blocks next (ores and blocks of materials)
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.NETHER_ATHERIUM_ORE.get()));
@@ -61,69 +62,80 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModBlocks.END_SUNSTONE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.SUNSTONE_BLOCK.get()));
 
-                        // Add tools made of Atherium to the Creative Mode Tab
+                        // Add swords, grouped by material
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_SWORD.get()));
+
+                        // Add pickaxes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_PICKAXE.get()));
+
+                        // Add axes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_AXE.get()));
+
+                        // Add shovels
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_SHOVEL.get()));
+
+                        // Add hoes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HOE.get()));
+
+                        // Add paxels
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
+
+                        // Add hammers
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.RUBY_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
+
+                        // Add armor pieces, grouped by material
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_BOOTS.get()));
 
-                        // Add tools made of Ruby to the Creative Mode Tab
-                        pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_PICKAXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_PAXEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.RUBY_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_BOOTS.get()));
 
-                        // Add tools made of Sapphire to the Creative Mode Tab
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PAXEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_BOOTS.get()));
 
-                        // Add tools made of Sunstone to the Creative Mode Tab
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_SWORD.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_PICKAXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_AXE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_SHOVEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HOE.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
-                        pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_BOOTS.get()));
 
-                        // Add rings to the Creative Mode Tab
+                        // Add rings
                         pOutput.accept(new ItemStack(ModItems.RING_OF_RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_SAPPHIRE.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_SUNSTONE.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_ATHERIUM.get()));
 
-                        // Add miscellaneous items to the Creative Mode Tab
+                        // Add miscellaneous items
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.GEM_POLISHING_TABLE.get()));
 
-                        // Add food items to the Creative Mode Tab
+                        // Add food items
                         pOutput.accept(new ItemStack(ModItems.ROCK_CANDY.get()));
                         pOutput.accept(new ItemStack(ModItems.ROCK.get()));
                         pOutput.accept(new ItemStack(ModItems.GARLIC.get()));
