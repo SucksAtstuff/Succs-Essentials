@@ -2,6 +2,7 @@ package net.succ.succsmod.item.custom;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -26,12 +27,26 @@ public class CustomCurioMobEffectItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+        // If the effect is POISON, show only "Provides Poison Resistance"
+        if (mobEffectInstance.getEffect() == MobEffects.POISON) {
+            list.add(Component.literal("Grants Poison Resistance"));
+        }
+        // For other effects, show the effect name
+        else {
+            String effectName = mobEffectInstance.getEffect().getDisplayName().getString();
+            list.add(Component.literal("Grants " + effectName));
+        }
+
         super.appendHoverText(itemstack, world, list, flag);
     }
 
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
-        // No periodic update needed for this item
+        LivingEntity livingEntity = (LivingEntity) slotContext.entity(); // Direct casting
+        // Check if the player has the poison effect, and if so, remove it
+        if (livingEntity != null && livingEntity.hasEffect(MobEffects.POISON)) {
+            livingEntity.removeEffect(MobEffects.POISON);
+        }
     }
 
     @Override

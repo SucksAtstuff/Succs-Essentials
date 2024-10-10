@@ -51,8 +51,5 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SUNSTONE_CHESTPLATE.get())
                 .add(ModItems.SUNSTONE_LEGGINGS.get())
                 .add(ModItems.SUNSTONE_BOOTS.get());
-
-
-
     }
 }

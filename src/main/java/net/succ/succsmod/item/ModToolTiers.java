@@ -65,4 +65,17 @@ public class ModToolTiers {
             // Specify that Sunstone is below Ruby in the tool tier hierarchy
             List.of(RUBY)
     );
+
+    // Register a new custom tool tier for Malachite
+    public static final Tier MALACHITE = TierSortingRegistry.registerTier(
+            // Define the properties of the Malachite tool tier
+            new ForgeTier(4, 1561, 8.0F, 2.5F, 10,
+                    ModTags.Blocks.NEEDS_MALACHITE_TOOL, () -> Ingredient.of(ModItems.MALACHITE.get())),
+            // Create a ResourceLocation for the Malachite tool tier
+            new ResourceLocation(SuccsMod.MOD_ID, "malachite"),
+            // Specify that Malachite is above Ruby in the tool tier hierarchy
+            List.of(RUBY),
+            // Specify that Ruby is below Atherium in the tool tier hierarchy
+            List.of(ATHERIUM)
+    );
 }

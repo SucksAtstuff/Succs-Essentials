@@ -49,6 +49,13 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
 
+    // Register the Malachite items
+    public static final RegistryObject<Item> MALACHITE = ITEMS.register("malachite",
+            () ->new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DIRTY_MALACHITE = ITEMS.register("dirty_malachite",
+            () -> new Item(new Item.Properties()));
+
     // Register the Rock Candy item with food properties
     public static final RegistryObject<Item> ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(ModFoods.ROCK_CANDY)));
@@ -140,7 +147,6 @@ public class ModItems {
     // Register the Ruby Paxel Item
     public static final RegistryObject<Item> RUBY_PAXEL = ITEMS.register("ruby_paxel",
             () -> new PaxelItem(ModToolTiers.RUBY, 2, -2.5F, new Item.Properties()));
-
 
     // Register the Ruby Helmet item
     public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
@@ -246,6 +252,10 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_BOOTS = ITEMS.register("sunstone_boots",
             () -> new ModArmorItem(ModArmorMaterials.SUNSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    // Register the Malachite Sword item
+    public static final RegistryObject<Item> MALACHITE_SWORD = ITEMS.register("malachite_sword",
+            () -> new PoisonSwordItem(ModToolTiers.MALACHITE, 3, -2.4F, new Item.Properties(), 100, 0)); // 100 ticks = 5 seconds, amplifier 0 = Poison I
+
     // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
             () -> new CustomCurioAttributeItem(Attributes.ATTACK_SPEED, "a7e8f2d7-5e4b-4e7e-8f89-8c7e1f94e76f", 0.4, AttributeModifier.Operation.ADDITION, "ring"));
@@ -262,6 +272,12 @@ public class ModItems {
     public static final RegistryObject<Item> RING_OF_SUNSTONE = ITEMS.register("ring_of_sunstone",
             () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0, true, false, false), "ring"));
 
+    // Register the Bracelet of Malachite item with poison immunity for the bracelet slot
+    public static final RegistryObject<Item> BRACELET_OF_MALACHITE = ITEMS.register("bracelet_of_malachite",
+            () -> new CustomCurioMobEffectItem(
+                    new MobEffectInstance(MobEffects.POISON, Integer.MAX_VALUE, 0, true, false, false),
+                    "bracelet"
+            ));
 
 
     // Method to register the DeferredRegister to the event bus

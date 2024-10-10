@@ -41,13 +41,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_RUBY_ORE.get())
                 .add(ModBlocks.END_RUBY_ORE.get());
 
-        // Add Atherium blocks to the "needs Ruby tool" tag
-        this.tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        // Add Atherium blocks to the "needs Malachite tool" tag
+        this.tag(ModTags.Blocks.NEEDS_MALACHITE_TOOL)
                 .add(ModBlocks.ATHERIUM_BLOCK.get())
                 .add(ModBlocks.ATHERIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_ATHERIUM_ORE.get())
                 .add(ModBlocks.NETHER_ATHERIUM_ORE.get())
                 .add(ModBlocks.END_ATHERIUM_ORE.get());
+
+        // Add Malachite blocks to the "needs Ruby tool" tag
+        this.tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+                .add(ModBlocks.MALACHITE_BLOCK.get())
+                .add(ModBlocks.MALACHITE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get());
+
 
         // Add Ruby blocks to the "needs Sapphire tool" tag
         this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)

@@ -93,8 +93,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GarlicCropBlock.AGE, 3));
         this.add(ModBlocks.GARLIC_CROP.get(), this.createCropDrops(ModBlocks.GARLIC_CROP.get(),
                 ModItems.GARLIC.get(), ModItems.GARLIC.get(), lootitemcondition$builder1));
-
-
     }
 
     // Helper method to create loot tables for ores that drop like diamond ores

@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
@@ -35,6 +34,8 @@ public class CustomCurioAttributeItem extends Item implements ICurioItem {
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+        // Add information about the attribute modifier to the tooltip
+        list.add(Component.literal("Grants " + attribute.getDescriptionId() + " modifier: " + amount));
         super.appendHoverText(itemstack, world, list, flag);
     }
 
@@ -57,8 +58,6 @@ public class CustomCurioAttributeItem extends Item implements ICurioItem {
             player.getAttribute(attribute).removeModifier(attributeModifierUUID);
             updatePlayerHealth(player);
         }
-
-
     }
 
     private void updatePlayerHealth(Player player) {

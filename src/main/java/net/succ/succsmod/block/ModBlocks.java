@@ -54,7 +54,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> ATHERIUM_BLOCK = registerBlock("atherium_block",
             () -> new Block(Block.Properties.copy(Blocks.ANCIENT_DEBRIS).sound(SoundType.AMETHYST)));
 
-
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
@@ -107,6 +106,17 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
 
     public static final RegistryObject<Block> SUNSTONE_BLOCK = registerBlock("sunstone_block",
             () -> new Block(Block.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> MALACHITE_ORE = registerBlock("malachite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> DEEPSLATE_MALACHITE_ORE = registerBlock("deepslate_malachite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> MALACHITE_BLOCK = registerBlock("malachite_block",
+            () -> new Block(Block.Properties.copy(Blocks.EMERALD_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> GEM_POLISHING_TABLE = registerBlock("gem_polishing_table",
             () -> new GemPolishingTableBlock(BlockBehaviour.Properties.copy(Blocks.BREWING_STAND).noOcclusion()));

@@ -4,6 +4,7 @@ package net.succ.succsmod.item;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -36,6 +37,8 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.DIRTY_SAPPHIRE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE.get()));
                         pOutput.accept(new ItemStack(ModItems.DIRTY_SUNSTONE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE.get()));
+                        pOutput.accept(new ItemStack(ModItems.DIRTY_MALACHITE.get()));
 
                         // Add blocks next (ores and blocks of materials)
                         pOutput.accept(new ItemStack(ModBlocks.ATHERIUM_ORE.get()));
@@ -61,6 +64,9 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModBlocks.NETHER_SUNSTONE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.END_SUNSTONE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.SUNSTONE_BLOCK.get()));
+
+                        pOutput.accept(new ItemStack(ModBlocks.MALACHITE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_MALACHITE_ORE.get()));
 
                         // Add swords, grouped by material
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SWORD.get()));
@@ -130,6 +136,9 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.RING_OF_SAPPHIRE.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_SUNSTONE.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_ATHERIUM.get()));
+
+                        // Add Bracelets
+                        pOutput.accept(new ItemStack(ModItems.BRACELET_OF_MALACHITE.get()));
 
                         // Add miscellaneous items
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));
