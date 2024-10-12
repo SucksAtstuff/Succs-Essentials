@@ -28,6 +28,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModBlocks.NETHER_RUBY_ORE.get(), ModBlocks.END_RUBY_ORE.get());
     public static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModBlocks.END_SAPPHIRE_ORE.get());
     public static final List<ItemLike> SUNSTONE_SMELTABLES = List.of(ModBlocks.SUNSTONE_ORE.get(), ModBlocks.DEEPSLATE_SUNSTONE_ORE.get(), ModBlocks.NETHER_SUNSTONE_ORE.get(), ModBlocks.END_SUNSTONE_ORE.get());
+    public static final List<ItemLike> MALACHITE_SMELTABLES = List.of(ModBlocks.MALACHITE_ORE.get(), ModBlocks.DEEPSLATE_MALACHITE_ORE.get());
 
     // Constructor for the ModRecipeProvider class
     public ModRecipeProvider(PackOutput pOutput) {
@@ -52,6 +53,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Register smelting and blasting recipes for Sunstone ores
         oreBlasting(pWriter, SUNSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.SUNSTONE.get(), 0.25f, 100, "sunstone");
         oreSmelting(pWriter, SUNSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.SUNSTONE.get(), 0.25f, 200, "sunstone");
+
+        // Register smelting and blasting recipes for Malachite ores
+        oreBlasting(pWriter, MALACHITE_SMELTABLES, RecipeCategory.MISC, ModItems.MALACHITE.get(), 0.25f, 100, "malachite");
+        oreSmelting(pWriter, MALACHITE_SMELTABLES, RecipeCategory.MISC, ModItems.MALACHITE.get(), 0.25f, 200, "malachite");
 
         // Register recipe for crafting the Gem Polishing Table
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GEM_POLISHING_TABLE.get(), 1)
@@ -81,6 +86,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         new GemPolishingRecipeBuilder(ModItems.DIRTY_SUNSTONE.get(), ModItems.SUNSTONE.get(), 1, 160, new FluidStack(Fluids.WATER, 250))
                 .unlockedBy(getHasName(ModItems.DIRTY_SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        new GemPolishingRecipeBuilder(ModItems.DIRTY_MALACHITE.get(), ModItems.MALACHITE.get(), 1, 160, new FluidStack(Fluids.WATER, 750))
+                .unlockedBy(getHasName(ModItems.DIRTY_MALACHITE.get()), has(ModItems.MALACHITE.get()))
                 .save(pWriter);
 
         // Register shapeless recipe for crafting Atherium
@@ -583,6 +592,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S S")
                 .define('S', ModItems.SUNSTONE.get())
                 .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
+                .save(pWriter);
+
+        // Register shapeless recipe to convert Malachite Block back to Malachite items
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MALACHITE.get(), 9)
+                .requires(ModBlocks.MALACHITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.MALACHITE_BLOCK.get()), has(ModBlocks.MALACHITE_BLOCK.get()))
+                .save(pWriter);
+        
+        // Register shaped recipe for Malachite Block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MALACHITE_BLOCK.get())
+                .pattern("MMM")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.MALACHITE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
                 .save(pWriter);
 
         // Register shapeless recipe for Garlic Bread

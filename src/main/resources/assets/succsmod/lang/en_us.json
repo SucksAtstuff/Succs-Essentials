@@ -88,6 +88,13 @@
     "item.succsmod.sunstone_leggings": "Sunstone Leggings",
     "item.succsmod.sunstone_boots": "Sunstone Boots",
 
+    "item.succsmod.malachite": "Malachite",
+    "item.succsmod.dirty_malachite": "Dirty Malachite",
+
+    "block.succsmod.malachite_block": "Block Of Malachite",
+    "block.succsmod.malachite_ore": "Malachite Ore",
+    "block.succsmod.deepslate_malachite_ore": "Deepslate Malachite Ore",
+
     "item.succsmod.ring_of_ruby": "Ring Of Ruby",
     "item.succsmod.ring_of_sapphire": "Ring Of Sapphire",
     "item.succsmod.ring_of_sunstone": "Ring Of Sunstone",
@@ -123,6 +130,8 @@
     "tooltip.succsmod.looting_sword.tooltip": "Press §eShift§r for more information",
     "tooltip.succsmod.atherium_armor.tooltip.shift": "Gives the player 10+ hearts when wearing a full set",
     "tooltip.succsmod.atherium_armor.tooltip": "Press §eShift§r for more information",
+    "tooltip.succsmod.poison_sword.tooltip.shift": "Inflicts Poison on hit mobs",
+    "tooltip.succsmod.poison_sword.tooltip": "Press §eShift§r for more information",
 
     "entity.minecraft.villager.succsmod.gem_cutter": "'Gem' Cutter"
 

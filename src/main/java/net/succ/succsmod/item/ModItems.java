@@ -254,7 +254,7 @@ public class ModItems {
 
     // Register the Malachite Sword item
     public static final RegistryObject<Item> MALACHITE_SWORD = ITEMS.register("malachite_sword",
-            () -> new PoisonSwordItem(ModToolTiers.MALACHITE, 3, -2.4F, new Item.Properties(), 100, 0)); // 100 ticks = 5 seconds, amplifier 0 = Poison I
+            () -> new PoisonSwordItem(ModToolTiers.MALACHITE, 5, -2.4F, new Item.Properties(), 100, 0)); // 100 ticks = 5 seconds, amplifier 0 = Poison I
 
     // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",

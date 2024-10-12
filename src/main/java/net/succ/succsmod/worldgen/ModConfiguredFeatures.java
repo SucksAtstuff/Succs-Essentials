@@ -36,6 +36,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> SUNSTONE_ORE_KEY = registerKey("sunstone_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_SUNSTONE_ORE_KEY = registerKey("deepslate_sunstone_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?,?>> MALACHITE_ORE_KEY = registerKey("malachite_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_MALACHITE_ORE_KEY = registerKey("deepslate_malachite_ore");
+
 
     // Method to register configured features during the bootstrap phase
     public static void bootstrap(BootstapContext<ConfiguredFeature<?,?>> context) {
@@ -110,8 +113,19 @@ public class ModConfiguredFeatures {
         register(context, DEEPSLATE_SUNSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(sunstoneOres, 8));
 
 
+        // Define target block states for Malachite ores
+        List<OreConfiguration.TargetBlockState> malachiteOres = List.of(
+                OreConfiguration.target(stoneReplaceable, ModBlocks.MALACHITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_MALACHITE_ORE.get().defaultBlockState())
+        );
 
+        // Register Malachite ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, MALACHITE_ORE_KEY, Feature.ORE, new OreConfiguration(malachiteOres, 10));
 
+        // Register Deepslate Malachite ore configured feature
+        // pSize represents the size of the ore vein (number of blocks)
+        register(context, DEEPSLATE_MALACHITE_ORE_KEY, Feature.ORE, new OreConfiguration(malachiteOres, 8));
 
     }
 

@@ -30,6 +30,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_END_SAPPHIRE_ORE = registerKey("add_end_sapphire_ore");
     public static final ResourceKey<BiomeModifier> ADD_SUNSTONE_ORE = registerKey("add_sunstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_SUNSTONE_ORE = registerKey("add_deepslate_sunstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MALACHITE_ORE = registerKey("add_malachite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_MALACHITE_ORE = registerKey("add_deepslate_malachite_ore");
 
 
 
@@ -115,6 +117,24 @@ public class ModBiomeModifiers {
                 // Specify that the feature should be added during the underground ores generation step
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+
+        // Register the biome modifier for adding Malachite ore to overworld biomes
+        context.register(ADD_MALACHITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Malachite ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.MALACHITE_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        // Register the biome modifier for adding Deepslate Malachite ore to overworld biomes
+        context.register(ADD_DEEPSLATE_MALACHITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                // Specify that the modifier applies to all overworld biomes
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                // Specify the placed feature to add (Deepslate Malachite ore)
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_MALACHITE_ORE_PLACED_KEY)),
+                // Specify that the feature should be added during the underground ores generation step
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
 
     }

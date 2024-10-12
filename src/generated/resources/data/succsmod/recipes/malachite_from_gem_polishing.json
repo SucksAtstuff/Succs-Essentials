@@ -1,0 +1,14 @@
+{
+  "type": "succsmod:gem_polishing",
+  "craftTime": 160,
+  "fluidAmount": 750,
+  "fluidType": "minecraft:water",
+  "ingredients": [
+    {
+      "item": "succsmod:dirty_malachite"
+    }
+  ],
+  "output": {
+    "item": "succsmod:malachite"
+  }
+}

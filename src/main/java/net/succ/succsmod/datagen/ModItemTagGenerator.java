@@ -31,7 +31,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.RUBY.get())
                 .add(ModItems.SAPPHIRE.get())
                 .add(ModItems.SUNSTONE.get())
-                .add(ModItems.ATHERIUM.get());
+                .add(ModItems.ATHERIUM.get())
+                .add(ModItems.MALACHITE.get());
 
         // Add Armour to "TRIMMABLE_ARMOR" tag
         this.tag(ItemTags.TRIMMABLE_ARMOR)

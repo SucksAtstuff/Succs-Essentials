@@ -40,7 +40,12 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
         add("ring_of_atherium_from_chest", new AddItemModifier(new LootItemCondition[]{
                 LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.RING_OF_ATHERIUM.get()));
+
+        add("bracelet_of_malachite", new AddItemModifier(new LootItemCondition[]{
+                LootItemRandomChanceCondition.randomChance(0.01f).build() }, ModItems.BRACELET_OF_MALACHITE.get()));
         }
+
+
 
     }
 

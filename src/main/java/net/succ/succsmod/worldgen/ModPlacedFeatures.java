@@ -34,6 +34,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SUNSTONE_ORE_PLACED_KEY = registerKey("sunstone_ore_placed");
     public static final ResourceKey<PlacedFeature> DEEPSLATE_SUNSTONE_ORE_PLACED_KEY = registerKey("deepslate_sunstone_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> MALACHITE_ORE_PLACED_KEY = registerKey("malachite_ore_placed");
+    public static final ResourceKey<PlacedFeature> DEEPSLATE_MALACHITE_ORE_PLACED_KEY = registerKey("deepslate_malachite_ore_placed");
+
 
     // Method to register placed features during the bootstrap phase
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -88,6 +91,18 @@ public class ModPlacedFeatures {
         // Deepslate Sapphire Ore is most common around Y level -28 (range from -64 to 8)
         register(context, DEEPSLATE_SUNSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_SUNSTONE_ORE_KEY),
                 // pCount represents the number of ore veins to generate per chunk (3 veins per chunk for Deepslate Sapphire ore)
+                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(8))));
+
+        // Register Malachite ore placed feature with its configuration and placement modifiers
+        // Malachite Ore is most common around Y level 36 (range from 8 to 64)
+        register(context, MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MALACHITE_ORE_KEY),
+                // pCount represents the number of ore veins to generate per chunk (5 veins per chunk for Malachite ore)
+                ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(64))));
+
+        // Register Deepslate Malachite ore placed feature with its configuration and placement modifiers
+        // Deepslate Malachite Ore is most common around Y level -28 (range from -64 to 8)
+        register(context, DEEPSLATE_MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_MALACHITE_ORE_KEY),
+                // pCount represents the number of ore veins to generate per chunk (3 veins per chunk for Deepslate Malachite ore)
                 ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(8))));
 
 

@@ -36,6 +36,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
         this.dropSelf(ModBlocks.SUNSTONE_BLOCK.get());
         this.dropSelf(ModBlocks.GEM_POLISHING_TABLE.get());
+        this.dropSelf(ModBlocks.MALACHITE_BLOCK.get());
 
 
         // Define loot tables for ore blocks that drop items similar to diamond ores
@@ -74,6 +75,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.END_SUNSTONE_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.END_SUNSTONE_ORE.get(), ModItems.DIRTY_SUNSTONE.get()));
+
+        this.add(ModBlocks.MALACHITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.MALACHITE_ORE.get(), ModItems.DIRTY_MALACHITE.get()));
+
+        this.add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_MALACHITE_ORE.get(), ModItems.DIRTY_MALACHITE.get()));
 
         // Define loot tables for ore blocks that drop items similar to copper ores
         this.add(ModBlocks.SAPPHIRE_ORE.get(),

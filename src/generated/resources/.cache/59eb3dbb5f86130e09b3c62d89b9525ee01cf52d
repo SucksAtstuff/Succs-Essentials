@@ -1,7 +1,8 @@
-// 1.20.1	2024-07-11T21:35:14.6638424	Loot Tables
+// 1.20.1	2024-10-12T04:55:52.4117859	Loot Tables
 539b36df382db36891fb5da327600f59bba2ee56 data/succsmod/loot_tables/blocks/atherium_block.json
 f439389c773d0c635d35694dd498dce52c0fa464 data/succsmod/loot_tables/blocks/atherium_ore.json
 0b7b501893212cdf97151e78d251be04f2710767 data/succsmod/loot_tables/blocks/deepslate_atherium_ore.json
+0585274bebc09367493105a02653dc433826b08e data/succsmod/loot_tables/blocks/deepslate_malachite_ore.json
 bd354fc5ba86b96688da115662623b0c4365ef75 data/succsmod/loot_tables/blocks/deepslate_ruby_ore.json
 57e77cee1c144179187f87c8fd24c7b855880c6d data/succsmod/loot_tables/blocks/deepslate_sapphire_ore.json
 bcc8c2de11f7b4c6371e66dcf5933ff7ab6fe5d6 data/succsmod/loot_tables/blocks/deepslate_sunstone_ore.json
@@ -11,6 +12,8 @@ c558401a8d6e2a835b00797381ce9aa78f0cb383 data/succsmod/loot_tables/blocks/end_ru
 da4b86d8178a2b96b2110e5984350508507ed047 data/succsmod/loot_tables/blocks/end_sunstone_ore.json
 228cf88ce4f43b6dceaeedadf8e6333b4f852b4b data/succsmod/loot_tables/blocks/garlic_crop.json
 fa956c17b59e5b0d6338e285cf296b42cf774c50 data/succsmod/loot_tables/blocks/gem_polishing_table.json
+c4bc7bd5b2dba5ee6d74e5dcd605da3d42cff84f data/succsmod/loot_tables/blocks/malachite_block.json
+f1e06956fb5433b06fe5e190d1e5c524009ef7ad data/succsmod/loot_tables/blocks/malachite_ore.json
 4aff6dfdf856773f7b24923e427eaf41c028938e data/succsmod/loot_tables/blocks/nether_atherium_ore.json
 eadd798b6a26e88e1eb83501f1b3ad4bd50d9dc1 data/succsmod/loot_tables/blocks/nether_ruby_ore.json
 2ffd6a0bb02ff494f19b8e10f99859a5d51021f2 data/succsmod/loot_tables/blocks/nether_sapphire_ore.json
