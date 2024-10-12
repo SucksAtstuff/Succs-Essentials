@@ -85,6 +85,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SUNSTONE_HAMMER);
         handheldItem(ModItems.SUNSTONE_PAXEL);
 
+        handheldItem(ModItems.MALACHITE_SWORD);
+        handheldItem(ModItems.MALACHITE_PICKAXE);
+        handheldItem(ModItems.MALACHITE_AXE);
+        handheldItem(ModItems.MALACHITE_SHOVEL);
+        handheldItem(ModItems.MALACHITE_HOE);
+
         complexBlock(ModBlocks.GEM_POLISHING_TABLE.get());
 
     }

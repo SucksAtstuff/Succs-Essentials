@@ -2,6 +2,8 @@
   "values": [
     "succsmod:malachite_block",
     "succsmod:malachite_ore",
-    "succsmod:deepslate_malachite_ore"
+    "succsmod:deepslate_malachite_ore",
+    "succsmod:nether_malachite_ore",
+    "succsmod:end_malachite_ore"
   ]
 }

@@ -67,36 +67,44 @@ public class ModCreateModeTabs {
 
                         pOutput.accept(new ItemStack(ModBlocks.MALACHITE_ORE.get()));
                         pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_MALACHITE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.NETHER_MALACHITE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.END_MALACHITE_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.MALACHITE_BLOCK.get()));
 
                         // Add swords, grouped by material
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SWORD.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_SWORD.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_SWORD.get()));
 
                         // Add pickaxes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_PICKAXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_PICKAXE.get()));
 
                         // Add axes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_AXE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_AXE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_AXE.get()));
 
                         // Add shovels
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_SHOVEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_SHOVEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_SHOVEL.get()));
 
                         // Add hoes
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HOE.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HOE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_HOE.get()));
 
                         // Add paxels
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_PAXEL.get()));

@@ -138,7 +138,7 @@ public class ModItems {
 
     // Register the Ruby Hoe item
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
-            () -> new HoeItem(ModToolTiers.RUBY, -3, 1F, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.RUBY, -4, 1F, new Item.Properties()));
 
     // Register the Ruby Hammer item
     public static final RegistryObject<Item> RUBY_HAMMER = ITEMS.register("ruby_hammer",
@@ -254,7 +254,23 @@ public class ModItems {
 
     // Register the Malachite Sword item
     public static final RegistryObject<Item> MALACHITE_SWORD = ITEMS.register("malachite_sword",
-            () -> new PoisonSwordItem(ModToolTiers.MALACHITE, 5, -2.4F, new Item.Properties(), 100, 0)); // 100 ticks = 5 seconds, amplifier 0 = Poison I
+            () -> new PoisonSwordItem(ModToolTiers.MALACHITE, 3, -2.4F, new Item.Properties(), 100, 1)); // 100 ticks = 5 seconds, amplifier 0 = Poison I
+
+    // Register the Malachite Pickaxe item
+    public static final RegistryObject<Item> MALACHITE_PICKAXE = ITEMS.register("malachite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.MALACHITE, 2, -2.8F, new Item.Properties()));
+
+    // Register the Malachite Axe item
+    public static final RegistryObject<Item> MALACHITE_AXE = ITEMS.register("malachite_axe",
+            () -> new AxeItem(ModToolTiers.MALACHITE, 6, -3F, new Item.Properties()));
+
+    // Register the Malachite Shovel item
+    public static final RegistryObject<Item> MALACHITE_SHOVEL = ITEMS.register("malachite_shovel",
+            () -> new ShovelItem(ModToolTiers.MALACHITE, 2, -3F, new Item.Properties()));
+
+    // Register the Malachite Hoe item
+    public static final RegistryObject<Item> MALACHITE_HOE = ITEMS.register("malachite_hoe",
+            () -> new HoeItem(ModToolTiers.MALACHITE, -5, 1F, new Item.Properties()));
 
     // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
@@ -262,7 +278,7 @@ public class ModItems {
 
     // Register the Ring of Ruby item with health effect for the ring slot
     public static final RegistryObject<Item> RING_OF_RUBY = ITEMS.register("ring_of_ruby",
-            () -> new CustomCurioAttributeItem(Attributes.MAX_HEALTH, "e3a7c2a3-4c5b-4e3e-9b8e-b6b9f781df55", 20.0, AttributeModifier.Operation.ADDITION, "ring"));
+            () -> new CustomCurioAttributeItem(Attributes.MAX_HEALTH, "e3a7c2a3-4c5b-4e3e-9b8e-b6b9f781df55", 10, AttributeModifier.Operation.ADDITION, "ring"));
 
     // Register the Ring of Sapphire item with luck effect for the ring slot
     public static final RegistryObject<Item> RING_OF_SAPPHIRE = ITEMS.register("ring_of_sapphire",

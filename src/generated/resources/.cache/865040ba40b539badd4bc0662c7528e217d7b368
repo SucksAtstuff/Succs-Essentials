@@ -1,8 +1,9 @@
-// 1.20.1	2024-10-12T04:47:21.3740006	Tags for minecraft:block mod id succsmod
+// 1.20.1	2024-10-12T16:22:47.7543063	Tags for minecraft:block mod id succsmod
 ba2daf60ac8a7a5260fbb1eda08ce08c8f00eb95 data/forge/tags/blocks/needs_netherite_tool.json
-de5bf850d74c378c36258999b625d63f9cdbf2b3 data/minecraft/tags/blocks/mineable/pickaxe.json
+724ab45edbdc2caf3642ad6bfa4373823b151ba1 data/minecraft/tags/blocks/mineable/pickaxe.json
 82362cfbd1836db13c7e9d36c8712821e795ac55 data/succsmod/tags/blocks/mineable/paxel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/succsmod/tags/blocks/needs_atherium_tool.json
 0abf5e3bcd2bb81eb0ec1b60adc71693e7fef031 data/succsmod/tags/blocks/needs_malachite_tool.json
-8b7b5b2a0f5dc1fd3ec02a226d11837fe4baf958 data/succsmod/tags/blocks/needs_ruby_tool.json
+0281544a57d924df01523adfc23623370d7f4732 data/succsmod/tags/blocks/needs_ruby_tool.json
 747391fa3a455034af155191051cee7de1ba9982 data/succsmod/tags/blocks/needs_sapphire_tool.json
+747391fa3a455034af155191051cee7de1ba9982 data/succsmod/tags/blocks/needs_sunstone_tool.json

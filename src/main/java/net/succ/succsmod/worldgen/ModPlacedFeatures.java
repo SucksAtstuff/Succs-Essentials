@@ -19,13 +19,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     // Define ResourceKeys for custom placed features (Atherium ore, Deepslate Atherium ore, Ruby ore, and Deepslate Ruby ore)
-    public static final ResourceKey<PlacedFeature> ATHERIUM_ORE_PLACED_KEY = registerKey("atherium_ore_placed");
-    public static final ResourceKey<PlacedFeature> DEEPSLATE_ATHERIUM_ORE_PLACED_KEY = registerKey("deepslate_atherium_ore_placed");
-    public static final ResourceKey<PlacedFeature> NETHER_ATHERIUM_ORE_PLACED_KEY = registerKey("nether_atherium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_ATHERIUM_ORE_PLACED_KEY = registerKey("end_atherium_ore_placed");
 
-    public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
-    public static final ResourceKey<PlacedFeature> DEEPSLATE_RUBY_ORE_PLACED_KEY = registerKey("deepslate_ruby_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed");
 
     public static final ResourceKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
@@ -36,6 +31,7 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> MALACHITE_ORE_PLACED_KEY = registerKey("malachite_ore_placed");
     public static final ResourceKey<PlacedFeature> DEEPSLATE_MALACHITE_ORE_PLACED_KEY = registerKey("deepslate_malachite_ore_placed");
+
 
 
     // Method to register placed features during the bootstrap phase
@@ -49,18 +45,6 @@ public class ModPlacedFeatures {
                 // pCount represents the number of ore veins to generate per chunk (3 veins per chunk for End Atherium ore)
                 ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(32))));
 
-
-        // Register Ruby ore placed feature with its configuration and placement modifiers
-        // Ruby Ore is most common around Y level 36 (range from 8 to 64)
-        register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (3 veins per chunk for Ruby ore)
-                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(64))));
-
-        // Register Deepslate Ruby ore placed feature with its configuration and placement modifiers
-        // Deepslate Ruby Ore is most common around Y level -28 (range from -64 to 8)
-        register(context, DEEPSLATE_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_RUBY_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (2 veins per chunk for Deepslate Ruby ore)
-                ModOrePlacement.commonOrePlacement(2, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(8))));
 
         // Register Nether Ruby ore placed feature with its configuration and placement modifiers
         // Nether Ruby Ore is most common around Y level 60 (range from 40 to 80)

@@ -2,26 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "succsmod:sapphire_axe"
-    },
     "G": {
       "item": "succsmod:gold_handle"
     },
-    "P": {
-      "item": "succsmod:sunstone_pickaxe"
-    },
-    "S": {
-      "item": "succsmod:sapphire_shovel"
+    "M": {
+      "item": "succsmod:malachite"
     }
   },
   "pattern": [
-    "ASP",
+    "MM ",
     " G ",
     " G "
   ],
   "result": {
-    "item": "succsmod:sunstone_paxel"
+    "item": "succsmod:malachite_hoe"
   },
   "show_notification": true
 }

@@ -551,11 +551,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Register shaped recipe for Sunstone Paxel
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUNSTONE_PAXEL.get())
-                .pattern("PPP")
-                .pattern("PSP")
+                .pattern("ASP")
                 .pattern(" G ")
+                .pattern(" G ")
+                .define('A', ModItems.SAPPHIRE_AXE.get())
+                .define('S', ModItems.SAPPHIRE_SHOVEL.get())
                 .define('P', ModItems.SUNSTONE_PICKAXE.get())
-                .define('S', ModItems.SUNSTONE_SHOVEL.get())
                 .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.SUNSTONE.get()), has(ModItems.SUNSTONE.get()))
                 .save(pWriter);
@@ -606,6 +607,56 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("MMM")
                 .pattern("MMM")
                 .define('M', ModItems.MALACHITE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register the shaped recipe for Malachite Sword
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" G ")
+                .define('M', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register the shaped recipe for Malachite Pickaxe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('M', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register the shaped recipe for Malachite Axe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_AXE.get())
+                .pattern("MM ")
+                .pattern("MG ")
+                .pattern(" G ")
+                .define('M', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register the shaped recipe for Malachite Shovel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('M', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register the shaped recipe for Malachite Hoe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_HOE.get())
+                .pattern("MM ")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('M', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
                 .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
                 .save(pWriter);
 

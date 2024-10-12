@@ -94,6 +94,14 @@
     "block.succsmod.malachite_block": "Block Of Malachite",
     "block.succsmod.malachite_ore": "Malachite Ore",
     "block.succsmod.deepslate_malachite_ore": "Deepslate Malachite Ore",
+    "block.succsmod.nether_malachite_ore": "Nether Malachite Ore",
+    "block.succsmod.end_malachite_ore": "End Malachite Ore",
+
+    "item.succsmod.malachite_pickaxe": "Malachite Pickaxe",
+    "item.succsmod.malachite_axe": "Malachite Axe",
+    "item.succsmod.malachite_shovel": "Malachite Shovel",
+    "item.succsmod.malachite_hoe": "Malachite Hoe",
+    "item.succsmod.malachite_sword": "Malachite Sword",
 
     "item.succsmod.ring_of_ruby": "Ring Of Ruby",
     "item.succsmod.ring_of_sapphire": "Ring Of Sapphire",

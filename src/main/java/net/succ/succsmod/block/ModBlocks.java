@@ -115,6 +115,14 @@ public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphi
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
 
+    public static final RegistryObject<Block> NETHER_MALACHITE_ORE = registerBlock("nether_malachite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
+    public static final RegistryObject<Block> END_MALACHITE_ORE = registerBlock("end_malachite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
     public static final RegistryObject<Block> MALACHITE_BLOCK = registerBlock("malachite_block",
             () -> new Block(Block.Properties.copy(Blocks.EMERALD_BLOCK).sound(SoundType.AMETHYST)));
 

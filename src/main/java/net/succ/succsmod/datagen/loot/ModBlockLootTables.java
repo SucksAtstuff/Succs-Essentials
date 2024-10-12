@@ -82,6 +82,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_MALACHITE_ORE.get(), ModItems.DIRTY_MALACHITE.get()));
 
+        this.add(ModBlocks.NETHER_MALACHITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_MALACHITE_ORE.get(), ModItems.DIRTY_MALACHITE.get()));
+
+        this.add(ModBlocks.END_MALACHITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.END_MALACHITE_ORE.get(), ModItems.DIRTY_MALACHITE.get()));
+
         // Define loot tables for ore blocks that drop items similar to copper ores
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.DIRTY_SAPPHIRE.get()));

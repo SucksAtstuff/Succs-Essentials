@@ -64,12 +64,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Register block states and item models for Sunstone Block
         blockWithItem(ModBlocks.SUNSTONE_BLOCK);
 
-        // Register block states and item models for Malachite Block
-        blockWithItem(ModBlocks.MALACHITE_BLOCK);
-
         // Register block states and item models for Malachite Ore and Deepslate Malachite Ore
         blockWithItem(ModBlocks.MALACHITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MALACHITE_ORE);
+        blockWithItem(ModBlocks.NETHER_MALACHITE_ORE);
+        blockWithItem(ModBlocks.END_MALACHITE_ORE);
+
+        // Register block states and item models for Malachite Block
+        blockWithItem(ModBlocks.MALACHITE_BLOCK);
 
         horizontalBlock(ModBlocks.GEM_POLISHING_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_table")));

@@ -26,8 +26,6 @@ public class ModConfiguredFeatures {
     // Define ResourceKeys for custom configured features (Atherium ore and Deepslate Atherium ore)
     public static final ResourceKey<ConfiguredFeature<?,?>> END_ATHERIUM_ORE_KEY = registerKey("end_atherium_ore");
 
-    public static final ResourceKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
-    public static final ResourceKey<ConfiguredFeature<?,?>> DEEPSLATE_RUBY_ORE_KEY = registerKey("deepslate_ruby_ore");
     public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
 
     public static final ResourceKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
@@ -68,13 +66,6 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(endStoneReplaceable, ModBlocks.END_RUBY_ORE.get().defaultBlockState())
         );
 
-        // Register Ruby ore configured feature
-        // pSize represents the size of the ore vein (number of blocks)
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(rubyOres, 6));
-
-        // Register Deepslate Ruby ore configured feature
-        // pSize represents the size of the ore vein (number of blocks)
-        register(context, DEEPSLATE_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(rubyOres, 4));
 
         // Register Nether Ruby ore configured feature
         // pSize represents the size of the ore vein (number of blocks)
@@ -111,7 +102,6 @@ public class ModConfiguredFeatures {
         // Register Deepslate Sunstone ore configured feature
         // pSize represents the size of the ore vein (number of blocks)
         register(context, DEEPSLATE_SUNSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(sunstoneOres, 8));
-
 
         // Define target block states for Malachite ores
         List<OreConfiguration.TargetBlockState> malachiteOres = List.of(

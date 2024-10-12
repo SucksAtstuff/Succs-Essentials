@@ -41,6 +41,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_RUBY_ORE.get())
                 .add(ModBlocks.END_RUBY_ORE.get());
 
+        // Add Malachite blocks to the "mineable with pickaxe" tag
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.MALACHITE_BLOCK.get())
+                .add(ModBlocks.MALACHITE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get())
+                .add(ModBlocks.NETHER_MALACHITE_ORE.get())
+                .add(ModBlocks.END_MALACHITE_ORE.get());
+
+        // Add Sapphire blocks to the "mineable with pickaxe" tag
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.SAPPHIRE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
+                .add(ModBlocks.NETHER_SAPPHIRE_ORE.get())
+                .add(ModBlocks.END_SAPPHIRE_ORE.get());
+
+        // Add Sunstone blocks to the "mineable with pickaxe" tag
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SUNSTONE_BLOCK.get())
+                .add(ModBlocks.SUNSTONE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get())
+                .add(ModBlocks.NETHER_SUNSTONE_ORE.get())
+                .add(ModBlocks.END_SUNSTONE_ORE.get());
+
         // Add Atherium blocks to the "needs Malachite tool" tag
         this.tag(ModTags.Blocks.NEEDS_MALACHITE_TOOL)
                 .add(ModBlocks.ATHERIUM_BLOCK.get())
@@ -53,8 +77,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
                 .add(ModBlocks.MALACHITE_BLOCK.get())
                 .add(ModBlocks.MALACHITE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get());
-
+                .add(ModBlocks.DEEPSLATE_MALACHITE_ORE.get())
+                .add(ModBlocks.NETHER_MALACHITE_ORE.get())
+                .add(ModBlocks.END_MALACHITE_ORE.get());
 
         // Add Ruby blocks to the "needs Sapphire tool" tag
         this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
@@ -64,16 +89,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_RUBY_ORE.get())
                 .add(ModBlocks.END_RUBY_ORE.get());
 
-        // Add Sapphire blocks to the "mineable with pickaxe" tag
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.SAPPHIRE_BLOCK.get())
-                .add(ModBlocks.SAPPHIRE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
-                .add(ModBlocks.NETHER_SAPPHIRE_ORE.get())
-                .add(ModBlocks.END_SAPPHIRE_ORE.get());
+        // Add Ruby blocks to the "needs Sunstone tool" tag
+        this.tag(ModTags.Blocks.NEEDS_SUNSTONE_TOOL)
+                .add(ModBlocks.RUBY_BLOCK.get())
+                .add(ModBlocks.RUBY_ORE.get())
+                .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
+                .add(ModBlocks.NETHER_RUBY_ORE.get())
+                .add(ModBlocks.END_RUBY_ORE.get());
 
-        // Add Sapphire blocks to the "needs Netherite tool" tag
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)  // Use the standard NEEDS_NETHERITE_TOOL tag
                 .add(ModBlocks.SAPPHIRE_BLOCK.get())
                 .add(ModBlocks.SAPPHIRE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
@@ -81,15 +105,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.END_SAPPHIRE_ORE.get());
 
         // Add Sunstone blocks to the "needs Netherite tool" tag
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.SUNSTONE_BLOCK.get())
-                .add(ModBlocks.SUNSTONE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get())
-                .add(ModBlocks.NETHER_SUNSTONE_ORE.get())
-                .add(ModBlocks.END_SUNSTONE_ORE.get());
-
-        // Add Sunstone blocks to the "mineable with pickaxe" tag
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)  // Use the standard NEEDS_NETHERITE_TOOL tag
                 .add(ModBlocks.SUNSTONE_BLOCK.get())
                 .add(ModBlocks.SUNSTONE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SUNSTONE_ORE.get())
