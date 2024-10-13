@@ -111,12 +111,14 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.RUBY_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_PAXEL.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_PAXEL.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_PAXEL.get()));
 
                         // Add hammers
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.SAPPHIRE_HAMMER.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_HAMMER.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_HAMMER.get()));
 
                         // Add armor pieces, grouped by material
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_HELMET.get()));

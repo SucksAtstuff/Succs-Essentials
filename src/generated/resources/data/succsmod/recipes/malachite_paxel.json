@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "succsmod:malachite_axe"
+    },
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "P": {
+      "item": "succsmod:malachite_pickaxe"
+    },
+    "S": {
+      "item": "succsmod:malachite_shovel"
+    }
+  },
+  "pattern": [
+    "ASP",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:malachite_paxel"
+  },
+  "show_notification": true
+}

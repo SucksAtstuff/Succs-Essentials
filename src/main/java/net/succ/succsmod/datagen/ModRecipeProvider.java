@@ -660,6 +660,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
                 .save(pWriter);
 
+        // Register shaped recipe for Malachite Hammer
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_HAMMER.get())
+                .pattern("HHH")
+                .pattern("HGH")
+                .pattern(" G ")
+                .define('H', ModItems.MALACHITE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+        // Register shaped recipe for Malachite Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MALACHITE_PAXEL.get())
+                .pattern("ASP")
+                .pattern(" G ")
+                .pattern(" G ")
+                .define('A', ModItems.MALACHITE_AXE.get())
+                .define('S', ModItems.MALACHITE_SHOVEL.get())
+                .define('P', ModItems.MALACHITE_PICKAXE.get())
+                .define('G', ModItems.GOLD_HANDLE.get())
+                .unlockedBy(getHasName(ModItems.MALACHITE.get()), has(ModItems.MALACHITE.get()))
+                .save(pWriter);
+
+
         // Register shapeless recipe for Garlic Bread
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GARLIC_BREAD.get(), 1)
                 .requires(Items.BREAD)

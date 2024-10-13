@@ -101,7 +101,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.END_SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_SAPPHIRE_ORE.get(), ModItems.DIRTY_SAPPHIRE.get()));
 
-
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.GARLIC_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GarlicCropBlock.AGE, 3));
         this.add(ModBlocks.GARLIC_CROP.get(), this.createCropDrops(ModBlocks.GARLIC_CROP.get(),

@@ -272,6 +272,14 @@ public class ModItems {
     public static final RegistryObject<Item> MALACHITE_HOE = ITEMS.register("malachite_hoe",
             () -> new HoeItem(ModToolTiers.MALACHITE, -5, 1F, new Item.Properties()));
 
+    // Register the Malachite Hammer item
+    public static final RegistryObject<Item> MALACHITE_HAMMER = ITEMS.register("malachite_hammer",
+            () -> new HammerItem(ModToolTiers.MALACHITE, 8, -3.5F, new Item.Properties()));
+
+    // Register the Malachite Paxel Item
+    public static final RegistryObject<Item> MALACHITE_PAXEL = ITEMS.register("malachite_paxel",
+            () -> new PaxelItem(ModToolTiers.MALACHITE, 1, -2.5F, new Item.Properties()));
+
     // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
             () -> new CustomCurioAttributeItem(Attributes.ATTACK_SPEED, "a7e8f2d7-5e4b-4e7e-8f89-8c7e1f94e76f", 0.4, AttributeModifier.Operation.ADDITION, "ring"));

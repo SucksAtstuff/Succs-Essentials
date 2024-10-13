@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "succsmod:gold_handle"
+    },
+    "H": {
+      "item": "succsmod:malachite"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "HGH",
+    " G "
+  ],
+  "result": {
+    "item": "succsmod:malachite_hammer"
+  },
+  "show_notification": true
+}

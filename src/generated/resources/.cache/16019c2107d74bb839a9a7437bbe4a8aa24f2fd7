@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-12T13:53:57.7732483	Item Models: succsmod
+// 1.20.1	2024-10-12T18:40:44.9556218	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
@@ -19,7 +19,9 @@ a8dd49ab1c746aabcee9666208712daaa1d6d3e1 assets/succsmod/models/item/dirty_ather
 4c20fe5a11fd7b3b65025bfbe0e7b954afe4b871 assets/succsmod/models/item/gold_handle.json
 2f91c6600aecdc78598507681f40f337ac7d5aa8 assets/succsmod/models/item/malachite.json
 b10bf6ef3f6812a146bd192e392d6b1759225c25 assets/succsmod/models/item/malachite_axe.json
+7b282a986c4e5fdc832b30140de198778763ff22 assets/succsmod/models/item/malachite_hammer.json
 e474ec59f0547d076765b0bc7f8256fe79038e27 assets/succsmod/models/item/malachite_hoe.json
+e4320e32c02f28c412fd9e8500f4408dd07cd162 assets/succsmod/models/item/malachite_paxel.json
 1a9b96f844fd03d7f25db44d80f9ccbb9b32040c assets/succsmod/models/item/malachite_pickaxe.json
 f55560ff09d1455bc01f6f7af7aa3ff0b12ce70d assets/succsmod/models/item/malachite_shovel.json
 f28b5ba15b9ab2c6adcc0505bac834ab09aa67d9 assets/succsmod/models/item/malachite_sword.json

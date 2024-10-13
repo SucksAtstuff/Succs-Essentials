@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-12T15:22:17.0641404	Recipes
+// 1.20.1	2024-10-12T18:40:44.9536207	Recipes
 250282d53adf278fce25ec28d45f8439924ba674 data/succsmod/advancements/recipes/atherium.json
 382b422311a7b4876f69b512bc6f4510633e138c data/succsmod/advancements/recipes/malachite.json
 8c15d15923adb7f24ef1368661e665d286d422db data/succsmod/advancements/recipes/misc/atherium_axe.json
@@ -33,7 +33,9 @@ fa30ce996ab6cd6bcd9c4b2597c3721ad60e6147 data/succsmod/advancements/recipes/misc
 4956ccb677e1f5d329a8a91de0f9343021974467 data/succsmod/advancements/recipes/misc/malachite_from_blasting_malachite_ore.json
 71008af665d5ee53b37a6ba2770c2140c3e9b555 data/succsmod/advancements/recipes/misc/malachite_from_smelting_deepslate_malachite_ore.json
 f5e9be87415e7d6e2e34da8345aac3038955239e data/succsmod/advancements/recipes/misc/malachite_from_smelting_malachite_ore.json
+9cf7a2ad5353d7c4ffcfc90f50934b8f5c3fcfd1 data/succsmod/advancements/recipes/misc/malachite_hammer.json
 45633634acb108ab9c1e6c4adefd008556b70a73 data/succsmod/advancements/recipes/misc/malachite_hoe.json
+496db2641c6175b358f917ef78af9496f2322a56 data/succsmod/advancements/recipes/misc/malachite_paxel.json
 73ecdaee3daef24af766bd9bed779500845ea20f data/succsmod/advancements/recipes/misc/malachite_pickaxe.json
 721b25bdee835e1b4b13d24d5dd06f41cb2c2127 data/succsmod/advancements/recipes/misc/malachite_shovel.json
 71437d3e21c4c2e4bf5e64a8e605c5ef9222d2b7 data/succsmod/advancements/recipes/misc/malachite_sword.json
@@ -137,7 +139,9 @@ a13acf4b1bb94d8c9044459c15d8a2b3c39c232f data/succsmod/recipes/malachite_from_bl
 87cb81a296daeb84a071f693c950baf50f60beab data/succsmod/recipes/malachite_from_gem_polishing.json
 f47a5e888ed84146748389351e752e28de87de08 data/succsmod/recipes/malachite_from_smelting_deepslate_malachite_ore.json
 999311a5395f047d873bb8cf2c45b9be0b379714 data/succsmod/recipes/malachite_from_smelting_malachite_ore.json
+36ef3ea8905aa2dfe5b1cbc7c0c8f4707209b677 data/succsmod/recipes/malachite_hammer.json
 ed882db0052a6c6766d27e1fe9cc375899de84c5 data/succsmod/recipes/malachite_hoe.json
+e23f53e36341d4c9b1b0133b6fb47ef595501a85 data/succsmod/recipes/malachite_paxel.json
 a959f2db7ca235677f17617a149eb2455de57fbb data/succsmod/recipes/malachite_pickaxe.json
 8303982a6b635beaa56553f2353bb1eedb971f01 data/succsmod/recipes/malachite_shovel.json
 bd182e8a19a3eb37d939239e4eda5094abbba6a8 data/succsmod/recipes/malachite_sword.json
