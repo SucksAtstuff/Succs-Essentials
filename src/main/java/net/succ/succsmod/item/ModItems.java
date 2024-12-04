@@ -280,6 +280,22 @@ public class ModItems {
     public static final RegistryObject<Item> MALACHITE_PAXEL = ITEMS.register("malachite_paxel",
             () -> new PaxelItem(ModToolTiers.MALACHITE, 1, -2.5F, new Item.Properties()));
 
+    // Register the Malachite Helmet item
+    public static final RegistryObject<Item> MALACHITE_HELMET = ITEMS.register("malachite_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.MALACHITE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    // Register the Malachite Chestplate item
+    public static final RegistryObject<Item> MALACHITE_CHESTPLATE = ITEMS.register("malachite_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.MALACHITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    // Register the Malachite Leggings item
+    public static final RegistryObject<Item> MALACHITE_LEGGINGS = ITEMS.register("malachite_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.MALACHITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    // Register the Malachite Boots item
+    public static final RegistryObject<Item> MALACHITE_BOOTS = ITEMS.register("malachite_boots",
+            () -> new ModArmorItem(ModArmorMaterials.MALACHITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     // Register the Ring of Atherium item with attack speed effect for the ring slot
     public static final RegistryObject<Item> RING_OF_ATHERIUM = ITEMS.register("ring_of_atherium",
             () -> new CustomCurioAttributeItem(Attributes.ATTACK_SPEED, "a7e8f2d7-5e4b-4e7e-8f89-8c7e1f94e76f", 0.4, AttributeModifier.Operation.ADDITION, "ring"));
@@ -298,10 +314,11 @@ public class ModItems {
 
     // Register the Bracelet of Malachite item with poison immunity for the bracelet slot
     public static final RegistryObject<Item> BRACELET_OF_MALACHITE = ITEMS.register("bracelet_of_malachite",
-            () -> new CustomCurioMobEffectItem(
-                    new MobEffectInstance(MobEffects.POISON, Integer.MAX_VALUE, 0, true, false, false),
-                    "bracelet"
-            ));
+            () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.POISON, Integer.MAX_VALUE, 0, true, false, false), "bracelet"));
+
+    // Register the Necklace of Amethyst item with haste effect for the necklace slot
+    public static final RegistryObject<Item> NECKLACE_OF_AMETHYST = ITEMS.register("necklace_of_amethyst",
+            () -> new CustomCurioMobEffectItem(new MobEffectInstance(MobEffects.DIG_SPEED, Integer.MAX_VALUE, 1, true, false, false), "necklace"));
 
 
     // Method to register the DeferredRegister to the event bus

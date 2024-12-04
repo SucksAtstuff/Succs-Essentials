@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-12T18:40:44.9536207	Recipes
+// 1.20.1	2024-10-16T13:29:38.151669	Recipes
 250282d53adf278fce25ec28d45f8439924ba674 data/succsmod/advancements/recipes/atherium.json
 382b422311a7b4876f69b512bc6f4510633e138c data/succsmod/advancements/recipes/malachite.json
 8c15d15923adb7f24ef1368661e665d286d422db data/succsmod/advancements/recipes/misc/atherium_axe.json
@@ -6,7 +6,6 @@ d928d37148606b8dec150964167b0353b5e59ced data/succsmod/advancements/recipes/misc
 87c80aa02837da84183b48af3c07e44a4793c205 data/succsmod/advancements/recipes/misc/atherium_block_to_atherium.json
 6faf0a6c44d3da0480fef3b01853fed0f65670df data/succsmod/advancements/recipes/misc/atherium_boots.json
 0fb0ee2ae40fdd2c379ff1d459fda9bdd463126f data/succsmod/advancements/recipes/misc/atherium_chestplate.json
-f3d5aec1c47d0e231016855a32f89479f6100af6 data/succsmod/advancements/recipes/misc/atherium_crafting.json
 e4fd4cfed2aa45be5a1b1a8414fadb1f9d325b21 data/succsmod/advancements/recipes/misc/atherium_from_blasting_atherium_ore.json
 4429ac3d60795920804d07324654ef4cb8e37898 data/succsmod/advancements/recipes/misc/atherium_from_blasting_deepslate_atherium_ore.json
 bf4bb5be19a53c84aa6c35688ec183c415b3985e data/succsmod/advancements/recipes/misc/atherium_from_blasting_end_atherium_ore.json
@@ -110,7 +109,6 @@ bd1076f4a220c47821820f3af776fa53a83135b5 data/succsmod/advancements/recipes/misc
 92af0dbbce0379a5825fbac0424d52dfbbac6704 data/succsmod/recipes/atherium_block_to_atherium.json
 1483fff647eef8f0395b13f675e53c0f00109f00 data/succsmod/recipes/atherium_boots.json
 9af5a1b191118fde535f8031c8e9890fb3122e17 data/succsmod/recipes/atherium_chestplate.json
-88a1b2453aaf2fd02da85cbb3b4c3bf948f302f3 data/succsmod/recipes/atherium_crafting.json
 985f8332d9b2a290d4ef4e0e36dd8819c3f338ce data/succsmod/recipes/atherium_from_blasting_atherium_ore.json
 a007e069c0202e9d4e6ebc5e9577ac1ce1beb83c data/succsmod/recipes/atherium_from_blasting_deepslate_atherium_ore.json
 e5fbdd07583ac51b2f7ca164b9d8e8c61f610d1e data/succsmod/recipes/atherium_from_blasting_end_atherium_ore.json

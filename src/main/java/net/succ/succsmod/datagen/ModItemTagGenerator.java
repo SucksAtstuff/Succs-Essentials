@@ -26,14 +26,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     // Override method to add custom item tags
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        // Add Gems to "Is Polishable" tag
-        this.tag(ModTags.Items.POLISHABLE_GEMS)
-                .add(ModItems.RUBY.get())
-                .add(ModItems.SAPPHIRE.get())
-                .add(ModItems.SUNSTONE.get())
-                .add(ModItems.ATHERIUM.get())
-                .add(ModItems.MALACHITE.get());
-
         // Add Armour to "TRIMMABLE_ARMOR" tag
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ATHERIUM_HELMET.get())
@@ -51,6 +43,18 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SUNSTONE_HELMET.get())
                 .add(ModItems.SUNSTONE_CHESTPLATE.get())
                 .add(ModItems.SUNSTONE_LEGGINGS.get())
-                .add(ModItems.SUNSTONE_BOOTS.get());
+                .add(ModItems.SUNSTONE_BOOTS.get())
+                .add(ModItems.MALACHITE_HELMET.get())
+                .add(ModItems.MALACHITE_CHESTPLATE.get())
+                .add(ModItems.MALACHITE_LEGGINGS.get())
+                .add(ModItems.MALACHITE_BOOTS.get());
+
+
+
+        // Inside your pickaxe item class or item registry
+        this.tag(ModTags.Items.SUNSTONE_SAPPHIRE_TOOLS)
+                .add(ModItems.SUNSTONE_PICKAXE.get())
+                .add(ModItems.SAPPHIRE_PICKAXE.get());
+
     }
 }

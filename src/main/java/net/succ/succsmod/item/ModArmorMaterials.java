@@ -17,32 +17,39 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     ATHERIUM("atherium", 40, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
-        p_266655_.put(ArmorItem.Type.BOOTS, 8);
-        p_266655_.put(ArmorItem.Type.LEGGINGS, 9);
-        p_266655_.put(ArmorItem.Type.CHESTPLATE, 11);
-        p_266655_.put(ArmorItem.Type.HELMET, 9);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.2F, () -> Ingredient.of(ModItems.ATHERIUM.get())),
+        p_266655_.put(ArmorItem.Type.BOOTS, 5);  // +1 from Malachite
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 8);  // +1
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 10);  // +1
+        p_266655_.put(ArmorItem.Type.HELMET, 5);  // +1
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F, () -> Ingredient.of(ModItems.ATHERIUM.get())),
+
+    MALACHITE("malachite", 40, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+        p_266655_.put(ArmorItem.Type.BOOTS, 4);  // +1 from Ruby
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 7);  // +1
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 9);  // +1
+        p_266655_.put(ArmorItem.Type.HELMET, 4);  // +1
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> Ingredient.of(ModItems.MALACHITE.get())),
 
     RUBY("ruby", 40, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
-        p_266655_.put(ArmorItem.Type.BOOTS, 7);
-        p_266655_.put(ArmorItem.Type.LEGGINGS, 8);
-        p_266655_.put(ArmorItem.Type.CHESTPLATE, 10);
-        p_266655_.put(ArmorItem.Type.HELMET, 8);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.0F, () -> Ingredient.of(ModItems.RUBY.get())),
+        p_266655_.put(ArmorItem.Type.BOOTS, 4);  // +1 from Sapphire/Sunstone
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 7);  // +1
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 9);  // +1
+        p_266655_.put(ArmorItem.Type.HELMET, 4);  // +1
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.5F, 0.1F, () -> Ingredient.of(ModItems.RUBY.get())),
 
     SAPPHIRE("sapphire", 40, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
-        p_266655_.put(ArmorItem.Type.BOOTS, 6);
-        p_266655_.put(ArmorItem.Type.LEGGINGS, 7);
-        p_266655_.put(ArmorItem.Type.CHESTPLATE, 9);
-        p_266655_.put(ArmorItem.Type.HELMET, 7);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.0F, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+        p_266655_.put(ArmorItem.Type.BOOTS, 3);  // Matches Netherite
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 8);
+        p_266655_.put(ArmorItem.Type.HELMET, 3);
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
 
     SUNSTONE("sunstone", 40, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
-        p_266655_.put(ArmorItem.Type.BOOTS, 6);
-        p_266655_.put(ArmorItem.Type.LEGGINGS, 7);
-        p_266655_.put(ArmorItem.Type.CHESTPLATE, 9);
-        p_266655_.put(ArmorItem.Type.HELMET, 7);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.0F, () -> Ingredient.of(ModItems.SUNSTONE.get()));
+        p_266655_.put(ArmorItem.Type.BOOTS, 3);  // Matches Netherite
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 8);
+        p_266655_.put(ArmorItem.Type.HELMET, 3);
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.of(ModItems.SUNSTONE.get()));
 
 
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);

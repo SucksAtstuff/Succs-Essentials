@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-12T18:40:44.9556218	Item Models: succsmod
+// 1.20.1	2024-10-16T13:29:38.1536691	Item Models: succsmod
 d16724ce78b8af26fe8939c0ba24c7e25334c6a2 assets/succsmod/models/item/atherium.json
 e497d88fd83e3e4e236651f77e4aeae8c3c3fe10 assets/succsmod/models/item/atherium_axe.json
 d849ad93a904a45752ab310ea554506bb2dc07a3 assets/succsmod/models/item/atherium_hammer.json
@@ -25,6 +25,7 @@ e4320e32c02f28c412fd9e8500f4408dd07cd162 assets/succsmod/models/item/malachite_p
 1a9b96f844fd03d7f25db44d80f9ccbb9b32040c assets/succsmod/models/item/malachite_pickaxe.json
 f55560ff09d1455bc01f6f7af7aa3ff0b12ce70d assets/succsmod/models/item/malachite_shovel.json
 f28b5ba15b9ab2c6adcc0505bac834ab09aa67d9 assets/succsmod/models/item/malachite_sword.json
+9089610fe4ec33095c692f1d099ef3beb7fb26be assets/succsmod/models/item/necklace_of_amethyst.json
 e0a5b4eb786e4ce703173173112c2708fe738fca assets/succsmod/models/item/ring_of_atherium.json
 8efd061ce90e51324ec6db5318536d3bd43ca7a9 assets/succsmod/models/item/ring_of_ruby.json
 da6f95d68b20cb1a4ddc1691583aaa5f711a8a6e assets/succsmod/models/item/ring_of_sapphire.json

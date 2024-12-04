@@ -92,11 +92,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.DIRTY_MALACHITE.get()), has(ModItems.MALACHITE.get()))
                 .save(pWriter);
 
-        // Register shapeless recipe for crafting Atherium
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 1)
-                .requires(Ingredient.of(ModTags.Items.POLISHABLE_GEMS), 9)  // Requires 9 items from the POLISHABLE_GEMS tag
-                .unlockedBy("has_polishable_gems", has(ModTags.Items.POLISHABLE_GEMS))
-                .save(pWriter, SuccsMod.MOD_ID + ":" + "atherium_crafting");
 
         // Register shapeless recipe to convert Atherium Block back to Atherium items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ATHERIUM.get(), 9)

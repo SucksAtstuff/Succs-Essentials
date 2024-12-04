@@ -2,6 +2,10 @@
   "type": "succsmod:add_item",
   "conditions": [
     {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_corridor"
+    },
+    {
       "chance": 0.01,
       "condition": "minecraft:random_chance"
     }

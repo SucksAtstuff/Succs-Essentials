@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem((ModItems.RING_OF_SUNSTONE));
         simpleItem((ModItems.RING_OF_ATHERIUM));
         simpleItem((ModItems.BRACELET_OF_MALACHITE));
+        simpleItem((ModItems.NECKLACE_OF_AMETHYST));
 
         //simpleItem((ModItems.ATHERIUM_HELMET));
        // simpleItem((ModItems.ATHERIUM_CHESTPLATE));

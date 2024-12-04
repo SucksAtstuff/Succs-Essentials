@@ -50,8 +50,7 @@ public class ModPlacedFeatures {
         // Nether Ruby Ore is most common around Y level 60 (range from 40 to 80)
         register(context, NETHER_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RUBY_ORE_KEY),
                 // pCount represents the number of ore veins to generate per chunk (5 veins per chunk for Ruby ore)
-                ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(40), VerticalAnchor.absolute(80))));
-
+                ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(40), VerticalAnchor.absolute(80))));
 
         // Register Sapphire ore placed feature with its configuration and placement modifiers
         // Sapphire Ore is most common around Y level 36 (range from 8 to 64)
@@ -78,21 +77,21 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(8))));
 
         // Register Malachite ore placed feature with its configuration and placement modifiers
-        // Malachite Ore is most common around Y level 36 (range from 8 to 64)
+        // Malachite Ore is most common around Y level 42 (range from 8 to 76)
         register(context, MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MALACHITE_ORE_KEY),
-                // pCount represents the number of ore veins to generate per chunk (5 veins per chunk for Malachite ore)
-                ModOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(64))));
+                // pCount represents the number of ore veins to generate per chunk (4 veins per chunk for Malachite ore)
+                ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(76))));
+
 
         // Register Deepslate Malachite ore placed feature with its configuration and placement modifiers
-        // Deepslate Malachite Ore is most common around Y level -28 (range from -64 to 8)
+        // Deepslate Malachite Ore is most common around Y level -32 (range from -64 to 0)
         register(context, DEEPSLATE_MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_MALACHITE_ORE_KEY),
                 // pCount represents the number of ore veins to generate per chunk (3 veins per chunk for Deepslate Malachite ore)
-                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(8))));
-
-
+                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
 
 
     }
+
 
     // Utility method to create a ResourceKey for a PlacedFeature using the mod ID and a given name
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -126,6 +126,11 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.ATHERIUM_BOOTS.get()));
 
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_HELMET.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_CHESTPLATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_LEGGINGS.get()));
+                        pOutput.accept(new ItemStack(ModItems.MALACHITE_BOOTS.get()));
+
                         pOutput.accept(new ItemStack(ModItems.RUBY_HELMET.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_CHESTPLATE.get()));
                         pOutput.accept(new ItemStack(ModItems.RUBY_LEGGINGS.get()));
@@ -141,6 +146,7 @@ public class ModCreateModeTabs {
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_LEGGINGS.get()));
                         pOutput.accept(new ItemStack(ModItems.SUNSTONE_BOOTS.get()));
 
+
                         // Add rings
                         pOutput.accept(new ItemStack(ModItems.RING_OF_RUBY.get()));
                         pOutput.accept(new ItemStack(ModItems.RING_OF_SAPPHIRE.get()));
@@ -149,6 +155,9 @@ public class ModCreateModeTabs {
 
                         // Add Bracelets
                         pOutput.accept(new ItemStack(ModItems.BRACELET_OF_MALACHITE.get()));
+
+                        // Add Necklaces
+                        pOutput.accept(new ItemStack(ModItems.NECKLACE_OF_AMETHYST.get()));
 
                         // Add miscellaneous items
                         pOutput.accept(new ItemStack(ModItems.GOLD_HANDLE.get()));

@@ -25,6 +25,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     // Override method to add custom block tags
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.GEM_POLISHING_TABLE.get());
+
         // Add Atherium blocks to the "mineable with pickaxe" tag
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ATHERIUM_BLOCK.get())
@@ -81,16 +85,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_MALACHITE_ORE.get())
                 .add(ModBlocks.END_MALACHITE_ORE.get());
 
-        // Add Ruby blocks to the "needs Sapphire tool" tag
-        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
-                .add(ModBlocks.RUBY_BLOCK.get())
-                .add(ModBlocks.RUBY_ORE.get())
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
-                .add(ModBlocks.NETHER_RUBY_ORE.get())
-                .add(ModBlocks.END_RUBY_ORE.get());
-
-        // Add Ruby blocks to the "needs Sunstone tool" tag
-        this.tag(ModTags.Blocks.NEEDS_SUNSTONE_TOOL)
+        // Add Ruby blocks and ores to a custom tag that requires Sunstone or Sapphire tools
+        this.tag(ModTags.Blocks.MINEABLE_WITH_SUNSTONE_OR_SAPPHIRE)
                 .add(ModBlocks.RUBY_BLOCK.get())
                 .add(ModBlocks.RUBY_ORE.get())
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
